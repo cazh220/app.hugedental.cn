@@ -1,0 +1,2652 @@
+[ 2018-01-23T20:24:22+08:00 ] 47.100.136.57 180.166.124.214 GET /public/admin.php/admin/stock/add
+[ log ] app.hugedental.cn/public/admin.php/admin/stock/add [运行时间：0.026386s][吞吐率：37.90req/s] [内存消耗：3,416.06kb] [文件加载：47]
+[ info ] [ LANG ] /www/wwwroot/app.hugedental.cn/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'stock',
+    2 => 'add',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'app.hugedental.cn',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.113 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://app.hugedental.cn/public/admin.php/admin/stock/index',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'PHPSESSID=964unpsauj0lg834ib6jb04f37',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Stock->add[ /www/wwwroot/app.hugedental.cn/application/admin/controller/Stock.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] /www/wwwroot/app.hugedental.cn/public/../application/admin/view/stock/create.html [ array (
+  0 => 'record_time',
+  1 => 'company',
+  2 => 'username',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000263s ] mysql:dbname=huge;host=localhost;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hg_company` [ RunTime:0.000664s ]
+[ sql ] [ SQL ] SELECT * FROM `hg_company` WHERE  `is_delete` = 0 [ RunTime:0.000195s ]
+
+---------------------------------------------------------------
+[ 2018-01-23T20:24:36+08:00 ] 47.100.136.57 180.166.124.214 GET /public/admin.php/admin/stock/index
+[ log ] app.hugedental.cn/public/admin.php/admin/stock/index [运行时间：0.026958s][吞吐率：37.09req/s] [内存消耗：3,359.80kb] [文件加载：48]
+[ info ] [ LANG ] /www/wwwroot/app.hugedental.cn/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'stock',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'app.hugedental.cn',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.113 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://app.hugedental.cn/public/admin.php/admin/index',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'PHPSESSID=964unpsauj0lg834ib6jb04f37',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Stock->index[ /www/wwwroot/app.hugedental.cn/application/admin/controller/Stock.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /www/wwwroot/app.hugedental.cn/public/../application/admin/view/stock/index.html [ array (
+  0 => 'stock',
+  1 => 'page',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000289s ] mysql:dbname=huge;host=localhost;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hg_stock` [ RunTime:0.000656s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `hg_stock` WHERE  `is_delete` = 0 LIMIT 1 [ RunTime:0.000193s ]
+[ sql ] [ SQL ] SELECT * FROM `hg_stock` WHERE  `is_delete` = 0 ORDER BY stock_id desc LIMIT 0,10 [ RunTime:0.000212s ]
+
+---------------------------------------------------------------
+[ 2018-01-23T20:24:37+08:00 ] 47.100.136.57 180.166.124.214 GET /public/admin.php/admin/stock/add
+[ log ] app.hugedental.cn/public/admin.php/admin/stock/add [运行时间：0.028048s][吞吐率：35.65req/s] [内存消耗：3,416.14kb] [文件加载：47]
+[ info ] [ LANG ] /www/wwwroot/app.hugedental.cn/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'stock',
+    2 => 'add',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'app.hugedental.cn',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.113 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://app.hugedental.cn/public/admin.php/admin/stock/index',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'PHPSESSID=964unpsauj0lg834ib6jb04f37',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Stock->add[ /www/wwwroot/app.hugedental.cn/application/admin/controller/Stock.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] /www/wwwroot/app.hugedental.cn/public/../application/admin/view/stock/create.html [ array (
+  0 => 'record_time',
+  1 => 'company',
+  2 => 'username',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000282s ] mysql:dbname=huge;host=localhost;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hg_company` [ RunTime:0.000612s ]
+[ sql ] [ SQL ] SELECT * FROM `hg_company` WHERE  `is_delete` = 0 [ RunTime:0.000185s ]
+
+---------------------------------------------------------------
+[ 2018-01-23T20:24:52+08:00 ] 47.100.136.57 180.166.124.214 GET /public/admin.php/admin/stock/index
+[ log ] app.hugedental.cn/public/admin.php/admin/stock/index [运行时间：0.029136s][吞吐率：34.32req/s] [内存消耗：3,359.80kb] [文件加载：48]
+[ info ] [ LANG ] /www/wwwroot/app.hugedental.cn/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'stock',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'app.hugedental.cn',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.113 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://app.hugedental.cn/public/admin.php/admin/index',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'PHPSESSID=964unpsauj0lg834ib6jb04f37',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Stock->index[ /www/wwwroot/app.hugedental.cn/application/admin/controller/Stock.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /www/wwwroot/app.hugedental.cn/public/../application/admin/view/stock/index.html [ array (
+  0 => 'stock',
+  1 => 'page',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000322s ] mysql:dbname=huge;host=localhost;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hg_stock` [ RunTime:0.000710s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `hg_stock` WHERE  `is_delete` = 0 LIMIT 1 [ RunTime:0.000189s ]
+[ sql ] [ SQL ] SELECT * FROM `hg_stock` WHERE  `is_delete` = 0 ORDER BY stock_id desc LIMIT 0,10 [ RunTime:0.000162s ]
+
+---------------------------------------------------------------
+[ 2018-01-23T20:24:53+08:00 ] 47.100.136.57 180.166.124.214 GET /public/admin.php/admin/stock/add
+[ log ] app.hugedental.cn/public/admin.php/admin/stock/add [运行时间：0.029067s][吞吐率：34.40req/s] [内存消耗：3,416.14kb] [文件加载：47]
+[ info ] [ LANG ] /www/wwwroot/app.hugedental.cn/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'stock',
+    2 => 'add',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'app.hugedental.cn',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.113 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://app.hugedental.cn/public/admin.php/admin/stock/index',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'PHPSESSID=964unpsauj0lg834ib6jb04f37',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Stock->add[ /www/wwwroot/app.hugedental.cn/application/admin/controller/Stock.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] /www/wwwroot/app.hugedental.cn/public/../application/admin/view/stock/create.html [ array (
+  0 => 'record_time',
+  1 => 'company',
+  2 => 'username',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000310s ] mysql:dbname=huge;host=localhost;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hg_company` [ RunTime:0.000621s ]
+[ sql ] [ SQL ] SELECT * FROM `hg_company` WHERE  `is_delete` = 0 [ RunTime:0.000242s ]
+
+---------------------------------------------------------------
+[ 2018-01-23T20:29:33+08:00 ] 47.100.136.57 180.166.124.214 GET /public/admin.php/admin/user/index
+[ log ] app.hugedental.cn/public/admin.php/admin/user/index [运行时间：0.033046s][吞吐率：30.26req/s] [内存消耗：3,623.70kb] [文件加载：50]
+[ info ] [ LANG ] /www/wwwroot/app.hugedental.cn/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'user',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'app.hugedental.cn',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.113 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://app.hugedental.cn/public/admin.php/admin/index',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'PHPSESSID=964unpsauj0lg834ib6jb04f37',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\User->index[ /www/wwwroot/app.hugedental.cn/application/admin/controller/User.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /www/wwwroot/app.hugedental.cn/public/../application/admin/view/user/index.html [ array (
+  0 => 'user',
+  1 => 'page',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000283s ] mysql:dbname=huge;host=localhost;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hg_user` [ RunTime:0.000796s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `hg_user` LIMIT 1 [ RunTime:0.000283s ]
+[ sql ] [ SQL ] SELECT * FROM `hg_user` ORDER BY user_id desc LIMIT 0,10 [ RunTime:0.000372s ]
+[ sql ] [ SQL ] SELECT COUNT(*) as cnt FROM hg_patient WHERE operate_user_id = '327' [ RunTime:0.000268s ]
+[ sql ] [ SQL ] select count(*) as 'cnt' from hg_stock where mobile = '18227612334' [ RunTime:0.000192s ]
+[ sql ] [ SQL ] SELECT COUNT(*) as cnt FROM hg_patient WHERE operate_user_id = '326' [ RunTime:0.000171s ]
+[ sql ] [ SQL ] select count(*) as 'cnt' from hg_stock where mobile = '18679185340' [ RunTime:0.000174s ]
+[ sql ] [ SQL ] SELECT COUNT(*) as cnt FROM hg_patient WHERE operate_user_id = '325' [ RunTime:0.000122s ]
+[ sql ] [ SQL ] select count(*) as 'cnt' from hg_stock where mobile = '18931970631' [ RunTime:0.000135s ]
+[ sql ] [ SQL ] SELECT COUNT(*) as cnt FROM hg_patient WHERE operate_user_id = '324' [ RunTime:0.000105s ]
+[ sql ] [ SQL ] select count(*) as 'cnt' from hg_stock where mobile = '15578008122' [ RunTime:0.000099s ]
+[ sql ] [ SQL ] SELECT COUNT(*) as cnt FROM hg_patient WHERE operate_user_id = '323' [ RunTime:0.000099s ]
+[ sql ] [ SQL ] select count(*) as 'cnt' from hg_stock where mobile = '18646000214' [ RunTime:0.000094s ]
+[ sql ] [ SQL ] SELECT COUNT(*) as cnt FROM hg_patient WHERE operate_user_id = '322' [ RunTime:0.000101s ]
+[ sql ] [ SQL ] select count(*) as 'cnt' from hg_stock where mobile = '18674503180' [ RunTime:0.000106s ]
+[ sql ] [ SQL ] SELECT COUNT(*) as cnt FROM hg_patient WHERE operate_user_id = '321' [ RunTime:0.000101s ]
+[ sql ] [ SQL ] select count(*) as 'cnt' from hg_stock where mobile = '18629599871' [ RunTime:0.000099s ]
+[ sql ] [ SQL ] SELECT COUNT(*) as cnt FROM hg_patient WHERE operate_user_id = '320' [ RunTime:0.000097s ]
+[ sql ] [ SQL ] select count(*) as 'cnt' from hg_stock where mobile = '18828093089' [ RunTime:0.000091s ]
+[ sql ] [ SQL ] SELECT COUNT(*) as cnt FROM hg_patient WHERE operate_user_id = '319' [ RunTime:0.000095s ]
+[ sql ] [ SQL ] select count(*) as 'cnt' from hg_stock where mobile = '13518157114' [ RunTime:0.000098s ]
+[ sql ] [ SQL ] SELECT COUNT(*) as cnt FROM hg_patient WHERE operate_user_id = '318' [ RunTime:0.000099s ]
+[ sql ] [ SQL ] select count(*) as 'cnt' from hg_stock where mobile = '18100612989' [ RunTime:0.000097s ]
+
+---------------------------------------------------------------
+[ 2018-01-23T20:29:36+08:00 ] 47.100.136.57 180.166.124.214 GET /public/admin.php/admin/user/index
+[ log ] app.hugedental.cn/public/admin.php/admin/user/index [运行时间：0.033405s][吞吐率：29.94req/s] [内存消耗：3,623.70kb] [文件加载：50]
+[ info ] [ LANG ] /www/wwwroot/app.hugedental.cn/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'user',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'app.hugedental.cn',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.113 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://app.hugedental.cn/public/admin.php/admin/index',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'PHPSESSID=964unpsauj0lg834ib6jb04f37',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\User->index[ /www/wwwroot/app.hugedental.cn/application/admin/controller/User.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /www/wwwroot/app.hugedental.cn/public/../application/admin/view/user/index.html [ array (
+  0 => 'user',
+  1 => 'page',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000288s ] mysql:dbname=huge;host=localhost;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hg_user` [ RunTime:0.000827s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `hg_user` LIMIT 1 [ RunTime:0.000176s ]
+[ sql ] [ SQL ] SELECT * FROM `hg_user` ORDER BY user_id desc LIMIT 0,10 [ RunTime:0.000237s ]
+[ sql ] [ SQL ] SELECT COUNT(*) as cnt FROM hg_patient WHERE operate_user_id = '327' [ RunTime:0.000237s ]
+[ sql ] [ SQL ] select count(*) as 'cnt' from hg_stock where mobile = '18227612334' [ RunTime:0.000119s ]
+[ sql ] [ SQL ] SELECT COUNT(*) as cnt FROM hg_patient WHERE operate_user_id = '326' [ RunTime:0.000102s ]
+[ sql ] [ SQL ] select count(*) as 'cnt' from hg_stock where mobile = '18679185340' [ RunTime:0.000099s ]
+[ sql ] [ SQL ] SELECT COUNT(*) as cnt FROM hg_patient WHERE operate_user_id = '325' [ RunTime:0.000100s ]
+[ sql ] [ SQL ] select count(*) as 'cnt' from hg_stock where mobile = '18931970631' [ RunTime:0.000095s ]
+[ sql ] [ SQL ] SELECT COUNT(*) as cnt FROM hg_patient WHERE operate_user_id = '324' [ RunTime:0.000104s ]
+[ sql ] [ SQL ] select count(*) as 'cnt' from hg_stock where mobile = '15578008122' [ RunTime:0.000113s ]
+[ sql ] [ SQL ] SELECT COUNT(*) as cnt FROM hg_patient WHERE operate_user_id = '323' [ RunTime:0.000113s ]
+[ sql ] [ SQL ] select count(*) as 'cnt' from hg_stock where mobile = '18646000214' [ RunTime:0.000093s ]
+[ sql ] [ SQL ] SELECT COUNT(*) as cnt FROM hg_patient WHERE operate_user_id = '322' [ RunTime:0.000097s ]
+[ sql ] [ SQL ] select count(*) as 'cnt' from hg_stock where mobile = '18674503180' [ RunTime:0.000091s ]
+[ sql ] [ SQL ] SELECT COUNT(*) as cnt FROM hg_patient WHERE operate_user_id = '321' [ RunTime:0.000097s ]
+[ sql ] [ SQL ] select count(*) as 'cnt' from hg_stock where mobile = '18629599871' [ RunTime:0.000100s ]
+[ sql ] [ SQL ] SELECT COUNT(*) as cnt FROM hg_patient WHERE operate_user_id = '320' [ RunTime:0.000110s ]
+[ sql ] [ SQL ] select count(*) as 'cnt' from hg_stock where mobile = '18828093089' [ RunTime:0.000092s ]
+[ sql ] [ SQL ] SELECT COUNT(*) as cnt FROM hg_patient WHERE operate_user_id = '319' [ RunTime:0.000100s ]
+[ sql ] [ SQL ] select count(*) as 'cnt' from hg_stock where mobile = '13518157114' [ RunTime:0.000111s ]
+[ sql ] [ SQL ] SELECT COUNT(*) as cnt FROM hg_patient WHERE operate_user_id = '318' [ RunTime:0.000119s ]
+[ sql ] [ SQL ] select count(*) as 'cnt' from hg_stock where mobile = '18100612989' [ RunTime:0.000093s ]
+
+---------------------------------------------------------------
+[ 2018-01-23T20:33:12+08:00 ] 47.100.136.57 180.166.124.214 GET /public/admin.php/admin/user/index
+[ log ] app.hugedental.cn/public/admin.php/admin/user/index [运行时间：0.033281s][吞吐率：30.05req/s] [内存消耗：3,623.68kb] [文件加载：50]
+[ info ] [ LANG ] /www/wwwroot/app.hugedental.cn/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'user',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'app.hugedental.cn',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.113 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://app.hugedental.cn/public/admin.php/admin/index',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'PHPSESSID=964unpsauj0lg834ib6jb04f37',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\User->index[ /www/wwwroot/app.hugedental.cn/application/admin/controller/User.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /www/wwwroot/app.hugedental.cn/public/../application/admin/view/user/index.html [ array (
+  0 => 'user',
+  1 => 'page',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000287s ] mysql:dbname=huge;host=localhost;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hg_user` [ RunTime:0.000850s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `hg_user` LIMIT 1 [ RunTime:0.000162s ]
+[ sql ] [ SQL ] SELECT * FROM `hg_user` ORDER BY user_id desc LIMIT 0,10 [ RunTime:0.000276s ]
+[ sql ] [ SQL ] SELECT COUNT(*) as cnt FROM hg_patient WHERE operate_user_id = '327' [ RunTime:0.000149s ]
+[ sql ] [ SQL ] select SUM(stock_num) as 'cnt' from hg_stock where mobile = '18227612334' [ RunTime:0.000260s ]
+[ sql ] [ SQL ] SELECT COUNT(*) as cnt FROM hg_patient WHERE operate_user_id = '326' [ RunTime:0.000122s ]
+[ sql ] [ SQL ] select SUM(stock_num) as 'cnt' from hg_stock where mobile = '18679185340' [ RunTime:0.000169s ]
+[ sql ] [ SQL ] SELECT COUNT(*) as cnt FROM hg_patient WHERE operate_user_id = '325' [ RunTime:0.000115s ]
+[ sql ] [ SQL ] select SUM(stock_num) as 'cnt' from hg_stock where mobile = '18931970631' [ RunTime:0.000153s ]
+[ sql ] [ SQL ] SELECT COUNT(*) as cnt FROM hg_patient WHERE operate_user_id = '324' [ RunTime:0.000124s ]
+[ sql ] [ SQL ] select SUM(stock_num) as 'cnt' from hg_stock where mobile = '15578008122' [ RunTime:0.000167s ]
+[ sql ] [ SQL ] SELECT COUNT(*) as cnt FROM hg_patient WHERE operate_user_id = '323' [ RunTime:0.000103s ]
+[ sql ] [ SQL ] select SUM(stock_num) as 'cnt' from hg_stock where mobile = '18646000214' [ RunTime:0.000163s ]
+[ sql ] [ SQL ] SELECT COUNT(*) as cnt FROM hg_patient WHERE operate_user_id = '322' [ RunTime:0.000105s ]
+[ sql ] [ SQL ] select SUM(stock_num) as 'cnt' from hg_stock where mobile = '18674503180' [ RunTime:0.000165s ]
+[ sql ] [ SQL ] SELECT COUNT(*) as cnt FROM hg_patient WHERE operate_user_id = '321' [ RunTime:0.000102s ]
+[ sql ] [ SQL ] select SUM(stock_num) as 'cnt' from hg_stock where mobile = '18629599871' [ RunTime:0.000162s ]
+[ sql ] [ SQL ] SELECT COUNT(*) as cnt FROM hg_patient WHERE operate_user_id = '320' [ RunTime:0.000104s ]
+[ sql ] [ SQL ] select SUM(stock_num) as 'cnt' from hg_stock where mobile = '18828093089' [ RunTime:0.000160s ]
+[ sql ] [ SQL ] SELECT COUNT(*) as cnt FROM hg_patient WHERE operate_user_id = '319' [ RunTime:0.000103s ]
+[ sql ] [ SQL ] select SUM(stock_num) as 'cnt' from hg_stock where mobile = '13518157114' [ RunTime:0.000183s ]
+[ sql ] [ SQL ] SELECT COUNT(*) as cnt FROM hg_patient WHERE operate_user_id = '318' [ RunTime:0.000108s ]
+[ sql ] [ SQL ] select SUM(stock_num) as 'cnt' from hg_stock where mobile = '18100612989' [ RunTime:0.000157s ]
+
+---------------------------------------------------------------
+[ 2018-01-23T20:33:15+08:00 ] 47.100.136.57 180.166.124.214 GET /public/admin.php/admin/user/index
+[ log ] app.hugedental.cn/public/admin.php/admin/user/index [运行时间：0.033366s][吞吐率：29.97req/s] [内存消耗：3,623.68kb] [文件加载：50]
+[ info ] [ LANG ] /www/wwwroot/app.hugedental.cn/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'user',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'app.hugedental.cn',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.113 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://app.hugedental.cn/public/admin.php/admin/index',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'PHPSESSID=964unpsauj0lg834ib6jb04f37',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\User->index[ /www/wwwroot/app.hugedental.cn/application/admin/controller/User.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /www/wwwroot/app.hugedental.cn/public/../application/admin/view/user/index.html [ array (
+  0 => 'user',
+  1 => 'page',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000277s ] mysql:dbname=huge;host=localhost;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hg_user` [ RunTime:0.000807s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `hg_user` LIMIT 1 [ RunTime:0.000161s ]
+[ sql ] [ SQL ] SELECT * FROM `hg_user` ORDER BY user_id desc LIMIT 0,10 [ RunTime:0.000240s ]
+[ sql ] [ SQL ] SELECT COUNT(*) as cnt FROM hg_patient WHERE operate_user_id = '327' [ RunTime:0.000142s ]
+[ sql ] [ SQL ] select SUM(stock_num) as 'cnt' from hg_stock where mobile = '18227612334' [ RunTime:0.000110s ]
+[ sql ] [ SQL ] SELECT COUNT(*) as cnt FROM hg_patient WHERE operate_user_id = '326' [ RunTime:0.000102s ]
+[ sql ] [ SQL ] select SUM(stock_num) as 'cnt' from hg_stock where mobile = '18679185340' [ RunTime:0.000097s ]
+[ sql ] [ SQL ] SELECT COUNT(*) as cnt FROM hg_patient WHERE operate_user_id = '325' [ RunTime:0.000137s ]
+[ sql ] [ SQL ] select SUM(stock_num) as 'cnt' from hg_stock where mobile = '18931970631' [ RunTime:0.000097s ]
+[ sql ] [ SQL ] SELECT COUNT(*) as cnt FROM hg_patient WHERE operate_user_id = '324' [ RunTime:0.000097s ]
+[ sql ] [ SQL ] select SUM(stock_num) as 'cnt' from hg_stock where mobile = '15578008122' [ RunTime:0.000094s ]
+[ sql ] [ SQL ] SELECT COUNT(*) as cnt FROM hg_patient WHERE operate_user_id = '323' [ RunTime:0.000097s ]
+[ sql ] [ SQL ] select SUM(stock_num) as 'cnt' from hg_stock where mobile = '18646000214' [ RunTime:0.000093s ]
+[ sql ] [ SQL ] SELECT COUNT(*) as cnt FROM hg_patient WHERE operate_user_id = '322' [ RunTime:0.000099s ]
+[ sql ] [ SQL ] select SUM(stock_num) as 'cnt' from hg_stock where mobile = '18674503180' [ RunTime:0.000119s ]
+[ sql ] [ SQL ] SELECT COUNT(*) as cnt FROM hg_patient WHERE operate_user_id = '321' [ RunTime:0.000099s ]
+[ sql ] [ SQL ] select SUM(stock_num) as 'cnt' from hg_stock where mobile = '18629599871' [ RunTime:0.000092s ]
+[ sql ] [ SQL ] SELECT COUNT(*) as cnt FROM hg_patient WHERE operate_user_id = '320' [ RunTime:0.000097s ]
+[ sql ] [ SQL ] select SUM(stock_num) as 'cnt' from hg_stock where mobile = '18828093089' [ RunTime:0.000093s ]
+[ sql ] [ SQL ] SELECT COUNT(*) as cnt FROM hg_patient WHERE operate_user_id = '319' [ RunTime:0.000100s ]
+[ sql ] [ SQL ] select SUM(stock_num) as 'cnt' from hg_stock where mobile = '13518157114' [ RunTime:0.000183s ]
+[ sql ] [ SQL ] SELECT COUNT(*) as cnt FROM hg_patient WHERE operate_user_id = '318' [ RunTime:0.000124s ]
+[ sql ] [ SQL ] select SUM(stock_num) as 'cnt' from hg_stock where mobile = '18100612989' [ RunTime:0.000103s ]
+
+---------------------------------------------------------------
+[ 2018-01-23T20:33:17+08:00 ] 47.100.136.57 180.166.124.214 GET /public/admin.php/admin/user/index
+[ log ] app.hugedental.cn/public/admin.php/admin/user/index [运行时间：0.032416s][吞吐率：30.85req/s] [内存消耗：3,623.68kb] [文件加载：50]
+[ info ] [ LANG ] /www/wwwroot/app.hugedental.cn/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'user',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'app.hugedental.cn',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.113 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://app.hugedental.cn/public/admin.php/admin/index',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'PHPSESSID=964unpsauj0lg834ib6jb04f37',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\User->index[ /www/wwwroot/app.hugedental.cn/application/admin/controller/User.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /www/wwwroot/app.hugedental.cn/public/../application/admin/view/user/index.html [ array (
+  0 => 'user',
+  1 => 'page',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000286s ] mysql:dbname=huge;host=localhost;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hg_user` [ RunTime:0.000860s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `hg_user` LIMIT 1 [ RunTime:0.000219s ]
+[ sql ] [ SQL ] SELECT * FROM `hg_user` ORDER BY user_id desc LIMIT 0,10 [ RunTime:0.000269s ]
+[ sql ] [ SQL ] SELECT COUNT(*) as cnt FROM hg_patient WHERE operate_user_id = '327' [ RunTime:0.000159s ]
+[ sql ] [ SQL ] select SUM(stock_num) as 'cnt' from hg_stock where mobile = '18227612334' [ RunTime:0.000112s ]
+[ sql ] [ SQL ] SELECT COUNT(*) as cnt FROM hg_patient WHERE operate_user_id = '326' [ RunTime:0.000102s ]
+[ sql ] [ SQL ] select SUM(stock_num) as 'cnt' from hg_stock where mobile = '18679185340' [ RunTime:0.000115s ]
+[ sql ] [ SQL ] SELECT COUNT(*) as cnt FROM hg_patient WHERE operate_user_id = '325' [ RunTime:0.000112s ]
+[ sql ] [ SQL ] select SUM(stock_num) as 'cnt' from hg_stock where mobile = '18931970631' [ RunTime:0.000168s ]
+[ sql ] [ SQL ] SELECT COUNT(*) as cnt FROM hg_patient WHERE operate_user_id = '324' [ RunTime:0.000120s ]
+[ sql ] [ SQL ] select SUM(stock_num) as 'cnt' from hg_stock where mobile = '15578008122' [ RunTime:0.000096s ]
+[ sql ] [ SQL ] SELECT COUNT(*) as cnt FROM hg_patient WHERE operate_user_id = '323' [ RunTime:0.000101s ]
+[ sql ] [ SQL ] select SUM(stock_num) as 'cnt' from hg_stock where mobile = '18646000214' [ RunTime:0.000104s ]
+[ sql ] [ SQL ] SELECT COUNT(*) as cnt FROM hg_patient WHERE operate_user_id = '322' [ RunTime:0.000121s ]
+[ sql ] [ SQL ] select SUM(stock_num) as 'cnt' from hg_stock where mobile = '18674503180' [ RunTime:0.000096s ]
+[ sql ] [ SQL ] SELECT COUNT(*) as cnt FROM hg_patient WHERE operate_user_id = '321' [ RunTime:0.000097s ]
+[ sql ] [ SQL ] select SUM(stock_num) as 'cnt' from hg_stock where mobile = '18629599871' [ RunTime:0.000123s ]
+[ sql ] [ SQL ] SELECT COUNT(*) as cnt FROM hg_patient WHERE operate_user_id = '320' [ RunTime:0.000136s ]
+[ sql ] [ SQL ] select SUM(stock_num) as 'cnt' from hg_stock where mobile = '18828093089' [ RunTime:0.000121s ]
+[ sql ] [ SQL ] SELECT COUNT(*) as cnt FROM hg_patient WHERE operate_user_id = '319' [ RunTime:0.000132s ]
+[ sql ] [ SQL ] select SUM(stock_num) as 'cnt' from hg_stock where mobile = '13518157114' [ RunTime:0.000097s ]
+[ sql ] [ SQL ] SELECT COUNT(*) as cnt FROM hg_patient WHERE operate_user_id = '318' [ RunTime:0.000097s ]
+[ sql ] [ SQL ] select SUM(stock_num) as 'cnt' from hg_stock where mobile = '18100612989' [ RunTime:0.000094s ]
+
+---------------------------------------------------------------
+[ 2018-01-23T20:33:18+08:00 ] 47.100.136.57 180.166.124.214 GET /public/admin.php/admin/user/index?page=6
+[ log ] app.hugedental.cn/public/admin.php/admin/user/index?page=6 [运行时间：0.030901s][吞吐率：32.36req/s] [内存消耗：3,623.43kb] [文件加载：50]
+[ info ] [ LANG ] /www/wwwroot/app.hugedental.cn/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'user',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'app.hugedental.cn',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.113 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://app.hugedental.cn/public/admin.php/admin/user/index',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'PHPSESSID=964unpsauj0lg834ib6jb04f37',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'page' => '6',
+)
+[ info ] [ RUN ] app\admin\controller\User->index[ /www/wwwroot/app.hugedental.cn/application/admin/controller/User.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /www/wwwroot/app.hugedental.cn/public/../application/admin/view/user/index.html [ array (
+  0 => 'user',
+  1 => 'page',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000290s ] mysql:dbname=huge;host=localhost;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hg_user` [ RunTime:0.000787s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `hg_user` LIMIT 1 [ RunTime:0.000156s ]
+[ sql ] [ SQL ] SELECT * FROM `hg_user` ORDER BY user_id desc LIMIT 50,10 [ RunTime:0.000420s ]
+[ sql ] [ SQL ] SELECT COUNT(*) as cnt FROM hg_patient WHERE operate_user_id = '262' [ RunTime:0.000156s ]
+[ sql ] [ SQL ] select SUM(stock_num) as 'cnt' from hg_stock where mobile = '18721225103' [ RunTime:0.000187s ]
+[ sql ] [ SQL ] SELECT COUNT(*) as cnt FROM hg_patient WHERE operate_user_id = '260' [ RunTime:0.000109s ]
+[ sql ] [ SQL ] select SUM(stock_num) as 'cnt' from hg_stock where mobile = '18225876893' [ RunTime:0.000153s ]
+[ sql ] [ SQL ] SELECT COUNT(*) as cnt FROM hg_patient WHERE operate_user_id = '259' [ RunTime:0.000115s ]
+[ sql ] [ SQL ] select SUM(stock_num) as 'cnt' from hg_stock where mobile = '13621956833' [ RunTime:0.000148s ]
+[ sql ] [ SQL ] SELECT COUNT(*) as cnt FROM hg_patient WHERE operate_user_id = '258' [ RunTime:0.000105s ]
+[ sql ] [ SQL ] select SUM(stock_num) as 'cnt' from hg_stock where mobile = '18621902751' [ RunTime:0.000154s ]
+[ sql ] [ SQL ] SELECT COUNT(*) as cnt FROM hg_patient WHERE operate_user_id = '257' [ RunTime:0.000103s ]
+[ sql ] [ SQL ] select SUM(stock_num) as 'cnt' from hg_stock where mobile = '18721225102' [ RunTime:0.000149s ]
+[ sql ] [ SQL ] SELECT COUNT(*) as cnt FROM hg_patient WHERE operate_user_id = '256' [ RunTime:0.000103s ]
+[ sql ] [ SQL ] select SUM(stock_num) as 'cnt' from hg_stock where mobile = '18721225100' [ RunTime:0.000150s ]
+[ sql ] [ SQL ] SELECT COUNT(*) as cnt FROM hg_patient WHERE operate_user_id = '255' [ RunTime:0.000104s ]
+[ sql ] [ SQL ] select SUM(stock_num) as 'cnt' from hg_stock where mobile = '18721241585' [ RunTime:0.000165s ]
+
+---------------------------------------------------------------
+[ 2018-01-23T20:33:30+08:00 ] 47.100.136.57 180.166.124.214 GET /public/admin.php/admin/user/index?page=5
+[ log ] app.hugedental.cn/public/admin.php/admin/user/index?page=5 [运行时间：0.034632s][吞吐率：28.88req/s] [内存消耗：3,624.95kb] [文件加载：50]
+[ info ] [ LANG ] /www/wwwroot/app.hugedental.cn/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'user',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'app.hugedental.cn',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.113 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://app.hugedental.cn/public/admin.php/admin/user/index?page=6',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'PHPSESSID=964unpsauj0lg834ib6jb04f37',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'page' => '5',
+)
+[ info ] [ RUN ] app\admin\controller\User->index[ /www/wwwroot/app.hugedental.cn/application/admin/controller/User.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /www/wwwroot/app.hugedental.cn/public/../application/admin/view/user/index.html [ array (
+  0 => 'user',
+  1 => 'page',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000277s ] mysql:dbname=huge;host=localhost;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hg_user` [ RunTime:0.000857s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `hg_user` LIMIT 1 [ RunTime:0.000196s ]
+[ sql ] [ SQL ] SELECT * FROM `hg_user` ORDER BY user_id desc LIMIT 40,10 [ RunTime:0.000443s ]
+[ sql ] [ SQL ] SELECT COUNT(*) as cnt FROM hg_patient WHERE operate_user_id = '287' [ RunTime:0.000183s ]
+[ sql ] [ SQL ] select SUM(stock_num) as 'cnt' from hg_stock where mobile = '18185171823' [ RunTime:0.000213s ]
+[ sql ] [ SQL ] SELECT COUNT(*) as cnt FROM hg_patient WHERE operate_user_id = '286' [ RunTime:0.000134s ]
+[ sql ] [ SQL ] select SUM(stock_num) as 'cnt' from hg_stock where mobile = '17621485886' [ RunTime:0.000176s ]
+[ sql ] [ SQL ] SELECT COUNT(*) as cnt FROM hg_patient WHERE operate_user_id = '285' [ RunTime:0.000218s ]
+[ sql ] [ SQL ] select SUM(stock_num) as 'cnt' from hg_stock where mobile = '18209619981' [ RunTime:0.000194s ]
+[ sql ] [ SQL ] SELECT COUNT(*) as cnt FROM hg_patient WHERE operate_user_id = '284' [ RunTime:0.000110s ]
+[ sql ] [ SQL ] select SUM(stock_num) as 'cnt' from hg_stock where mobile = '18053766900' [ RunTime:0.000179s ]
+[ sql ] [ SQL ] SELECT COUNT(*) as cnt FROM hg_patient WHERE operate_user_id = '283' [ RunTime:0.000132s ]
+[ sql ] [ SQL ] select SUM(stock_num) as 'cnt' from hg_stock where mobile = '15921762628' [ RunTime:0.000165s ]
+[ sql ] [ SQL ] SELECT COUNT(*) as cnt FROM hg_patient WHERE operate_user_id = '281' [ RunTime:0.000108s ]
+[ sql ] [ SQL ] select SUM(stock_num) as 'cnt' from hg_stock where mobile = '18670393499' [ RunTime:0.000170s ]
+[ sql ] [ SQL ] SELECT COUNT(*) as cnt FROM hg_patient WHERE operate_user_id = '280' [ RunTime:0.000110s ]
+[ sql ] [ SQL ] select SUM(stock_num) as 'cnt' from hg_stock where mobile = '18721225112' [ RunTime:0.000171s ]
+[ sql ] [ SQL ] SELECT COUNT(*) as cnt FROM hg_patient WHERE operate_user_id = '272' [ RunTime:0.000106s ]
+[ sql ] [ SQL ] select SUM(stock_num) as 'cnt' from hg_stock where mobile = '13570462894' [ RunTime:0.000152s ]
+[ sql ] [ SQL ] SELECT COUNT(*) as cnt FROM hg_patient WHERE operate_user_id = '264' [ RunTime:0.000106s ]
+[ sql ] [ SQL ] select SUM(stock_num) as 'cnt' from hg_stock where mobile = '18721225105' [ RunTime:0.000151s ]
+[ sql ] [ SQL ] SELECT COUNT(*) as cnt FROM hg_patient WHERE operate_user_id = '263' [ RunTime:0.000111s ]
+[ sql ] [ SQL ] select SUM(stock_num) as 'cnt' from hg_stock where mobile = '18721225104' [ RunTime:0.000183s ]
+
+---------------------------------------------------------------
+[ 2018-01-23T20:33:33+08:00 ] 47.100.136.57 180.166.124.214 GET /public/admin.php/admin/user/index?page=4
+[ log ] app.hugedental.cn/public/admin.php/admin/user/index?page=4 [运行时间：0.034415s][吞吐率：29.06req/s] [内存消耗：3,625.79kb] [文件加载：50]
+[ info ] [ LANG ] /www/wwwroot/app.hugedental.cn/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'user',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'app.hugedental.cn',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.113 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://app.hugedental.cn/public/admin.php/admin/user/index?page=5',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'PHPSESSID=964unpsauj0lg834ib6jb04f37',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'page' => '4',
+)
+[ info ] [ RUN ] app\admin\controller\User->index[ /www/wwwroot/app.hugedental.cn/application/admin/controller/User.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /www/wwwroot/app.hugedental.cn/public/../application/admin/view/user/index.html [ array (
+  0 => 'user',
+  1 => 'page',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000316s ] mysql:dbname=huge;host=localhost;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hg_user` [ RunTime:0.000811s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `hg_user` LIMIT 1 [ RunTime:0.000177s ]
+[ sql ] [ SQL ] SELECT * FROM `hg_user` ORDER BY user_id desc LIMIT 30,10 [ RunTime:0.000522s ]
+[ sql ] [ SQL ] SELECT COUNT(*) as cnt FROM hg_patient WHERE operate_user_id = '297' [ RunTime:0.000175s ]
+[ sql ] [ SQL ] select SUM(stock_num) as 'cnt' from hg_stock where mobile = '13972074522' [ RunTime:0.000212s ]
+[ sql ] [ SQL ] SELECT COUNT(*) as cnt FROM hg_patient WHERE operate_user_id = '296' [ RunTime:0.000143s ]
+[ sql ] [ SQL ] select SUM(stock_num) as 'cnt' from hg_stock where mobile = '18353239442' [ RunTime:0.000153s ]
+[ sql ] [ SQL ] SELECT COUNT(*) as cnt FROM hg_patient WHERE operate_user_id = '295' [ RunTime:0.000115s ]
+[ sql ] [ SQL ] select SUM(stock_num) as 'cnt' from hg_stock where mobile = '18780063690' [ RunTime:0.000151s ]
+[ sql ] [ SQL ] SELECT COUNT(*) as cnt FROM hg_patient WHERE operate_user_id = '294' [ RunTime:0.000106s ]
+[ sql ] [ SQL ] select SUM(stock_num) as 'cnt' from hg_stock where mobile = '13947211945' [ RunTime:0.000202s ]
+[ sql ] [ SQL ] SELECT COUNT(*) as cnt FROM hg_patient WHERE operate_user_id = '293' [ RunTime:0.000111s ]
+[ sql ] [ SQL ] select SUM(stock_num) as 'cnt' from hg_stock where mobile = '15333715918' [ RunTime:0.000157s ]
+[ sql ] [ SQL ] SELECT COUNT(*) as cnt FROM hg_patient WHERE operate_user_id = '292' [ RunTime:0.000104s ]
+[ sql ] [ SQL ] select SUM(stock_num) as 'cnt' from hg_stock where mobile = '13980890490' [ RunTime:0.000158s ]
+[ sql ] [ SQL ] SELECT COUNT(*) as cnt FROM hg_patient WHERE operate_user_id = '291' [ RunTime:0.000194s ]
+[ sql ] [ SQL ] select SUM(stock_num) as 'cnt' from hg_stock where mobile = '13621594142' [ RunTime:0.000206s ]
+[ sql ] [ SQL ] SELECT COUNT(*) as cnt FROM hg_patient WHERE operate_user_id = '290' [ RunTime:0.000124s ]
+[ sql ] [ SQL ] select SUM(stock_num) as 'cnt' from hg_stock where mobile = '15821124322' [ RunTime:0.000179s ]
+[ sql ] [ SQL ] SELECT COUNT(*) as cnt FROM hg_patient WHERE operate_user_id = '289' [ RunTime:0.000117s ]
+[ sql ] [ SQL ] select SUM(stock_num) as 'cnt' from hg_stock where mobile = '13762721139' [ RunTime:0.000248s ]
+[ sql ] [ SQL ] SELECT COUNT(*) as cnt FROM hg_patient WHERE operate_user_id = '288' [ RunTime:0.000130s ]
+[ sql ] [ SQL ] select SUM(stock_num) as 'cnt' from hg_stock where mobile = '13816704909' [ RunTime:0.000163s ]
+
+---------------------------------------------------------------
+[ 2018-01-23T20:33:37+08:00 ] 47.100.136.57 180.166.124.214 GET /public/admin.php/admin/user/index?page=3
+[ log ] app.hugedental.cn/public/admin.php/admin/user/index?page=3 [运行时间：0.035621s][吞吐率：28.07req/s] [内存消耗：3,625.41kb] [文件加载：50]
+[ info ] [ LANG ] /www/wwwroot/app.hugedental.cn/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'user',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'app.hugedental.cn',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.113 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://app.hugedental.cn/public/admin.php/admin/user/index?page=4',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'PHPSESSID=964unpsauj0lg834ib6jb04f37',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'page' => '3',
+)
+[ info ] [ RUN ] app\admin\controller\User->index[ /www/wwwroot/app.hugedental.cn/application/admin/controller/User.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /www/wwwroot/app.hugedental.cn/public/../application/admin/view/user/index.html [ array (
+  0 => 'user',
+  1 => 'page',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000345s ] mysql:dbname=huge;host=localhost;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hg_user` [ RunTime:0.000856s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `hg_user` LIMIT 1 [ RunTime:0.000172s ]
+[ sql ] [ SQL ] SELECT * FROM `hg_user` ORDER BY user_id desc LIMIT 20,10 [ RunTime:0.000389s ]
+[ sql ] [ SQL ] SELECT COUNT(*) as cnt FROM hg_patient WHERE operate_user_id = '307' [ RunTime:0.000156s ]
+[ sql ] [ SQL ] select SUM(stock_num) as 'cnt' from hg_stock where mobile = '13595194821' [ RunTime:0.000228s ]
+[ sql ] [ SQL ] SELECT COUNT(*) as cnt FROM hg_patient WHERE operate_user_id = '306' [ RunTime:0.000129s ]
+[ sql ] [ SQL ] select SUM(stock_num) as 'cnt' from hg_stock where mobile = '15201661993' [ RunTime:0.000157s ]
+[ sql ] [ SQL ] SELECT COUNT(*) as cnt FROM hg_patient WHERE operate_user_id = '305' [ RunTime:0.000132s ]
+[ sql ] [ SQL ] select SUM(stock_num) as 'cnt' from hg_stock where mobile = '13889535856' [ RunTime:0.000182s ]
+[ sql ] [ SQL ] SELECT COUNT(*) as cnt FROM hg_patient WHERE operate_user_id = '304' [ RunTime:0.000133s ]
+[ sql ] [ SQL ] select SUM(stock_num) as 'cnt' from hg_stock where mobile = '18630996108' [ RunTime:0.000169s ]
+[ sql ] [ SQL ] SELECT COUNT(*) as cnt FROM hg_patient WHERE operate_user_id = '303' [ RunTime:0.000108s ]
+[ sql ] [ SQL ] select SUM(stock_num) as 'cnt' from hg_stock where mobile = '18343206292' [ RunTime:0.000202s ]
+[ sql ] [ SQL ] SELECT COUNT(*) as cnt FROM hg_patient WHERE operate_user_id = '302' [ RunTime:0.000128s ]
+[ sql ] [ SQL ] select SUM(stock_num) as 'cnt' from hg_stock where mobile = '18903790234' [ RunTime:0.000156s ]
+[ sql ] [ SQL ] SELECT COUNT(*) as cnt FROM hg_patient WHERE operate_user_id = '301' [ RunTime:0.000112s ]
+[ sql ] [ SQL ] select SUM(stock_num) as 'cnt' from hg_stock where mobile = '18721225113' [ RunTime:0.000178s ]
+[ sql ] [ SQL ] SELECT COUNT(*) as cnt FROM hg_patient WHERE operate_user_id = '300' [ RunTime:0.000129s ]
+[ sql ] [ SQL ] select SUM(stock_num) as 'cnt' from hg_stock where mobile = '18253286663' [ RunTime:0.000179s ]
+[ sql ] [ SQL ] SELECT COUNT(*) as cnt FROM hg_patient WHERE operate_user_id = '299' [ RunTime:0.000116s ]
+[ sql ] [ SQL ] select SUM(stock_num) as 'cnt' from hg_stock where mobile = '15275247799' [ RunTime:0.000155s ]
+[ sql ] [ SQL ] SELECT COUNT(*) as cnt FROM hg_patient WHERE operate_user_id = '298' [ RunTime:0.000106s ]
+[ sql ] [ SQL ] select SUM(stock_num) as 'cnt' from hg_stock where mobile = '18952752006' [ RunTime:0.000178s ]
+
+---------------------------------------------------------------
+[ 2018-01-23T20:33:50+08:00 ] 47.100.136.57 180.166.124.214 GET /public/admin.php/admin/user/index?page=1
+[ log ] app.hugedental.cn/public/admin.php/admin/user/index?page=1 [运行时间：0.031608s][吞吐率：31.64req/s] [内存消耗：3,624.48kb] [文件加载：50]
+[ info ] [ LANG ] /www/wwwroot/app.hugedental.cn/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'user',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'app.hugedental.cn',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.113 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://app.hugedental.cn/public/admin.php/admin/user/index?page=3',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'PHPSESSID=964unpsauj0lg834ib6jb04f37',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'page' => '1',
+)
+[ info ] [ RUN ] app\admin\controller\User->index[ /www/wwwroot/app.hugedental.cn/application/admin/controller/User.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /www/wwwroot/app.hugedental.cn/public/../application/admin/view/user/index.html [ array (
+  0 => 'user',
+  1 => 'page',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000295s ] mysql:dbname=huge;host=localhost;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hg_user` [ RunTime:0.000785s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `hg_user` LIMIT 1 [ RunTime:0.000172s ]
+[ sql ] [ SQL ] SELECT * FROM `hg_user` ORDER BY user_id desc LIMIT 0,10 [ RunTime:0.000251s ]
+[ sql ] [ SQL ] SELECT COUNT(*) as cnt FROM hg_patient WHERE operate_user_id = '327' [ RunTime:0.000150s ]
+[ sql ] [ SQL ] select SUM(stock_num) as 'cnt' from hg_stock where mobile = '18227612334' [ RunTime:0.000140s ]
+[ sql ] [ SQL ] SELECT COUNT(*) as cnt FROM hg_patient WHERE operate_user_id = '326' [ RunTime:0.000126s ]
+[ sql ] [ SQL ] select SUM(stock_num) as 'cnt' from hg_stock where mobile = '18679185340' [ RunTime:0.000123s ]
+[ sql ] [ SQL ] SELECT COUNT(*) as cnt FROM hg_patient WHERE operate_user_id = '325' [ RunTime:0.000132s ]
+[ sql ] [ SQL ] select SUM(stock_num) as 'cnt' from hg_stock where mobile = '18931970631' [ RunTime:0.000110s ]
+[ sql ] [ SQL ] SELECT COUNT(*) as cnt FROM hg_patient WHERE operate_user_id = '324' [ RunTime:0.000102s ]
+[ sql ] [ SQL ] select SUM(stock_num) as 'cnt' from hg_stock where mobile = '15578008122' [ RunTime:0.000094s ]
+[ sql ] [ SQL ] SELECT COUNT(*) as cnt FROM hg_patient WHERE operate_user_id = '323' [ RunTime:0.000127s ]
+[ sql ] [ SQL ] select SUM(stock_num) as 'cnt' from hg_stock where mobile = '18646000214' [ RunTime:0.000121s ]
+[ sql ] [ SQL ] SELECT COUNT(*) as cnt FROM hg_patient WHERE operate_user_id = '322' [ RunTime:0.000133s ]
+[ sql ] [ SQL ] select SUM(stock_num) as 'cnt' from hg_stock where mobile = '18674503180' [ RunTime:0.000105s ]
+[ sql ] [ SQL ] SELECT COUNT(*) as cnt FROM hg_patient WHERE operate_user_id = '321' [ RunTime:0.000120s ]
+[ sql ] [ SQL ] select SUM(stock_num) as 'cnt' from hg_stock where mobile = '18629599871' [ RunTime:0.000112s ]
+[ sql ] [ SQL ] SELECT COUNT(*) as cnt FROM hg_patient WHERE operate_user_id = '320' [ RunTime:0.000110s ]
+[ sql ] [ SQL ] select SUM(stock_num) as 'cnt' from hg_stock where mobile = '18828093089' [ RunTime:0.000112s ]
+[ sql ] [ SQL ] SELECT COUNT(*) as cnt FROM hg_patient WHERE operate_user_id = '319' [ RunTime:0.000160s ]
+[ sql ] [ SQL ] select SUM(stock_num) as 'cnt' from hg_stock where mobile = '13518157114' [ RunTime:0.000110s ]
+[ sql ] [ SQL ] SELECT COUNT(*) as cnt FROM hg_patient WHERE operate_user_id = '318' [ RunTime:0.000107s ]
+[ sql ] [ SQL ] select SUM(stock_num) as 'cnt' from hg_stock where mobile = '18100612989' [ RunTime:0.000129s ]
+
+---------------------------------------------------------------
+[ 2018-01-23T20:33:54+08:00 ] 47.100.136.57 180.166.124.214 GET /public/admin.php/admin/user/index?page=2
+[ log ] app.hugedental.cn/public/admin.php/admin/user/index?page=2 [运行时间：0.033267s][吞吐率：30.06req/s] [内存消耗：3,625.62kb] [文件加载：50]
+[ info ] [ LANG ] /www/wwwroot/app.hugedental.cn/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'user',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'app.hugedental.cn',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.113 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://app.hugedental.cn/public/admin.php/admin/user/index?page=1',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'PHPSESSID=964unpsauj0lg834ib6jb04f37',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'page' => '2',
+)
+[ info ] [ RUN ] app\admin\controller\User->index[ /www/wwwroot/app.hugedental.cn/application/admin/controller/User.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /www/wwwroot/app.hugedental.cn/public/../application/admin/view/user/index.html [ array (
+  0 => 'user',
+  1 => 'page',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000307s ] mysql:dbname=huge;host=localhost;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hg_user` [ RunTime:0.000866s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `hg_user` LIMIT 1 [ RunTime:0.000160s ]
+[ sql ] [ SQL ] SELECT * FROM `hg_user` ORDER BY user_id desc LIMIT 10,10 [ RunTime:0.000419s ]
+[ sql ] [ SQL ] SELECT COUNT(*) as cnt FROM hg_patient WHERE operate_user_id = '317' [ RunTime:0.000149s ]
+[ sql ] [ SQL ] select SUM(stock_num) as 'cnt' from hg_stock where mobile = '13156009882' [ RunTime:0.000207s ]
+[ sql ] [ SQL ] SELECT COUNT(*) as cnt FROM hg_patient WHERE operate_user_id = '316' [ RunTime:0.000119s ]
+[ sql ] [ SQL ] select SUM(stock_num) as 'cnt' from hg_stock where mobile = '15945307799' [ RunTime:0.000164s ]
+[ sql ] [ SQL ] SELECT COUNT(*) as cnt FROM hg_patient WHERE operate_user_id = '315' [ RunTime:0.000107s ]
+[ sql ] [ SQL ] select SUM(stock_num) as 'cnt' from hg_stock where mobile = '15611561019' [ RunTime:0.000154s ]
+[ sql ] [ SQL ] SELECT COUNT(*) as cnt FROM hg_patient WHERE operate_user_id = '314' [ RunTime:0.000109s ]
+[ sql ] [ SQL ] select SUM(stock_num) as 'cnt' from hg_stock where mobile = '18672322357' [ RunTime:0.000167s ]
+[ sql ] [ SQL ] SELECT COUNT(*) as cnt FROM hg_patient WHERE operate_user_id = '313' [ RunTime:0.000107s ]
+[ sql ] [ SQL ] select SUM(stock_num) as 'cnt' from hg_stock where mobile = '15140515031' [ RunTime:0.000163s ]
+[ sql ] [ SQL ] SELECT COUNT(*) as cnt FROM hg_patient WHERE operate_user_id = '312' [ RunTime:0.000104s ]
+[ sql ] [ SQL ] select SUM(stock_num) as 'cnt' from hg_stock where mobile = '18096068886' [ RunTime:0.000163s ]
+[ sql ] [ SQL ] SELECT COUNT(*) as cnt FROM hg_patient WHERE operate_user_id = '311' [ RunTime:0.000111s ]
+[ sql ] [ SQL ] select SUM(stock_num) as 'cnt' from hg_stock where mobile = '13674534008' [ RunTime:0.000165s ]
+[ sql ] [ SQL ] SELECT COUNT(*) as cnt FROM hg_patient WHERE operate_user_id = '310' [ RunTime:0.000179s ]
+[ sql ] [ SQL ] select SUM(stock_num) as 'cnt' from hg_stock where mobile = '15634067070' [ RunTime:0.000159s ]
+[ sql ] [ SQL ] SELECT COUNT(*) as cnt FROM hg_patient WHERE operate_user_id = '309' [ RunTime:0.000173s ]
+[ sql ] [ SQL ] select SUM(stock_num) as 'cnt' from hg_stock where mobile = '18742410551' [ RunTime:0.000187s ]
+[ sql ] [ SQL ] SELECT COUNT(*) as cnt FROM hg_patient WHERE operate_user_id = '308' [ RunTime:0.000160s ]
+[ sql ] [ SQL ] select SUM(stock_num) as 'cnt' from hg_stock where mobile = '15546031252' [ RunTime:0.000198s ]
+
+---------------------------------------------------------------
+[ 2018-01-23T20:33:59+08:00 ] 47.100.136.57 180.166.124.214 GET /public/admin.php/admin/user/index?page=3
+[ log ] app.hugedental.cn/public/admin.php/admin/user/index?page=3 [运行时间：0.032857s][吞吐率：30.43req/s] [内存消耗：3,625.41kb] [文件加载：50]
+[ info ] [ LANG ] /www/wwwroot/app.hugedental.cn/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'user',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'app.hugedental.cn',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.113 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://app.hugedental.cn/public/admin.php/admin/user/index?page=2',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'PHPSESSID=964unpsauj0lg834ib6jb04f37',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'page' => '3',
+)
+[ info ] [ RUN ] app\admin\controller\User->index[ /www/wwwroot/app.hugedental.cn/application/admin/controller/User.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /www/wwwroot/app.hugedental.cn/public/../application/admin/view/user/index.html [ array (
+  0 => 'user',
+  1 => 'page',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000302s ] mysql:dbname=huge;host=localhost;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hg_user` [ RunTime:0.000855s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `hg_user` LIMIT 1 [ RunTime:0.000206s ]
+[ sql ] [ SQL ] SELECT * FROM `hg_user` ORDER BY user_id desc LIMIT 20,10 [ RunTime:0.000257s ]
+[ sql ] [ SQL ] SELECT COUNT(*) as cnt FROM hg_patient WHERE operate_user_id = '307' [ RunTime:0.000152s ]
+[ sql ] [ SQL ] select SUM(stock_num) as 'cnt' from hg_stock where mobile = '13595194821' [ RunTime:0.000123s ]
+[ sql ] [ SQL ] SELECT COUNT(*) as cnt FROM hg_patient WHERE operate_user_id = '306' [ RunTime:0.000114s ]
+[ sql ] [ SQL ] select SUM(stock_num) as 'cnt' from hg_stock where mobile = '15201661993' [ RunTime:0.000111s ]
+[ sql ] [ SQL ] SELECT COUNT(*) as cnt FROM hg_patient WHERE operate_user_id = '305' [ RunTime:0.000107s ]
+[ sql ] [ SQL ] select SUM(stock_num) as 'cnt' from hg_stock where mobile = '13889535856' [ RunTime:0.000096s ]
+[ sql ] [ SQL ] SELECT COUNT(*) as cnt FROM hg_patient WHERE operate_user_id = '304' [ RunTime:0.000110s ]
+[ sql ] [ SQL ] select SUM(stock_num) as 'cnt' from hg_stock where mobile = '18630996108' [ RunTime:0.000096s ]
+[ sql ] [ SQL ] SELECT COUNT(*) as cnt FROM hg_patient WHERE operate_user_id = '303' [ RunTime:0.000149s ]
+[ sql ] [ SQL ] select SUM(stock_num) as 'cnt' from hg_stock where mobile = '18343206292' [ RunTime:0.000106s ]
+[ sql ] [ SQL ] SELECT COUNT(*) as cnt FROM hg_patient WHERE operate_user_id = '302' [ RunTime:0.000103s ]
+[ sql ] [ SQL ] select SUM(stock_num) as 'cnt' from hg_stock where mobile = '18903790234' [ RunTime:0.000105s ]
+[ sql ] [ SQL ] SELECT COUNT(*) as cnt FROM hg_patient WHERE operate_user_id = '301' [ RunTime:0.000130s ]
+[ sql ] [ SQL ] select SUM(stock_num) as 'cnt' from hg_stock where mobile = '18721225113' [ RunTime:0.000114s ]
+[ sql ] [ SQL ] SELECT COUNT(*) as cnt FROM hg_patient WHERE operate_user_id = '300' [ RunTime:0.000102s ]
+[ sql ] [ SQL ] select SUM(stock_num) as 'cnt' from hg_stock where mobile = '18253286663' [ RunTime:0.000101s ]
+[ sql ] [ SQL ] SELECT COUNT(*) as cnt FROM hg_patient WHERE operate_user_id = '299' [ RunTime:0.000116s ]
+[ sql ] [ SQL ] select SUM(stock_num) as 'cnt' from hg_stock where mobile = '15275247799' [ RunTime:0.000109s ]
+[ sql ] [ SQL ] SELECT COUNT(*) as cnt FROM hg_patient WHERE operate_user_id = '298' [ RunTime:0.000099s ]
+[ sql ] [ SQL ] select SUM(stock_num) as 'cnt' from hg_stock where mobile = '18952752006' [ RunTime:0.000099s ]
+
+---------------------------------------------------------------
+[ 2018-01-23T20:35:53+08:00 ] 47.100.136.57 180.166.124.214 GET /public/admin.php/admin/user/index
+[ log ] app.hugedental.cn/public/admin.php/admin/user/index [运行时间：0.036364s][吞吐率：27.50req/s] [内存消耗：3,928.13kb] [文件加载：52]
+[ info ] [ LANG ] /www/wwwroot/app.hugedental.cn/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'user',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'app.hugedental.cn',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.113 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://app.hugedental.cn/public/admin.php/admin/index',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'PHPSESSID=964unpsauj0lg834ib6jb04f37',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\User->index[ /www/wwwroot/app.hugedental.cn/application/admin/controller/User.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /www/wwwroot/app.hugedental.cn/public/../application/admin/view/user/index.html [ array (
+  0 => 'user',
+  1 => 'page',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000281s ] mysql:dbname=huge;host=localhost;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hg_user` [ RunTime:0.000890s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `hg_user` LIMIT 1 [ RunTime:0.000171s ]
+[ sql ] [ SQL ] SELECT * FROM `hg_user` ORDER BY user_id desc LIMIT 0,10 [ RunTime:0.000322s ]
+[ sql ] [ SQL ] SELECT COUNT(*) as cnt FROM hg_patient WHERE operate_user_id = '327' [ RunTime:0.000185s ]
+[ sql ] [ SQL ] select SUM(stock_num) as 'cnt' from hg_stock where mobile = '18227612334' [ RunTime:0.000207s ]
+[ sql ] [ SQL ] SELECT COUNT(*) as cnt FROM hg_patient WHERE operate_user_id = '326' [ RunTime:0.000154s ]
+[ sql ] [ SQL ] select SUM(stock_num) as 'cnt' from hg_stock where mobile = '18679185340' [ RunTime:0.000111s ]
+[ sql ] [ SQL ] SELECT COUNT(*) as cnt FROM hg_patient WHERE operate_user_id = '325' [ RunTime:0.000162s ]
+[ sql ] [ SQL ] select SUM(stock_num) as 'cnt' from hg_stock where mobile = '18931970631' [ RunTime:0.000140s ]
+[ sql ] [ SQL ] SELECT COUNT(*) as cnt FROM hg_patient WHERE operate_user_id = '324' [ RunTime:0.000137s ]
+[ sql ] [ SQL ] select SUM(stock_num) as 'cnt' from hg_stock where mobile = '15578008122' [ RunTime:0.000116s ]
+[ sql ] [ SQL ] SELECT COUNT(*) as cnt FROM hg_patient WHERE operate_user_id = '323' [ RunTime:0.000104s ]
+[ sql ] [ SQL ] select SUM(stock_num) as 'cnt' from hg_stock where mobile = '18646000214' [ RunTime:0.000097s ]
+[ sql ] [ SQL ] SELECT COUNT(*) as cnt FROM hg_patient WHERE operate_user_id = '322' [ RunTime:0.000110s ]
+[ sql ] [ SQL ] select SUM(stock_num) as 'cnt' from hg_stock where mobile = '18674503180' [ RunTime:0.000134s ]
+[ sql ] [ SQL ] SELECT COUNT(*) as cnt FROM hg_patient WHERE operate_user_id = '321' [ RunTime:0.000113s ]
+[ sql ] [ SQL ] select SUM(stock_num) as 'cnt' from hg_stock where mobile = '18629599871' [ RunTime:0.000096s ]
+[ sql ] [ SQL ] SELECT COUNT(*) as cnt FROM hg_patient WHERE operate_user_id = '320' [ RunTime:0.000110s ]
+[ sql ] [ SQL ] select SUM(stock_num) as 'cnt' from hg_stock where mobile = '18828093089' [ RunTime:0.000094s ]
+[ sql ] [ SQL ] SELECT COUNT(*) as cnt FROM hg_patient WHERE operate_user_id = '319' [ RunTime:0.000101s ]
+[ sql ] [ SQL ] select SUM(stock_num) as 'cnt' from hg_stock where mobile = '13518157114' [ RunTime:0.000113s ]
+[ sql ] [ SQL ] SELECT COUNT(*) as cnt FROM hg_patient WHERE operate_user_id = '318' [ RunTime:0.000115s ]
+[ sql ] [ SQL ] select SUM(stock_num) as 'cnt' from hg_stock where mobile = '18100612989' [ RunTime:0.000125s ]
+
+---------------------------------------------------------------
+[ 2018-01-23T20:35:55+08:00 ] 47.100.136.57 180.166.124.214 GET /public/admin.php/admin/user/index
+[ log ] app.hugedental.cn/public/admin.php/admin/user/index [运行时间：0.040362s][吞吐率：24.78req/s] [内存消耗：3,623.68kb] [文件加载：50]
+[ info ] [ LANG ] /www/wwwroot/app.hugedental.cn/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'user',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'app.hugedental.cn',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.113 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://app.hugedental.cn/public/admin.php/admin/index',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'PHPSESSID=964unpsauj0lg834ib6jb04f37',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\User->index[ /www/wwwroot/app.hugedental.cn/application/admin/controller/User.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /www/wwwroot/app.hugedental.cn/public/../application/admin/view/user/index.html [ array (
+  0 => 'user',
+  1 => 'page',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000379s ] mysql:dbname=huge;host=localhost;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hg_user` [ RunTime:0.000974s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `hg_user` LIMIT 1 [ RunTime:0.000196s ]
+[ sql ] [ SQL ] SELECT * FROM `hg_user` ORDER BY user_id desc LIMIT 0,10 [ RunTime:0.000254s ]
+[ sql ] [ SQL ] SELECT COUNT(*) as cnt FROM hg_patient WHERE operate_user_id = '327' [ RunTime:0.000249s ]
+[ sql ] [ SQL ] select SUM(stock_num) as 'cnt' from hg_stock where mobile = '18227612334' [ RunTime:0.000147s ]
+[ sql ] [ SQL ] SELECT COUNT(*) as cnt FROM hg_patient WHERE operate_user_id = '326' [ RunTime:0.000146s ]
+[ sql ] [ SQL ] select SUM(stock_num) as 'cnt' from hg_stock where mobile = '18679185340' [ RunTime:0.000125s ]
+[ sql ] [ SQL ] SELECT COUNT(*) as cnt FROM hg_patient WHERE operate_user_id = '325' [ RunTime:0.000144s ]
+[ sql ] [ SQL ] select SUM(stock_num) as 'cnt' from hg_stock where mobile = '18931970631' [ RunTime:0.000152s ]
+[ sql ] [ SQL ] SELECT COUNT(*) as cnt FROM hg_patient WHERE operate_user_id = '324' [ RunTime:0.000144s ]
+[ sql ] [ SQL ] select SUM(stock_num) as 'cnt' from hg_stock where mobile = '15578008122' [ RunTime:0.000129s ]
+[ sql ] [ SQL ] SELECT COUNT(*) as cnt FROM hg_patient WHERE operate_user_id = '323' [ RunTime:0.000133s ]
+[ sql ] [ SQL ] select SUM(stock_num) as 'cnt' from hg_stock where mobile = '18646000214' [ RunTime:0.000111s ]
+[ sql ] [ SQL ] SELECT COUNT(*) as cnt FROM hg_patient WHERE operate_user_id = '322' [ RunTime:0.000105s ]
+[ sql ] [ SQL ] select SUM(stock_num) as 'cnt' from hg_stock where mobile = '18674503180' [ RunTime:0.000121s ]
+[ sql ] [ SQL ] SELECT COUNT(*) as cnt FROM hg_patient WHERE operate_user_id = '321' [ RunTime:0.000106s ]
+[ sql ] [ SQL ] select SUM(stock_num) as 'cnt' from hg_stock where mobile = '18629599871' [ RunTime:0.000109s ]
+[ sql ] [ SQL ] SELECT COUNT(*) as cnt FROM hg_patient WHERE operate_user_id = '320' [ RunTime:0.000136s ]
+[ sql ] [ SQL ] select SUM(stock_num) as 'cnt' from hg_stock where mobile = '18828093089' [ RunTime:0.000109s ]
+[ sql ] [ SQL ] SELECT COUNT(*) as cnt FROM hg_patient WHERE operate_user_id = '319' [ RunTime:0.000102s ]
+[ sql ] [ SQL ] select SUM(stock_num) as 'cnt' from hg_stock where mobile = '13518157114' [ RunTime:0.000101s ]
+[ sql ] [ SQL ] SELECT COUNT(*) as cnt FROM hg_patient WHERE operate_user_id = '318' [ RunTime:0.000191s ]
+[ sql ] [ SQL ] select SUM(stock_num) as 'cnt' from hg_stock where mobile = '18100612989' [ RunTime:0.000134s ]
+
+---------------------------------------------------------------
+[ 2018-01-23T20:35:56+08:00 ] 47.100.136.57 180.166.124.214 GET /public/admin.php/admin/user/index
+[ log ] app.hugedental.cn/public/admin.php/admin/user/index [运行时间：0.036015s][吞吐率：27.77req/s] [内存消耗：3,623.68kb] [文件加载：50]
+[ info ] [ LANG ] /www/wwwroot/app.hugedental.cn/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'user',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'app.hugedental.cn',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.113 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://app.hugedental.cn/public/admin.php/admin/index',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'PHPSESSID=964unpsauj0lg834ib6jb04f37',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\User->index[ /www/wwwroot/app.hugedental.cn/application/admin/controller/User.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /www/wwwroot/app.hugedental.cn/public/../application/admin/view/user/index.html [ array (
+  0 => 'user',
+  1 => 'page',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000382s ] mysql:dbname=huge;host=localhost;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hg_user` [ RunTime:0.000943s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `hg_user` LIMIT 1 [ RunTime:0.000170s ]
+[ sql ] [ SQL ] SELECT * FROM `hg_user` ORDER BY user_id desc LIMIT 0,10 [ RunTime:0.000241s ]
+[ sql ] [ SQL ] SELECT COUNT(*) as cnt FROM hg_patient WHERE operate_user_id = '327' [ RunTime:0.000177s ]
+[ sql ] [ SQL ] select SUM(stock_num) as 'cnt' from hg_stock where mobile = '18227612334' [ RunTime:0.000121s ]
+[ sql ] [ SQL ] SELECT COUNT(*) as cnt FROM hg_patient WHERE operate_user_id = '326' [ RunTime:0.000104s ]
+[ sql ] [ SQL ] select SUM(stock_num) as 'cnt' from hg_stock where mobile = '18679185340' [ RunTime:0.000106s ]
+[ sql ] [ SQL ] SELECT COUNT(*) as cnt FROM hg_patient WHERE operate_user_id = '325' [ RunTime:0.000132s ]
+[ sql ] [ SQL ] select SUM(stock_num) as 'cnt' from hg_stock where mobile = '18931970631' [ RunTime:0.000111s ]
+[ sql ] [ SQL ] SELECT COUNT(*) as cnt FROM hg_patient WHERE operate_user_id = '324' [ RunTime:0.000137s ]
+[ sql ] [ SQL ] select SUM(stock_num) as 'cnt' from hg_stock where mobile = '15578008122' [ RunTime:0.000098s ]
+[ sql ] [ SQL ] SELECT COUNT(*) as cnt FROM hg_patient WHERE operate_user_id = '323' [ RunTime:0.000099s ]
+[ sql ] [ SQL ] select SUM(stock_num) as 'cnt' from hg_stock where mobile = '18646000214' [ RunTime:0.000101s ]
+[ sql ] [ SQL ] SELECT COUNT(*) as cnt FROM hg_patient WHERE operate_user_id = '322' [ RunTime:0.000135s ]
+[ sql ] [ SQL ] select SUM(stock_num) as 'cnt' from hg_stock where mobile = '18674503180' [ RunTime:0.000107s ]
+[ sql ] [ SQL ] SELECT COUNT(*) as cnt FROM hg_patient WHERE operate_user_id = '321' [ RunTime:0.000110s ]
+[ sql ] [ SQL ] select SUM(stock_num) as 'cnt' from hg_stock where mobile = '18629599871' [ RunTime:0.000112s ]
+[ sql ] [ SQL ] SELECT COUNT(*) as cnt FROM hg_patient WHERE operate_user_id = '320' [ RunTime:0.000105s ]
+[ sql ] [ SQL ] select SUM(stock_num) as 'cnt' from hg_stock where mobile = '18828093089' [ RunTime:0.000106s ]
+[ sql ] [ SQL ] SELECT COUNT(*) as cnt FROM hg_patient WHERE operate_user_id = '319' [ RunTime:0.000105s ]
+[ sql ] [ SQL ] select SUM(stock_num) as 'cnt' from hg_stock where mobile = '13518157114' [ RunTime:0.000125s ]
+[ sql ] [ SQL ] SELECT COUNT(*) as cnt FROM hg_patient WHERE operate_user_id = '318' [ RunTime:0.000124s ]
+[ sql ] [ SQL ] select SUM(stock_num) as 'cnt' from hg_stock where mobile = '18100612989' [ RunTime:0.000106s ]
+
+---------------------------------------------------------------
+[ 2018-01-23T20:35:56+08:00 ] 47.100.136.57 180.166.124.214 GET /public/admin.php/admin/user/index
+[ log ] app.hugedental.cn/public/admin.php/admin/user/index [运行时间：0.034468s][吞吐率：29.01req/s] [内存消耗：3,623.68kb] [文件加载：50]
+[ info ] [ LANG ] /www/wwwroot/app.hugedental.cn/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'user',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'app.hugedental.cn',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.113 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://app.hugedental.cn/public/admin.php/admin/index',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'PHPSESSID=964unpsauj0lg834ib6jb04f37',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\User->index[ /www/wwwroot/app.hugedental.cn/application/admin/controller/User.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /www/wwwroot/app.hugedental.cn/public/../application/admin/view/user/index.html [ array (
+  0 => 'user',
+  1 => 'page',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000340s ] mysql:dbname=huge;host=localhost;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hg_user` [ RunTime:0.000842s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `hg_user` LIMIT 1 [ RunTime:0.000218s ]
+[ sql ] [ SQL ] SELECT * FROM `hg_user` ORDER BY user_id desc LIMIT 0,10 [ RunTime:0.000260s ]
+[ sql ] [ SQL ] SELECT COUNT(*) as cnt FROM hg_patient WHERE operate_user_id = '327' [ RunTime:0.000196s ]
+[ sql ] [ SQL ] select SUM(stock_num) as 'cnt' from hg_stock where mobile = '18227612334' [ RunTime:0.000148s ]
+[ sql ] [ SQL ] SELECT COUNT(*) as cnt FROM hg_patient WHERE operate_user_id = '326' [ RunTime:0.000148s ]
+[ sql ] [ SQL ] select SUM(stock_num) as 'cnt' from hg_stock where mobile = '18679185340' [ RunTime:0.000151s ]
+[ sql ] [ SQL ] SELECT COUNT(*) as cnt FROM hg_patient WHERE operate_user_id = '325' [ RunTime:0.000138s ]
+[ sql ] [ SQL ] select SUM(stock_num) as 'cnt' from hg_stock where mobile = '18931970631' [ RunTime:0.000130s ]
+[ sql ] [ SQL ] SELECT COUNT(*) as cnt FROM hg_patient WHERE operate_user_id = '324' [ RunTime:0.000136s ]
+[ sql ] [ SQL ] select SUM(stock_num) as 'cnt' from hg_stock where mobile = '15578008122' [ RunTime:0.000135s ]
+[ sql ] [ SQL ] SELECT COUNT(*) as cnt FROM hg_patient WHERE operate_user_id = '323' [ RunTime:0.000135s ]
+[ sql ] [ SQL ] select SUM(stock_num) as 'cnt' from hg_stock where mobile = '18646000214' [ RunTime:0.000132s ]
+[ sql ] [ SQL ] SELECT COUNT(*) as cnt FROM hg_patient WHERE operate_user_id = '322' [ RunTime:0.000136s ]
+[ sql ] [ SQL ] select SUM(stock_num) as 'cnt' from hg_stock where mobile = '18674503180' [ RunTime:0.000130s ]
+[ sql ] [ SQL ] SELECT COUNT(*) as cnt FROM hg_patient WHERE operate_user_id = '321' [ RunTime:0.000135s ]
+[ sql ] [ SQL ] select SUM(stock_num) as 'cnt' from hg_stock where mobile = '18629599871' [ RunTime:0.000128s ]
+[ sql ] [ SQL ] SELECT COUNT(*) as cnt FROM hg_patient WHERE operate_user_id = '320' [ RunTime:0.000148s ]
+[ sql ] [ SQL ] select SUM(stock_num) as 'cnt' from hg_stock where mobile = '18828093089' [ RunTime:0.000130s ]
+[ sql ] [ SQL ] SELECT COUNT(*) as cnt FROM hg_patient WHERE operate_user_id = '319' [ RunTime:0.000134s ]
+[ sql ] [ SQL ] select SUM(stock_num) as 'cnt' from hg_stock where mobile = '13518157114' [ RunTime:0.000129s ]
+[ sql ] [ SQL ] SELECT COUNT(*) as cnt FROM hg_patient WHERE operate_user_id = '318' [ RunTime:0.000142s ]
+[ sql ] [ SQL ] select SUM(stock_num) as 'cnt' from hg_stock where mobile = '18100612989' [ RunTime:0.000128s ]
+
+---------------------------------------------------------------
+[ 2018-01-23T20:36:09+08:00 ] 47.100.136.57 180.166.124.214 GET /public/admin.php/admin/user/index
+[ log ] app.hugedental.cn/public/admin.php/admin/user/index [运行时间：0.035923s][吞吐率：27.84req/s] [内存消耗：3,928.59kb] [文件加载：52]
+[ info ] [ LANG ] /www/wwwroot/app.hugedental.cn/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'user',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'app.hugedental.cn',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.113 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://app.hugedental.cn/public/admin.php/admin/index',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'PHPSESSID=964unpsauj0lg834ib6jb04f37',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\User->index[ /www/wwwroot/app.hugedental.cn/application/admin/controller/User.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /www/wwwroot/app.hugedental.cn/public/../application/admin/view/user/index.html [ array (
+  0 => 'user',
+  1 => 'page',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000373s ] mysql:dbname=huge;host=localhost;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hg_user` [ RunTime:0.000817s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `hg_user` LIMIT 1 [ RunTime:0.000174s ]
+[ sql ] [ SQL ] SELECT * FROM `hg_user` ORDER BY user_id desc LIMIT 0,10 [ RunTime:0.000257s ]
+[ sql ] [ SQL ] SELECT COUNT(*) as cnt FROM hg_patient WHERE operate_user_id = '327' [ RunTime:0.000168s ]
+[ sql ] [ SQL ] select SUM(stock_num) as 'cnt' from hg_stock where mobile = '18227612334' [ RunTime:0.000120s ]
+[ sql ] [ SQL ] SELECT COUNT(*) as cnt FROM hg_patient WHERE operate_user_id = '326' [ RunTime:0.000120s ]
+[ sql ] [ SQL ] select SUM(stock_num) as 'cnt' from hg_stock where mobile = '18679185340' [ RunTime:0.000113s ]
+[ sql ] [ SQL ] SELECT COUNT(*) as cnt FROM hg_patient WHERE operate_user_id = '325' [ RunTime:0.000117s ]
+[ sql ] [ SQL ] select SUM(stock_num) as 'cnt' from hg_stock where mobile = '18931970631' [ RunTime:0.000101s ]
+[ sql ] [ SQL ] SELECT COUNT(*) as cnt FROM hg_patient WHERE operate_user_id = '324' [ RunTime:0.000103s ]
+[ sql ] [ SQL ] select SUM(stock_num) as 'cnt' from hg_stock where mobile = '15578008122' [ RunTime:0.000116s ]
+[ sql ] [ SQL ] SELECT COUNT(*) as cnt FROM hg_patient WHERE operate_user_id = '323' [ RunTime:0.000104s ]
+[ sql ] [ SQL ] select SUM(stock_num) as 'cnt' from hg_stock where mobile = '18646000214' [ RunTime:0.000121s ]
+[ sql ] [ SQL ] SELECT COUNT(*) as cnt FROM hg_patient WHERE operate_user_id = '322' [ RunTime:0.000122s ]
+[ sql ] [ SQL ] select SUM(stock_num) as 'cnt' from hg_stock where mobile = '18674503180' [ RunTime:0.000104s ]
+[ sql ] [ SQL ] SELECT COUNT(*) as cnt FROM hg_patient WHERE operate_user_id = '321' [ RunTime:0.000102s ]
+[ sql ] [ SQL ] select SUM(stock_num) as 'cnt' from hg_stock where mobile = '18629599871' [ RunTime:0.000122s ]
+[ sql ] [ SQL ] SELECT COUNT(*) as cnt FROM hg_patient WHERE operate_user_id = '320' [ RunTime:0.000105s ]
+[ sql ] [ SQL ] select SUM(stock_num) as 'cnt' from hg_stock where mobile = '18828093089' [ RunTime:0.000104s ]
+[ sql ] [ SQL ] SELECT COUNT(*) as cnt FROM hg_patient WHERE operate_user_id = '319' [ RunTime:0.000111s ]
+[ sql ] [ SQL ] select SUM(stock_num) as 'cnt' from hg_stock where mobile = '13518157114' [ RunTime:0.000116s ]
+[ sql ] [ SQL ] SELECT COUNT(*) as cnt FROM hg_patient WHERE operate_user_id = '318' [ RunTime:0.000134s ]
+[ sql ] [ SQL ] select SUM(stock_num) as 'cnt' from hg_stock where mobile = '18100612989' [ RunTime:0.000102s ]
+
+---------------------------------------------------------------
+[ 2018-01-23T20:36:12+08:00 ] 47.100.136.57 180.166.124.214 GET /public/admin.php/admin/user/index
+[ log ] app.hugedental.cn/public/admin.php/admin/user/index [运行时间：0.034547s][吞吐率：28.95req/s] [内存消耗：3,623.68kb] [文件加载：50]
+[ info ] [ LANG ] /www/wwwroot/app.hugedental.cn/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'user',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'app.hugedental.cn',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.113 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://app.hugedental.cn/public/admin.php/admin/index',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'PHPSESSID=964unpsauj0lg834ib6jb04f37',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\User->index[ /www/wwwroot/app.hugedental.cn/application/admin/controller/User.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /www/wwwroot/app.hugedental.cn/public/../application/admin/view/user/index.html [ array (
+  0 => 'user',
+  1 => 'page',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000351s ] mysql:dbname=huge;host=localhost;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hg_user` [ RunTime:0.000885s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `hg_user` LIMIT 1 [ RunTime:0.000261s ]
+[ sql ] [ SQL ] SELECT * FROM `hg_user` ORDER BY user_id desc LIMIT 0,10 [ RunTime:0.000300s ]
+[ sql ] [ SQL ] SELECT COUNT(*) as cnt FROM hg_patient WHERE operate_user_id = '327' [ RunTime:0.000169s ]
+[ sql ] [ SQL ] select SUM(stock_num) as 'cnt' from hg_stock where mobile = '18227612334' [ RunTime:0.000132s ]
+[ sql ] [ SQL ] SELECT COUNT(*) as cnt FROM hg_patient WHERE operate_user_id = '326' [ RunTime:0.000157s ]
+[ sql ] [ SQL ] select SUM(stock_num) as 'cnt' from hg_stock where mobile = '18679185340' [ RunTime:0.000127s ]
+[ sql ] [ SQL ] SELECT COUNT(*) as cnt FROM hg_patient WHERE operate_user_id = '325' [ RunTime:0.000112s ]
+[ sql ] [ SQL ] select SUM(stock_num) as 'cnt' from hg_stock where mobile = '18931970631' [ RunTime:0.000142s ]
+[ sql ] [ SQL ] SELECT COUNT(*) as cnt FROM hg_patient WHERE operate_user_id = '324' [ RunTime:0.000129s ]
+[ sql ] [ SQL ] select SUM(stock_num) as 'cnt' from hg_stock where mobile = '15578008122' [ RunTime:0.000124s ]
+[ sql ] [ SQL ] SELECT COUNT(*) as cnt FROM hg_patient WHERE operate_user_id = '323' [ RunTime:0.000106s ]
+[ sql ] [ SQL ] select SUM(stock_num) as 'cnt' from hg_stock where mobile = '18646000214' [ RunTime:0.000154s ]
+[ sql ] [ SQL ] SELECT COUNT(*) as cnt FROM hg_patient WHERE operate_user_id = '322' [ RunTime:0.000116s ]
+[ sql ] [ SQL ] select SUM(stock_num) as 'cnt' from hg_stock where mobile = '18674503180' [ RunTime:0.000107s ]
+[ sql ] [ SQL ] SELECT COUNT(*) as cnt FROM hg_patient WHERE operate_user_id = '321' [ RunTime:0.000130s ]
+[ sql ] [ SQL ] select SUM(stock_num) as 'cnt' from hg_stock where mobile = '18629599871' [ RunTime:0.000117s ]
+[ sql ] [ SQL ] SELECT COUNT(*) as cnt FROM hg_patient WHERE operate_user_id = '320' [ RunTime:0.000137s ]
+[ sql ] [ SQL ] select SUM(stock_num) as 'cnt' from hg_stock where mobile = '18828093089' [ RunTime:0.000109s ]
+[ sql ] [ SQL ] SELECT COUNT(*) as cnt FROM hg_patient WHERE operate_user_id = '319' [ RunTime:0.000108s ]
+[ sql ] [ SQL ] select SUM(stock_num) as 'cnt' from hg_stock where mobile = '13518157114' [ RunTime:0.000108s ]
+[ sql ] [ SQL ] SELECT COUNT(*) as cnt FROM hg_patient WHERE operate_user_id = '318' [ RunTime:0.000109s ]
+[ sql ] [ SQL ] select SUM(stock_num) as 'cnt' from hg_stock where mobile = '18100612989' [ RunTime:0.000142s ]
+
+---------------------------------------------------------------
+[ 2018-01-23T20:36:13+08:00 ] 47.100.136.57 180.166.124.214 GET /public/admin.php/admin/user/index
+[ log ] app.hugedental.cn/public/admin.php/admin/user/index [运行时间：0.033620s][吞吐率：29.74req/s] [内存消耗：3,623.68kb] [文件加载：50]
+[ info ] [ LANG ] /www/wwwroot/app.hugedental.cn/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'user',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'app.hugedental.cn',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.113 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://app.hugedental.cn/public/admin.php/admin/index',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'PHPSESSID=964unpsauj0lg834ib6jb04f37',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\User->index[ /www/wwwroot/app.hugedental.cn/application/admin/controller/User.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /www/wwwroot/app.hugedental.cn/public/../application/admin/view/user/index.html [ array (
+  0 => 'user',
+  1 => 'page',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000373s ] mysql:dbname=huge;host=localhost;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hg_user` [ RunTime:0.000828s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `hg_user` LIMIT 1 [ RunTime:0.000182s ]
+[ sql ] [ SQL ] SELECT * FROM `hg_user` ORDER BY user_id desc LIMIT 0,10 [ RunTime:0.000274s ]
+[ sql ] [ SQL ] SELECT COUNT(*) as cnt FROM hg_patient WHERE operate_user_id = '327' [ RunTime:0.000165s ]
+[ sql ] [ SQL ] select SUM(stock_num) as 'cnt' from hg_stock where mobile = '18227612334' [ RunTime:0.000122s ]
+[ sql ] [ SQL ] SELECT COUNT(*) as cnt FROM hg_patient WHERE operate_user_id = '326' [ RunTime:0.000110s ]
+[ sql ] [ SQL ] select SUM(stock_num) as 'cnt' from hg_stock where mobile = '18679185340' [ RunTime:0.000145s ]
+[ sql ] [ SQL ] SELECT COUNT(*) as cnt FROM hg_patient WHERE operate_user_id = '325' [ RunTime:0.000110s ]
+[ sql ] [ SQL ] select SUM(stock_num) as 'cnt' from hg_stock where mobile = '18931970631' [ RunTime:0.000103s ]
+[ sql ] [ SQL ] SELECT COUNT(*) as cnt FROM hg_patient WHERE operate_user_id = '324' [ RunTime:0.000110s ]
+[ sql ] [ SQL ] select SUM(stock_num) as 'cnt' from hg_stock where mobile = '15578008122' [ RunTime:0.000105s ]
+[ sql ] [ SQL ] SELECT COUNT(*) as cnt FROM hg_patient WHERE operate_user_id = '323' [ RunTime:0.000111s ]
+[ sql ] [ SQL ] select SUM(stock_num) as 'cnt' from hg_stock where mobile = '18646000214' [ RunTime:0.000104s ]
+[ sql ] [ SQL ] SELECT COUNT(*) as cnt FROM hg_patient WHERE operate_user_id = '322' [ RunTime:0.000107s ]
+[ sql ] [ SQL ] select SUM(stock_num) as 'cnt' from hg_stock where mobile = '18674503180' [ RunTime:0.000111s ]
+[ sql ] [ SQL ] SELECT COUNT(*) as cnt FROM hg_patient WHERE operate_user_id = '321' [ RunTime:0.000106s ]
+[ sql ] [ SQL ] select SUM(stock_num) as 'cnt' from hg_stock where mobile = '18629599871' [ RunTime:0.000119s ]
+[ sql ] [ SQL ] SELECT COUNT(*) as cnt FROM hg_patient WHERE operate_user_id = '320' [ RunTime:0.000109s ]
+[ sql ] [ SQL ] select SUM(stock_num) as 'cnt' from hg_stock where mobile = '18828093089' [ RunTime:0.000102s ]
+[ sql ] [ SQL ] SELECT COUNT(*) as cnt FROM hg_patient WHERE operate_user_id = '319' [ RunTime:0.000110s ]
+[ sql ] [ SQL ] select SUM(stock_num) as 'cnt' from hg_stock where mobile = '13518157114' [ RunTime:0.000107s ]
+[ sql ] [ SQL ] SELECT COUNT(*) as cnt FROM hg_patient WHERE operate_user_id = '318' [ RunTime:0.000113s ]
+[ sql ] [ SQL ] select SUM(stock_num) as 'cnt' from hg_stock where mobile = '18100612989' [ RunTime:0.000105s ]
+
+---------------------------------------------------------------
+[ 2018-01-23T20:36:13+08:00 ] 47.100.136.57 180.166.124.214 GET /public/admin.php/admin/user/index
+[ log ] app.hugedental.cn/public/admin.php/admin/user/index [运行时间：0.034058s][吞吐率：29.36req/s] [内存消耗：3,623.68kb] [文件加载：50]
+[ info ] [ LANG ] /www/wwwroot/app.hugedental.cn/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'user',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'app.hugedental.cn',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.113 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://app.hugedental.cn/public/admin.php/admin/index',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'PHPSESSID=964unpsauj0lg834ib6jb04f37',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\User->index[ /www/wwwroot/app.hugedental.cn/application/admin/controller/User.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /www/wwwroot/app.hugedental.cn/public/../application/admin/view/user/index.html [ array (
+  0 => 'user',
+  1 => 'page',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000371s ] mysql:dbname=huge;host=localhost;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hg_user` [ RunTime:0.000879s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `hg_user` LIMIT 1 [ RunTime:0.000184s ]
+[ sql ] [ SQL ] SELECT * FROM `hg_user` ORDER BY user_id desc LIMIT 0,10 [ RunTime:0.000248s ]
+[ sql ] [ SQL ] SELECT COUNT(*) as cnt FROM hg_patient WHERE operate_user_id = '327' [ RunTime:0.000165s ]
+[ sql ] [ SQL ] select SUM(stock_num) as 'cnt' from hg_stock where mobile = '18227612334' [ RunTime:0.000118s ]
+[ sql ] [ SQL ] SELECT COUNT(*) as cnt FROM hg_patient WHERE operate_user_id = '326' [ RunTime:0.000106s ]
+[ sql ] [ SQL ] select SUM(stock_num) as 'cnt' from hg_stock where mobile = '18679185340' [ RunTime:0.000107s ]
+[ sql ] [ SQL ] SELECT COUNT(*) as cnt FROM hg_patient WHERE operate_user_id = '325' [ RunTime:0.000135s ]
+[ sql ] [ SQL ] select SUM(stock_num) as 'cnt' from hg_stock where mobile = '18931970631' [ RunTime:0.000101s ]
+[ sql ] [ SQL ] SELECT COUNT(*) as cnt FROM hg_patient WHERE operate_user_id = '324' [ RunTime:0.000118s ]
+[ sql ] [ SQL ] select SUM(stock_num) as 'cnt' from hg_stock where mobile = '15578008122' [ RunTime:0.000104s ]
+[ sql ] [ SQL ] SELECT COUNT(*) as cnt FROM hg_patient WHERE operate_user_id = '323' [ RunTime:0.000101s ]
+[ sql ] [ SQL ] select SUM(stock_num) as 'cnt' from hg_stock where mobile = '18646000214' [ RunTime:0.000098s ]
+[ sql ] [ SQL ] SELECT COUNT(*) as cnt FROM hg_patient WHERE operate_user_id = '322' [ RunTime:0.000108s ]
+[ sql ] [ SQL ] select SUM(stock_num) as 'cnt' from hg_stock where mobile = '18674503180' [ RunTime:0.000119s ]
+[ sql ] [ SQL ] SELECT COUNT(*) as cnt FROM hg_patient WHERE operate_user_id = '321' [ RunTime:0.000153s ]
+[ sql ] [ SQL ] select SUM(stock_num) as 'cnt' from hg_stock where mobile = '18629599871' [ RunTime:0.000114s ]
+[ sql ] [ SQL ] SELECT COUNT(*) as cnt FROM hg_patient WHERE operate_user_id = '320' [ RunTime:0.000110s ]
+[ sql ] [ SQL ] select SUM(stock_num) as 'cnt' from hg_stock where mobile = '18828093089' [ RunTime:0.000101s ]
+[ sql ] [ SQL ] SELECT COUNT(*) as cnt FROM hg_patient WHERE operate_user_id = '319' [ RunTime:0.000104s ]
+[ sql ] [ SQL ] select SUM(stock_num) as 'cnt' from hg_stock where mobile = '13518157114' [ RunTime:0.000100s ]
+[ sql ] [ SQL ] SELECT COUNT(*) as cnt FROM hg_patient WHERE operate_user_id = '318' [ RunTime:0.000109s ]
+[ sql ] [ SQL ] select SUM(stock_num) as 'cnt' from hg_stock where mobile = '18100612989' [ RunTime:0.000114s ]
+
+---------------------------------------------------------------
+[ 2018-01-23T20:36:33+08:00 ] 47.100.136.57 180.166.124.214 GET /public/admin.php/admin/user/index
+[ log ] app.hugedental.cn/public/admin.php/admin/user/index [运行时间：0.036112s][吞吐率：27.69req/s] [内存消耗：3,928.13kb] [文件加载：52]
+[ info ] [ LANG ] /www/wwwroot/app.hugedental.cn/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'user',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'app.hugedental.cn',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.113 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://app.hugedental.cn/public/admin.php/admin/index',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'PHPSESSID=964unpsauj0lg834ib6jb04f37',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\User->index[ /www/wwwroot/app.hugedental.cn/application/admin/controller/User.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /www/wwwroot/app.hugedental.cn/public/../application/admin/view/user/index.html [ array (
+  0 => 'user',
+  1 => 'page',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000305s ] mysql:dbname=huge;host=localhost;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hg_user` [ RunTime:0.000869s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `hg_user` LIMIT 1 [ RunTime:0.000246s ]
+[ sql ] [ SQL ] SELECT * FROM `hg_user` ORDER BY user_id desc LIMIT 0,10 [ RunTime:0.000276s ]
+[ sql ] [ SQL ] SELECT COUNT(*) as cnt FROM hg_patient WHERE operate_user_id = '327' [ RunTime:0.000146s ]
+[ sql ] [ SQL ] select SUM(stock_num) as 'cnt' from hg_stock where mobile = '18227612334' [ RunTime:0.000121s ]
+[ sql ] [ SQL ] SELECT COUNT(*) as cnt FROM hg_patient WHERE operate_user_id = '326' [ RunTime:0.000154s ]
+[ sql ] [ SQL ] select SUM(stock_num) as 'cnt' from hg_stock where mobile = '18679185340' [ RunTime:0.000121s ]
+[ sql ] [ SQL ] SELECT COUNT(*) as cnt FROM hg_patient WHERE operate_user_id = '325' [ RunTime:0.000120s ]
+[ sql ] [ SQL ] select SUM(stock_num) as 'cnt' from hg_stock where mobile = '18931970631' [ RunTime:0.000118s ]
+[ sql ] [ SQL ] SELECT COUNT(*) as cnt FROM hg_patient WHERE operate_user_id = '324' [ RunTime:0.000113s ]
+[ sql ] [ SQL ] select SUM(stock_num) as 'cnt' from hg_stock where mobile = '15578008122' [ RunTime:0.000117s ]
+[ sql ] [ SQL ] SELECT COUNT(*) as cnt FROM hg_patient WHERE operate_user_id = '323' [ RunTime:0.000107s ]
+[ sql ] [ SQL ] select SUM(stock_num) as 'cnt' from hg_stock where mobile = '18646000214' [ RunTime:0.000100s ]
+[ sql ] [ SQL ] SELECT COUNT(*) as cnt FROM hg_patient WHERE operate_user_id = '322' [ RunTime:0.000104s ]
+[ sql ] [ SQL ] select SUM(stock_num) as 'cnt' from hg_stock where mobile = '18674503180' [ RunTime:0.000100s ]
+[ sql ] [ SQL ] SELECT COUNT(*) as cnt FROM hg_patient WHERE operate_user_id = '321' [ RunTime:0.000108s ]
+[ sql ] [ SQL ] select SUM(stock_num) as 'cnt' from hg_stock where mobile = '18629599871' [ RunTime:0.000103s ]
+[ sql ] [ SQL ] SELECT COUNT(*) as cnt FROM hg_patient WHERE operate_user_id = '320' [ RunTime:0.000129s ]
+[ sql ] [ SQL ] select SUM(stock_num) as 'cnt' from hg_stock where mobile = '18828093089' [ RunTime:0.000102s ]
+[ sql ] [ SQL ] SELECT COUNT(*) as cnt FROM hg_patient WHERE operate_user_id = '319' [ RunTime:0.000104s ]
+[ sql ] [ SQL ] select SUM(stock_num) as 'cnt' from hg_stock where mobile = '13518157114' [ RunTime:0.000099s ]
+[ sql ] [ SQL ] SELECT COUNT(*) as cnt FROM hg_patient WHERE operate_user_id = '318' [ RunTime:0.000107s ]
+[ sql ] [ SQL ] select SUM(stock_num) as 'cnt' from hg_stock where mobile = '18100612989' [ RunTime:0.000159s ]
+
+---------------------------------------------------------------
+[ 2018-01-23T20:36:44+08:00 ] 47.100.136.57 180.166.124.214 GET /public/admin.php/admin/user/index
+[ log ] app.hugedental.cn/public/admin.php/admin/user/index [运行时间：0.034573s][吞吐率：28.92req/s] [内存消耗：3,624.05kb] [文件加载：50]
+[ info ] [ LANG ] /www/wwwroot/app.hugedental.cn/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'user',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'app.hugedental.cn',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.113 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://app.hugedental.cn/public/admin.php/admin/index',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'PHPSESSID=964unpsauj0lg834ib6jb04f37',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\User->index[ /www/wwwroot/app.hugedental.cn/application/admin/controller/User.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /www/wwwroot/app.hugedental.cn/public/../application/admin/view/user/index.html [ array (
+  0 => 'user',
+  1 => 'page',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000341s ] mysql:dbname=huge;host=localhost;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hg_user` [ RunTime:0.000848s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `hg_user` LIMIT 1 [ RunTime:0.000172s ]
+[ sql ] [ SQL ] SELECT * FROM `hg_user` ORDER BY user_id desc LIMIT 0,10 [ RunTime:0.000347s ]
+[ sql ] [ SQL ] SELECT COUNT(*) as cnt FROM hg_patient WHERE operate_user_id = '327' [ RunTime:0.000173s ]
+[ sql ] [ SQL ] select SUM(stock_num) as 'cnt' from hg_stock where mobile = '18227612334' [ RunTime:0.000148s ]
+[ sql ] [ SQL ] SELECT COUNT(*) as cnt FROM hg_patient WHERE operate_user_id = '326' [ RunTime:0.000147s ]
+[ sql ] [ SQL ] select SUM(stock_num) as 'cnt' from hg_stock where mobile = '18679185340' [ RunTime:0.000111s ]
+[ sql ] [ SQL ] SELECT COUNT(*) as cnt FROM hg_patient WHERE operate_user_id = '325' [ RunTime:0.000111s ]
+[ sql ] [ SQL ] select SUM(stock_num) as 'cnt' from hg_stock where mobile = '18931970631' [ RunTime:0.000106s ]
+[ sql ] [ SQL ] SELECT COUNT(*) as cnt FROM hg_patient WHERE operate_user_id = '324' [ RunTime:0.000131s ]
+[ sql ] [ SQL ] select SUM(stock_num) as 'cnt' from hg_stock where mobile = '15578008122' [ RunTime:0.000127s ]
+[ sql ] [ SQL ] SELECT COUNT(*) as cnt FROM hg_patient WHERE operate_user_id = '323' [ RunTime:0.000138s ]
+[ sql ] [ SQL ] select SUM(stock_num) as 'cnt' from hg_stock where mobile = '18646000214' [ RunTime:0.000104s ]
+[ sql ] [ SQL ] SELECT COUNT(*) as cnt FROM hg_patient WHERE operate_user_id = '322' [ RunTime:0.000107s ]
+[ sql ] [ SQL ] select SUM(stock_num) as 'cnt' from hg_stock where mobile = '18674503180' [ RunTime:0.000102s ]
+[ sql ] [ SQL ] SELECT COUNT(*) as cnt FROM hg_patient WHERE operate_user_id = '321' [ RunTime:0.000140s ]
+[ sql ] [ SQL ] select SUM(stock_num) as 'cnt' from hg_stock where mobile = '18629599871' [ RunTime:0.000119s ]
+[ sql ] [ SQL ] SELECT COUNT(*) as cnt FROM hg_patient WHERE operate_user_id = '320' [ RunTime:0.000168s ]
+[ sql ] [ SQL ] select SUM(stock_num) as 'cnt' from hg_stock where mobile = '18828093089' [ RunTime:0.000127s ]
+[ sql ] [ SQL ] SELECT COUNT(*) as cnt FROM hg_patient WHERE operate_user_id = '319' [ RunTime:0.000127s ]
+[ sql ] [ SQL ] select SUM(stock_num) as 'cnt' from hg_stock where mobile = '13518157114' [ RunTime:0.000108s ]
+[ sql ] [ SQL ] SELECT COUNT(*) as cnt FROM hg_patient WHERE operate_user_id = '318' [ RunTime:0.000127s ]
+[ sql ] [ SQL ] select SUM(stock_num) as 'cnt' from hg_stock where mobile = '18100612989' [ RunTime:0.000137s ]
+
+---------------------------------------------------------------
+[ 2018-01-23T20:36:44+08:00 ] 47.100.136.57 180.166.124.214 GET /public/admin.php/admin/user/index
+[ log ] app.hugedental.cn/public/admin.php/admin/user/index [运行时间：0.033903s][吞吐率：29.50req/s] [内存消耗：3,624.05kb] [文件加载：50]
+[ info ] [ LANG ] /www/wwwroot/app.hugedental.cn/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'user',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'app.hugedental.cn',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.113 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://app.hugedental.cn/public/admin.php/admin/index',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'PHPSESSID=964unpsauj0lg834ib6jb04f37',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\User->index[ /www/wwwroot/app.hugedental.cn/application/admin/controller/User.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /www/wwwroot/app.hugedental.cn/public/../application/admin/view/user/index.html [ array (
+  0 => 'user',
+  1 => 'page',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000312s ] mysql:dbname=huge;host=localhost;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hg_user` [ RunTime:0.000792s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `hg_user` LIMIT 1 [ RunTime:0.000166s ]
+[ sql ] [ SQL ] SELECT * FROM `hg_user` ORDER BY user_id desc LIMIT 0,10 [ RunTime:0.000242s ]
+[ sql ] [ SQL ] SELECT COUNT(*) as cnt FROM hg_patient WHERE operate_user_id = '327' [ RunTime:0.000149s ]
+[ sql ] [ SQL ] select SUM(stock_num) as 'cnt' from hg_stock where mobile = '18227612334' [ RunTime:0.000113s ]
+[ sql ] [ SQL ] SELECT COUNT(*) as cnt FROM hg_patient WHERE operate_user_id = '326' [ RunTime:0.000106s ]
+[ sql ] [ SQL ] select SUM(stock_num) as 'cnt' from hg_stock where mobile = '18679185340' [ RunTime:0.000120s ]
+[ sql ] [ SQL ] SELECT COUNT(*) as cnt FROM hg_patient WHERE operate_user_id = '325' [ RunTime:0.000122s ]
+[ sql ] [ SQL ] select SUM(stock_num) as 'cnt' from hg_stock where mobile = '18931970631' [ RunTime:0.000099s ]
+[ sql ] [ SQL ] SELECT COUNT(*) as cnt FROM hg_patient WHERE operate_user_id = '324' [ RunTime:0.000101s ]
+[ sql ] [ SQL ] select SUM(stock_num) as 'cnt' from hg_stock where mobile = '15578008122' [ RunTime:0.000097s ]
+[ sql ] [ SQL ] SELECT COUNT(*) as cnt FROM hg_patient WHERE operate_user_id = '323' [ RunTime:0.000106s ]
+[ sql ] [ SQL ] select SUM(stock_num) as 'cnt' from hg_stock where mobile = '18646000214' [ RunTime:0.000107s ]
+[ sql ] [ SQL ] SELECT COUNT(*) as cnt FROM hg_patient WHERE operate_user_id = '322' [ RunTime:0.000170s ]
+[ sql ] [ SQL ] select SUM(stock_num) as 'cnt' from hg_stock where mobile = '18674503180' [ RunTime:0.000152s ]
+[ sql ] [ SQL ] SELECT COUNT(*) as cnt FROM hg_patient WHERE operate_user_id = '321' [ RunTime:0.000110s ]
+[ sql ] [ SQL ] select SUM(stock_num) as 'cnt' from hg_stock where mobile = '18629599871' [ RunTime:0.000164s ]
+[ sql ] [ SQL ] SELECT COUNT(*) as cnt FROM hg_patient WHERE operate_user_id = '320' [ RunTime:0.000112s ]
+[ sql ] [ SQL ] select SUM(stock_num) as 'cnt' from hg_stock where mobile = '18828093089' [ RunTime:0.000122s ]
+[ sql ] [ SQL ] SELECT COUNT(*) as cnt FROM hg_patient WHERE operate_user_id = '319' [ RunTime:0.000106s ]
+[ sql ] [ SQL ] select SUM(stock_num) as 'cnt' from hg_stock where mobile = '13518157114' [ RunTime:0.000112s ]
+[ sql ] [ SQL ] SELECT COUNT(*) as cnt FROM hg_patient WHERE operate_user_id = '318' [ RunTime:0.000103s ]
+[ sql ] [ SQL ] select SUM(stock_num) as 'cnt' from hg_stock where mobile = '18100612989' [ RunTime:0.000098s ]
+
+---------------------------------------------------------------
+[ 2018-01-23T20:36:44+08:00 ] 47.100.136.57 180.166.124.214 GET /public/admin.php/admin/user/index
+[ log ] app.hugedental.cn/public/admin.php/admin/user/index [运行时间：0.033397s][吞吐率：29.94req/s] [内存消耗：3,624.05kb] [文件加载：50]
+[ info ] [ LANG ] /www/wwwroot/app.hugedental.cn/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'user',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'app.hugedental.cn',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.113 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://app.hugedental.cn/public/admin.php/admin/index',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'PHPSESSID=964unpsauj0lg834ib6jb04f37',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\User->index[ /www/wwwroot/app.hugedental.cn/application/admin/controller/User.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /www/wwwroot/app.hugedental.cn/public/../application/admin/view/user/index.html [ array (
+  0 => 'user',
+  1 => 'page',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000295s ] mysql:dbname=huge;host=localhost;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hg_user` [ RunTime:0.000789s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `hg_user` LIMIT 1 [ RunTime:0.000155s ]
+[ sql ] [ SQL ] SELECT * FROM `hg_user` ORDER BY user_id desc LIMIT 0,10 [ RunTime:0.000281s ]
+[ sql ] [ SQL ] SELECT COUNT(*) as cnt FROM hg_patient WHERE operate_user_id = '327' [ RunTime:0.000153s ]
+[ sql ] [ SQL ] select SUM(stock_num) as 'cnt' from hg_stock where mobile = '18227612334' [ RunTime:0.000249s ]
+[ sql ] [ SQL ] SELECT COUNT(*) as cnt FROM hg_patient WHERE operate_user_id = '326' [ RunTime:0.000168s ]
+[ sql ] [ SQL ] select SUM(stock_num) as 'cnt' from hg_stock where mobile = '18679185340' [ RunTime:0.000114s ]
+[ sql ] [ SQL ] SELECT COUNT(*) as cnt FROM hg_patient WHERE operate_user_id = '325' [ RunTime:0.000108s ]
+[ sql ] [ SQL ] select SUM(stock_num) as 'cnt' from hg_stock where mobile = '18931970631' [ RunTime:0.000138s ]
+[ sql ] [ SQL ] SELECT COUNT(*) as cnt FROM hg_patient WHERE operate_user_id = '324' [ RunTime:0.000115s ]
+[ sql ] [ SQL ] select SUM(stock_num) as 'cnt' from hg_stock where mobile = '15578008122' [ RunTime:0.000115s ]
+[ sql ] [ SQL ] SELECT COUNT(*) as cnt FROM hg_patient WHERE operate_user_id = '323' [ RunTime:0.000125s ]
+[ sql ] [ SQL ] select SUM(stock_num) as 'cnt' from hg_stock where mobile = '18646000214' [ RunTime:0.000098s ]
+[ sql ] [ SQL ] SELECT COUNT(*) as cnt FROM hg_patient WHERE operate_user_id = '322' [ RunTime:0.000110s ]
+[ sql ] [ SQL ] select SUM(stock_num) as 'cnt' from hg_stock where mobile = '18674503180' [ RunTime:0.000113s ]
+[ sql ] [ SQL ] SELECT COUNT(*) as cnt FROM hg_patient WHERE operate_user_id = '321' [ RunTime:0.000131s ]
+[ sql ] [ SQL ] select SUM(stock_num) as 'cnt' from hg_stock where mobile = '18629599871' [ RunTime:0.000120s ]
+[ sql ] [ SQL ] SELECT COUNT(*) as cnt FROM hg_patient WHERE operate_user_id = '320' [ RunTime:0.000114s ]
+[ sql ] [ SQL ] select SUM(stock_num) as 'cnt' from hg_stock where mobile = '18828093089' [ RunTime:0.000104s ]
+[ sql ] [ SQL ] SELECT COUNT(*) as cnt FROM hg_patient WHERE operate_user_id = '319' [ RunTime:0.000101s ]
+[ sql ] [ SQL ] select SUM(stock_num) as 'cnt' from hg_stock where mobile = '13518157114' [ RunTime:0.000096s ]
+[ sql ] [ SQL ] SELECT COUNT(*) as cnt FROM hg_patient WHERE operate_user_id = '318' [ RunTime:0.000112s ]
+[ sql ] [ SQL ] select SUM(stock_num) as 'cnt' from hg_stock where mobile = '18100612989' [ RunTime:0.000112s ]
+
+---------------------------------------------------------------
+[ 2018-01-23T20:36:45+08:00 ] 47.100.136.57 180.166.124.214 GET /public/admin.php/admin/user/index
+[ log ] app.hugedental.cn/public/admin.php/admin/user/index [运行时间：0.033069s][吞吐率：30.24req/s] [内存消耗：3,624.05kb] [文件加载：50]
+[ info ] [ LANG ] /www/wwwroot/app.hugedental.cn/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'user',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'app.hugedental.cn',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.113 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://app.hugedental.cn/public/admin.php/admin/index',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'PHPSESSID=964unpsauj0lg834ib6jb04f37',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\User->index[ /www/wwwroot/app.hugedental.cn/application/admin/controller/User.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /www/wwwroot/app.hugedental.cn/public/../application/admin/view/user/index.html [ array (
+  0 => 'user',
+  1 => 'page',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000354s ] mysql:dbname=huge;host=localhost;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hg_user` [ RunTime:0.000793s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `hg_user` LIMIT 1 [ RunTime:0.000170s ]
+[ sql ] [ SQL ] SELECT * FROM `hg_user` ORDER BY user_id desc LIMIT 0,10 [ RunTime:0.000263s ]
+[ sql ] [ SQL ] SELECT COUNT(*) as cnt FROM hg_patient WHERE operate_user_id = '327' [ RunTime:0.000143s ]
+[ sql ] [ SQL ] select SUM(stock_num) as 'cnt' from hg_stock where mobile = '18227612334' [ RunTime:0.000113s ]
+[ sql ] [ SQL ] SELECT COUNT(*) as cnt FROM hg_patient WHERE operate_user_id = '326' [ RunTime:0.000102s ]
+[ sql ] [ SQL ] select SUM(stock_num) as 'cnt' from hg_stock where mobile = '18679185340' [ RunTime:0.000127s ]
+[ sql ] [ SQL ] SELECT COUNT(*) as cnt FROM hg_patient WHERE operate_user_id = '325' [ RunTime:0.000143s ]
+[ sql ] [ SQL ] select SUM(stock_num) as 'cnt' from hg_stock where mobile = '18931970631' [ RunTime:0.000102s ]
+[ sql ] [ SQL ] SELECT COUNT(*) as cnt FROM hg_patient WHERE operate_user_id = '324' [ RunTime:0.000105s ]
+[ sql ] [ SQL ] select SUM(stock_num) as 'cnt' from hg_stock where mobile = '15578008122' [ RunTime:0.000096s ]
+[ sql ] [ SQL ] SELECT COUNT(*) as cnt FROM hg_patient WHERE operate_user_id = '323' [ RunTime:0.000098s ]
+[ sql ] [ SQL ] select SUM(stock_num) as 'cnt' from hg_stock where mobile = '18646000214' [ RunTime:0.000140s ]
+[ sql ] [ SQL ] SELECT COUNT(*) as cnt FROM hg_patient WHERE operate_user_id = '322' [ RunTime:0.000113s ]
+[ sql ] [ SQL ] select SUM(stock_num) as 'cnt' from hg_stock where mobile = '18674503180' [ RunTime:0.000130s ]
+[ sql ] [ SQL ] SELECT COUNT(*) as cnt FROM hg_patient WHERE operate_user_id = '321' [ RunTime:0.000142s ]
+[ sql ] [ SQL ] select SUM(stock_num) as 'cnt' from hg_stock where mobile = '18629599871' [ RunTime:0.000134s ]
+[ sql ] [ SQL ] SELECT COUNT(*) as cnt FROM hg_patient WHERE operate_user_id = '320' [ RunTime:0.000129s ]
+[ sql ] [ SQL ] select SUM(stock_num) as 'cnt' from hg_stock where mobile = '18828093089' [ RunTime:0.000129s ]
+[ sql ] [ SQL ] SELECT COUNT(*) as cnt FROM hg_patient WHERE operate_user_id = '319' [ RunTime:0.000127s ]
+[ sql ] [ SQL ] select SUM(stock_num) as 'cnt' from hg_stock where mobile = '13518157114' [ RunTime:0.000106s ]
+[ sql ] [ SQL ] SELECT COUNT(*) as cnt FROM hg_patient WHERE operate_user_id = '318' [ RunTime:0.000127s ]
+[ sql ] [ SQL ] select SUM(stock_num) as 'cnt' from hg_stock where mobile = '18100612989' [ RunTime:0.000106s ]
+
+---------------------------------------------------------------
+[ 2018-01-23T20:37:09+08:00 ] 47.100.136.57 180.166.124.214 GET /public/admin.php/admin/user/index
+[ log ] app.hugedental.cn/public/admin.php/admin/user/index [运行时间：0.036263s][吞吐率：27.58req/s] [内存消耗：3,928.13kb] [文件加载：52]
+[ info ] [ LANG ] /www/wwwroot/app.hugedental.cn/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'user',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'app.hugedental.cn',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.113 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://app.hugedental.cn/public/admin.php/admin/index',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'PHPSESSID=964unpsauj0lg834ib6jb04f37',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\User->index[ /www/wwwroot/app.hugedental.cn/application/admin/controller/User.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /www/wwwroot/app.hugedental.cn/public/../application/admin/view/user/index.html [ array (
+  0 => 'user',
+  1 => 'page',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000316s ] mysql:dbname=huge;host=localhost;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hg_user` [ RunTime:0.000821s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `hg_user` LIMIT 1 [ RunTime:0.000170s ]
+[ sql ] [ SQL ] SELECT * FROM `hg_user` ORDER BY user_id desc LIMIT 0,10 [ RunTime:0.000264s ]
+[ sql ] [ SQL ] SELECT COUNT(*) as cnt FROM hg_patient WHERE operate_user_id = '327' [ RunTime:0.000147s ]
+[ sql ] [ SQL ] select SUM(stock_num) as 'cnt' from hg_stock where mobile = '18227612334' [ RunTime:0.000125s ]
+[ sql ] [ SQL ] SELECT COUNT(*) as cnt FROM hg_patient WHERE operate_user_id = '326' [ RunTime:0.000125s ]
+[ sql ] [ SQL ] select SUM(stock_num) as 'cnt' from hg_stock where mobile = '18679185340' [ RunTime:0.000115s ]
+[ sql ] [ SQL ] SELECT COUNT(*) as cnt FROM hg_patient WHERE operate_user_id = '325' [ RunTime:0.000107s ]
+[ sql ] [ SQL ] select SUM(stock_num) as 'cnt' from hg_stock where mobile = '18931970631' [ RunTime:0.000101s ]
+[ sql ] [ SQL ] SELECT COUNT(*) as cnt FROM hg_patient WHERE operate_user_id = '324' [ RunTime:0.000108s ]
+[ sql ] [ SQL ] select SUM(stock_num) as 'cnt' from hg_stock where mobile = '15578008122' [ RunTime:0.000099s ]
+[ sql ] [ SQL ] SELECT COUNT(*) as cnt FROM hg_patient WHERE operate_user_id = '323' [ RunTime:0.000114s ]
+[ sql ] [ SQL ] select SUM(stock_num) as 'cnt' from hg_stock where mobile = '18646000214' [ RunTime:0.000117s ]
+[ sql ] [ SQL ] SELECT COUNT(*) as cnt FROM hg_patient WHERE operate_user_id = '322' [ RunTime:0.000110s ]
+[ sql ] [ SQL ] select SUM(stock_num) as 'cnt' from hg_stock where mobile = '18674503180' [ RunTime:0.000103s ]
+[ sql ] [ SQL ] SELECT COUNT(*) as cnt FROM hg_patient WHERE operate_user_id = '321' [ RunTime:0.000103s ]
+[ sql ] [ SQL ] select SUM(stock_num) as 'cnt' from hg_stock where mobile = '18629599871' [ RunTime:0.000095s ]
+[ sql ] [ SQL ] SELECT COUNT(*) as cnt FROM hg_patient WHERE operate_user_id = '320' [ RunTime:0.000104s ]
+[ sql ] [ SQL ] select SUM(stock_num) as 'cnt' from hg_stock where mobile = '18828093089' [ RunTime:0.000102s ]
+[ sql ] [ SQL ] SELECT COUNT(*) as cnt FROM hg_patient WHERE operate_user_id = '319' [ RunTime:0.000116s ]
+[ sql ] [ SQL ] select SUM(stock_num) as 'cnt' from hg_stock where mobile = '13518157114' [ RunTime:0.000104s ]
+[ sql ] [ SQL ] SELECT COUNT(*) as cnt FROM hg_patient WHERE operate_user_id = '318' [ RunTime:0.000102s ]
+[ sql ] [ SQL ] select SUM(stock_num) as 'cnt' from hg_stock where mobile = '18100612989' [ RunTime:0.000106s ]
+
+---------------------------------------------------------------
+[ 2018-01-23T20:37:10+08:00 ] 47.100.136.57 180.166.124.214 GET /public/admin.php/admin/user/index
+[ log ] app.hugedental.cn/public/admin.php/admin/user/index [运行时间：0.035024s][吞吐率：28.55req/s] [内存消耗：3,623.68kb] [文件加载：50]
+[ info ] [ LANG ] /www/wwwroot/app.hugedental.cn/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'user',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'app.hugedental.cn',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.113 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://app.hugedental.cn/public/admin.php/admin/index',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'PHPSESSID=964unpsauj0lg834ib6jb04f37',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\User->index[ /www/wwwroot/app.hugedental.cn/application/admin/controller/User.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /www/wwwroot/app.hugedental.cn/public/../application/admin/view/user/index.html [ array (
+  0 => 'user',
+  1 => 'page',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000289s ] mysql:dbname=huge;host=localhost;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hg_user` [ RunTime:0.000846s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `hg_user` LIMIT 1 [ RunTime:0.000174s ]
+[ sql ] [ SQL ] SELECT * FROM `hg_user` ORDER BY user_id desc LIMIT 0,10 [ RunTime:0.000338s ]
+[ sql ] [ SQL ] SELECT COUNT(*) as cnt FROM hg_patient WHERE operate_user_id = '327' [ RunTime:0.000190s ]
+[ sql ] [ SQL ] select SUM(stock_num) as 'cnt' from hg_stock where mobile = '18227612334' [ RunTime:0.000134s ]
+[ sql ] [ SQL ] SELECT COUNT(*) as cnt FROM hg_patient WHERE operate_user_id = '326' [ RunTime:0.000146s ]
+[ sql ] [ SQL ] select SUM(stock_num) as 'cnt' from hg_stock where mobile = '18679185340' [ RunTime:0.000122s ]
+[ sql ] [ SQL ] SELECT COUNT(*) as cnt FROM hg_patient WHERE operate_user_id = '325' [ RunTime:0.000110s ]
+[ sql ] [ SQL ] select SUM(stock_num) as 'cnt' from hg_stock where mobile = '18931970631' [ RunTime:0.000115s ]
+[ sql ] [ SQL ] SELECT COUNT(*) as cnt FROM hg_patient WHERE operate_user_id = '324' [ RunTime:0.000105s ]
+[ sql ] [ SQL ] select SUM(stock_num) as 'cnt' from hg_stock where mobile = '15578008122' [ RunTime:0.000118s ]
+[ sql ] [ SQL ] SELECT COUNT(*) as cnt FROM hg_patient WHERE operate_user_id = '323' [ RunTime:0.000164s ]
+[ sql ] [ SQL ] select SUM(stock_num) as 'cnt' from hg_stock where mobile = '18646000214' [ RunTime:0.000135s ]
+[ sql ] [ SQL ] SELECT COUNT(*) as cnt FROM hg_patient WHERE operate_user_id = '322' [ RunTime:0.000114s ]
+[ sql ] [ SQL ] select SUM(stock_num) as 'cnt' from hg_stock where mobile = '18674503180' [ RunTime:0.000104s ]
+[ sql ] [ SQL ] SELECT COUNT(*) as cnt FROM hg_patient WHERE operate_user_id = '321' [ RunTime:0.000149s ]
+[ sql ] [ SQL ] select SUM(stock_num) as 'cnt' from hg_stock where mobile = '18629599871' [ RunTime:0.000130s ]
+[ sql ] [ SQL ] SELECT COUNT(*) as cnt FROM hg_patient WHERE operate_user_id = '320' [ RunTime:0.000139s ]
+[ sql ] [ SQL ] select SUM(stock_num) as 'cnt' from hg_stock where mobile = '18828093089' [ RunTime:0.000105s ]
+[ sql ] [ SQL ] SELECT COUNT(*) as cnt FROM hg_patient WHERE operate_user_id = '319' [ RunTime:0.000104s ]
+[ sql ] [ SQL ] select SUM(stock_num) as 'cnt' from hg_stock where mobile = '13518157114' [ RunTime:0.000100s ]
+[ sql ] [ SQL ] SELECT COUNT(*) as cnt FROM hg_patient WHERE operate_user_id = '318' [ RunTime:0.000154s ]
+[ sql ] [ SQL ] select SUM(stock_num) as 'cnt' from hg_stock where mobile = '18100612989' [ RunTime:0.000108s ]
+
+---------------------------------------------------------------
+[ 2018-01-23T20:37:10+08:00 ] 47.100.136.57 180.166.124.214 GET /public/admin.php/admin/user/index
+[ log ] app.hugedental.cn/public/admin.php/admin/user/index [运行时间：0.032934s][吞吐率：30.36req/s] [内存消耗：3,623.68kb] [文件加载：50]
+[ info ] [ LANG ] /www/wwwroot/app.hugedental.cn/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'user',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'app.hugedental.cn',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.113 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://app.hugedental.cn/public/admin.php/admin/index',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'PHPSESSID=964unpsauj0lg834ib6jb04f37',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\User->index[ /www/wwwroot/app.hugedental.cn/application/admin/controller/User.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /www/wwwroot/app.hugedental.cn/public/../application/admin/view/user/index.html [ array (
+  0 => 'user',
+  1 => 'page',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000278s ] mysql:dbname=huge;host=localhost;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hg_user` [ RunTime:0.000818s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `hg_user` LIMIT 1 [ RunTime:0.000189s ]
+[ sql ] [ SQL ] SELECT * FROM `hg_user` ORDER BY user_id desc LIMIT 0,10 [ RunTime:0.000274s ]
+[ sql ] [ SQL ] SELECT COUNT(*) as cnt FROM hg_patient WHERE operate_user_id = '327' [ RunTime:0.000160s ]
+[ sql ] [ SQL ] select SUM(stock_num) as 'cnt' from hg_stock where mobile = '18227612334' [ RunTime:0.000129s ]
+[ sql ] [ SQL ] SELECT COUNT(*) as cnt FROM hg_patient WHERE operate_user_id = '326' [ RunTime:0.000107s ]
+[ sql ] [ SQL ] select SUM(stock_num) as 'cnt' from hg_stock where mobile = '18679185340' [ RunTime:0.000108s ]
+[ sql ] [ SQL ] SELECT COUNT(*) as cnt FROM hg_patient WHERE operate_user_id = '325' [ RunTime:0.000127s ]
+[ sql ] [ SQL ] select SUM(stock_num) as 'cnt' from hg_stock where mobile = '18931970631' [ RunTime:0.000102s ]
+[ sql ] [ SQL ] SELECT COUNT(*) as cnt FROM hg_patient WHERE operate_user_id = '324' [ RunTime:0.000109s ]
+[ sql ] [ SQL ] select SUM(stock_num) as 'cnt' from hg_stock where mobile = '15578008122' [ RunTime:0.000107s ]
+[ sql ] [ SQL ] SELECT COUNT(*) as cnt FROM hg_patient WHERE operate_user_id = '323' [ RunTime:0.000116s ]
+[ sql ] [ SQL ] select SUM(stock_num) as 'cnt' from hg_stock where mobile = '18646000214' [ RunTime:0.000107s ]
+[ sql ] [ SQL ] SELECT COUNT(*) as cnt FROM hg_patient WHERE operate_user_id = '322' [ RunTime:0.000104s ]
+[ sql ] [ SQL ] select SUM(stock_num) as 'cnt' from hg_stock where mobile = '18674503180' [ RunTime:0.000124s ]
+[ sql ] [ SQL ] SELECT COUNT(*) as cnt FROM hg_patient WHERE operate_user_id = '321' [ RunTime:0.000103s ]
+[ sql ] [ SQL ] select SUM(stock_num) as 'cnt' from hg_stock where mobile = '18629599871' [ RunTime:0.000099s ]
+[ sql ] [ SQL ] SELECT COUNT(*) as cnt FROM hg_patient WHERE operate_user_id = '320' [ RunTime:0.000120s ]
+[ sql ] [ SQL ] select SUM(stock_num) as 'cnt' from hg_stock where mobile = '18828093089' [ RunTime:0.000102s ]
+[ sql ] [ SQL ] SELECT COUNT(*) as cnt FROM hg_patient WHERE operate_user_id = '319' [ RunTime:0.000130s ]
+[ sql ] [ SQL ] select SUM(stock_num) as 'cnt' from hg_stock where mobile = '13518157114' [ RunTime:0.000140s ]
+[ sql ] [ SQL ] SELECT COUNT(*) as cnt FROM hg_patient WHERE operate_user_id = '318' [ RunTime:0.000132s ]
+[ sql ] [ SQL ] select SUM(stock_num) as 'cnt' from hg_stock where mobile = '18100612989' [ RunTime:0.000128s ]
+
+---------------------------------------------------------------
+[ 2018-01-23T20:37:31+08:00 ] 47.100.136.57 180.166.124.214 GET /public/admin.php/admin/user/index
+[ log ] app.hugedental.cn/public/admin.php/admin/user/index [运行时间：0.033996s][吞吐率：29.42req/s] [内存消耗：3,928.13kb] [文件加载：52]
+[ info ] [ LANG ] /www/wwwroot/app.hugedental.cn/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'user',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'app.hugedental.cn',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.113 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://app.hugedental.cn/public/admin.php/admin/index',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'PHPSESSID=964unpsauj0lg834ib6jb04f37',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\User->index[ /www/wwwroot/app.hugedental.cn/application/admin/controller/User.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /www/wwwroot/app.hugedental.cn/public/../application/admin/view/user/index.html [ array (
+  0 => 'user',
+  1 => 'page',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000311s ] mysql:dbname=huge;host=localhost;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hg_user` [ RunTime:0.000859s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `hg_user` LIMIT 1 [ RunTime:0.000163s ]
+[ sql ] [ SQL ] SELECT * FROM `hg_user` ORDER BY user_id desc LIMIT 0,10 [ RunTime:0.000220s ]
+[ sql ] [ SQL ] SELECT COUNT(*) as cnt FROM hg_patient WHERE operate_user_id = '327' [ RunTime:0.000170s ]
+[ sql ] [ SQL ] select SUM(stock_num) as 'cnt' from hg_stock where mobile = '18227612334' [ RunTime:0.000146s ]
+[ sql ] [ SQL ] SELECT COUNT(*) as cnt FROM hg_patient WHERE operate_user_id = '326' [ RunTime:0.000121s ]
+[ sql ] [ SQL ] select SUM(stock_num) as 'cnt' from hg_stock where mobile = '18679185340' [ RunTime:0.000110s ]
+[ sql ] [ SQL ] SELECT COUNT(*) as cnt FROM hg_patient WHERE operate_user_id = '325' [ RunTime:0.000104s ]
+[ sql ] [ SQL ] select SUM(stock_num) as 'cnt' from hg_stock where mobile = '18931970631' [ RunTime:0.000108s ]
+[ sql ] [ SQL ] SELECT COUNT(*) as cnt FROM hg_patient WHERE operate_user_id = '324' [ RunTime:0.000117s ]
+[ sql ] [ SQL ] select SUM(stock_num) as 'cnt' from hg_stock where mobile = '15578008122' [ RunTime:0.000149s ]
+[ sql ] [ SQL ] SELECT COUNT(*) as cnt FROM hg_patient WHERE operate_user_id = '323' [ RunTime:0.000134s ]
+[ sql ] [ SQL ] select SUM(stock_num) as 'cnt' from hg_stock where mobile = '18646000214' [ RunTime:0.000104s ]
+[ sql ] [ SQL ] SELECT COUNT(*) as cnt FROM hg_patient WHERE operate_user_id = '322' [ RunTime:0.000123s ]
+[ sql ] [ SQL ] select SUM(stock_num) as 'cnt' from hg_stock where mobile = '18674503180' [ RunTime:0.000097s ]
+[ sql ] [ SQL ] SELECT COUNT(*) as cnt FROM hg_patient WHERE operate_user_id = '321' [ RunTime:0.000118s ]
+[ sql ] [ SQL ] select SUM(stock_num) as 'cnt' from hg_stock where mobile = '18629599871' [ RunTime:0.000105s ]
+[ sql ] [ SQL ] SELECT COUNT(*) as cnt FROM hg_patient WHERE operate_user_id = '320' [ RunTime:0.000100s ]
+[ sql ] [ SQL ] select SUM(stock_num) as 'cnt' from hg_stock where mobile = '18828093089' [ RunTime:0.000095s ]
+[ sql ] [ SQL ] SELECT COUNT(*) as cnt FROM hg_patient WHERE operate_user_id = '319' [ RunTime:0.000106s ]
+[ sql ] [ SQL ] select SUM(stock_num) as 'cnt' from hg_stock where mobile = '13518157114' [ RunTime:0.000104s ]
+[ sql ] [ SQL ] SELECT COUNT(*) as cnt FROM hg_patient WHERE operate_user_id = '318' [ RunTime:0.000135s ]
+[ sql ] [ SQL ] select SUM(stock_num) as 'cnt' from hg_stock where mobile = '18100612989' [ RunTime:0.000110s ]
+
+---------------------------------------------------------------
+[ 2018-01-23T20:37:32+08:00 ] 47.100.136.57 180.166.124.214 GET /public/admin.php/admin/user/index
+[ log ] app.hugedental.cn/public/admin.php/admin/user/index [运行时间：0.033622s][吞吐率：29.74req/s] [内存消耗：3,623.68kb] [文件加载：50]
+[ info ] [ LANG ] /www/wwwroot/app.hugedental.cn/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'user',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'app.hugedental.cn',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.113 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://app.hugedental.cn/public/admin.php/admin/index',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'PHPSESSID=964unpsauj0lg834ib6jb04f37',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\User->index[ /www/wwwroot/app.hugedental.cn/application/admin/controller/User.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /www/wwwroot/app.hugedental.cn/public/../application/admin/view/user/index.html [ array (
+  0 => 'user',
+  1 => 'page',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000283s ] mysql:dbname=huge;host=localhost;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hg_user` [ RunTime:0.000893s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `hg_user` LIMIT 1 [ RunTime:0.000222s ]
+[ sql ] [ SQL ] SELECT * FROM `hg_user` ORDER BY user_id desc LIMIT 0,10 [ RunTime:0.000255s ]
+[ sql ] [ SQL ] SELECT COUNT(*) as cnt FROM hg_patient WHERE operate_user_id = '327' [ RunTime:0.000154s ]
+[ sql ] [ SQL ] select SUM(stock_num) as 'cnt' from hg_stock where mobile = '18227612334' [ RunTime:0.000190s ]
+[ sql ] [ SQL ] SELECT COUNT(*) as cnt FROM hg_patient WHERE operate_user_id = '326' [ RunTime:0.000175s ]
+[ sql ] [ SQL ] select SUM(stock_num) as 'cnt' from hg_stock where mobile = '18679185340' [ RunTime:0.000114s ]
+[ sql ] [ SQL ] SELECT COUNT(*) as cnt FROM hg_patient WHERE operate_user_id = '325' [ RunTime:0.000121s ]
+[ sql ] [ SQL ] select SUM(stock_num) as 'cnt' from hg_stock where mobile = '18931970631' [ RunTime:0.000125s ]
+[ sql ] [ SQL ] SELECT COUNT(*) as cnt FROM hg_patient WHERE operate_user_id = '324' [ RunTime:0.000134s ]
+[ sql ] [ SQL ] select SUM(stock_num) as 'cnt' from hg_stock where mobile = '15578008122' [ RunTime:0.000112s ]
+[ sql ] [ SQL ] SELECT COUNT(*) as cnt FROM hg_patient WHERE operate_user_id = '323' [ RunTime:0.000116s ]
+[ sql ] [ SQL ] select SUM(stock_num) as 'cnt' from hg_stock where mobile = '18646000214' [ RunTime:0.000107s ]
+[ sql ] [ SQL ] SELECT COUNT(*) as cnt FROM hg_patient WHERE operate_user_id = '322' [ RunTime:0.000126s ]
+[ sql ] [ SQL ] select SUM(stock_num) as 'cnt' from hg_stock where mobile = '18674503180' [ RunTime:0.000104s ]
+[ sql ] [ SQL ] SELECT COUNT(*) as cnt FROM hg_patient WHERE operate_user_id = '321' [ RunTime:0.000110s ]
+[ sql ] [ SQL ] select SUM(stock_num) as 'cnt' from hg_stock where mobile = '18629599871' [ RunTime:0.000108s ]
+[ sql ] [ SQL ] SELECT COUNT(*) as cnt FROM hg_patient WHERE operate_user_id = '320' [ RunTime:0.000109s ]
+[ sql ] [ SQL ] select SUM(stock_num) as 'cnt' from hg_stock where mobile = '18828093089' [ RunTime:0.000105s ]
+[ sql ] [ SQL ] SELECT COUNT(*) as cnt FROM hg_patient WHERE operate_user_id = '319' [ RunTime:0.000108s ]
+[ sql ] [ SQL ] select SUM(stock_num) as 'cnt' from hg_stock where mobile = '13518157114' [ RunTime:0.000107s ]
+[ sql ] [ SQL ] SELECT COUNT(*) as cnt FROM hg_patient WHERE operate_user_id = '318' [ RunTime:0.000106s ]
+[ sql ] [ SQL ] select SUM(stock_num) as 'cnt' from hg_stock where mobile = '18100612989' [ RunTime:0.000124s ]
+
+---------------------------------------------------------------
+[ 2018-01-23T20:37:33+08:00 ] 47.100.136.57 180.166.124.214 GET /public/admin.php/admin/user/index
+[ log ] app.hugedental.cn/public/admin.php/admin/user/index [运行时间：0.033138s][吞吐率：30.18req/s] [内存消耗：3,623.68kb] [文件加载：50]
+[ info ] [ LANG ] /www/wwwroot/app.hugedental.cn/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'user',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'app.hugedental.cn',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.113 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://app.hugedental.cn/public/admin.php/admin/index',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'PHPSESSID=964unpsauj0lg834ib6jb04f37',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\User->index[ /www/wwwroot/app.hugedental.cn/application/admin/controller/User.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /www/wwwroot/app.hugedental.cn/public/../application/admin/view/user/index.html [ array (
+  0 => 'user',
+  1 => 'page',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000275s ] mysql:dbname=huge;host=localhost;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hg_user` [ RunTime:0.000820s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `hg_user` LIMIT 1 [ RunTime:0.000201s ]
+[ sql ] [ SQL ] SELECT * FROM `hg_user` ORDER BY user_id desc LIMIT 0,10 [ RunTime:0.000256s ]
+[ sql ] [ SQL ] SELECT COUNT(*) as cnt FROM hg_patient WHERE operate_user_id = '327' [ RunTime:0.000162s ]
+[ sql ] [ SQL ] select SUM(stock_num) as 'cnt' from hg_stock where mobile = '18227612334' [ RunTime:0.000125s ]
+[ sql ] [ SQL ] SELECT COUNT(*) as cnt FROM hg_patient WHERE operate_user_id = '326' [ RunTime:0.000119s ]
+[ sql ] [ SQL ] select SUM(stock_num) as 'cnt' from hg_stock where mobile = '18679185340' [ RunTime:0.000136s ]
+[ sql ] [ SQL ] SELECT COUNT(*) as cnt FROM hg_patient WHERE operate_user_id = '325' [ RunTime:0.000146s ]
+[ sql ] [ SQL ] select SUM(stock_num) as 'cnt' from hg_stock where mobile = '18931970631' [ RunTime:0.000157s ]
+[ sql ] [ SQL ] SELECT COUNT(*) as cnt FROM hg_patient WHERE operate_user_id = '324' [ RunTime:0.000109s ]
+[ sql ] [ SQL ] select SUM(stock_num) as 'cnt' from hg_stock where mobile = '15578008122' [ RunTime:0.000096s ]
+[ sql ] [ SQL ] SELECT COUNT(*) as cnt FROM hg_patient WHERE operate_user_id = '323' [ RunTime:0.000109s ]
+[ sql ] [ SQL ] select SUM(stock_num) as 'cnt' from hg_stock where mobile = '18646000214' [ RunTime:0.000102s ]
+[ sql ] [ SQL ] SELECT COUNT(*) as cnt FROM hg_patient WHERE operate_user_id = '322' [ RunTime:0.000100s ]
+[ sql ] [ SQL ] select SUM(stock_num) as 'cnt' from hg_stock where mobile = '18674503180' [ RunTime:0.000097s ]
+[ sql ] [ SQL ] SELECT COUNT(*) as cnt FROM hg_patient WHERE operate_user_id = '321' [ RunTime:0.000099s ]
+[ sql ] [ SQL ] select SUM(stock_num) as 'cnt' from hg_stock where mobile = '18629599871' [ RunTime:0.000101s ]
+[ sql ] [ SQL ] SELECT COUNT(*) as cnt FROM hg_patient WHERE operate_user_id = '320' [ RunTime:0.000099s ]
+[ sql ] [ SQL ] select SUM(stock_num) as 'cnt' from hg_stock where mobile = '18828093089' [ RunTime:0.000103s ]
+[ sql ] [ SQL ] SELECT COUNT(*) as cnt FROM hg_patient WHERE operate_user_id = '319' [ RunTime:0.000104s ]
+[ sql ] [ SQL ] select SUM(stock_num) as 'cnt' from hg_stock where mobile = '13518157114' [ RunTime:0.000097s ]
+[ sql ] [ SQL ] SELECT COUNT(*) as cnt FROM hg_patient WHERE operate_user_id = '318' [ RunTime:0.000098s ]
+[ sql ] [ SQL ] select SUM(stock_num) as 'cnt' from hg_stock where mobile = '18100612989' [ RunTime:0.000099s ]
+
+---------------------------------------------------------------
+[ 2018-01-23T20:37:33+08:00 ] 47.100.136.57 180.166.124.214 GET /public/admin.php/admin/user/index
+[ log ] app.hugedental.cn/public/admin.php/admin/user/index [运行时间：0.033446s][吞吐率：29.90req/s] [内存消耗：3,623.68kb] [文件加载：50]
+[ info ] [ LANG ] /www/wwwroot/app.hugedental.cn/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'user',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'app.hugedental.cn',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.113 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://app.hugedental.cn/public/admin.php/admin/index',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'PHPSESSID=964unpsauj0lg834ib6jb04f37',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\User->index[ /www/wwwroot/app.hugedental.cn/application/admin/controller/User.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /www/wwwroot/app.hugedental.cn/public/../application/admin/view/user/index.html [ array (
+  0 => 'user',
+  1 => 'page',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000309s ] mysql:dbname=huge;host=localhost;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hg_user` [ RunTime:0.000818s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `hg_user` LIMIT 1 [ RunTime:0.000185s ]
+[ sql ] [ SQL ] SELECT * FROM `hg_user` ORDER BY user_id desc LIMIT 0,10 [ RunTime:0.000265s ]
+[ sql ] [ SQL ] SELECT COUNT(*) as cnt FROM hg_patient WHERE operate_user_id = '327' [ RunTime:0.000163s ]
+[ sql ] [ SQL ] select SUM(stock_num) as 'cnt' from hg_stock where mobile = '18227612334' [ RunTime:0.000118s ]
+[ sql ] [ SQL ] SELECT COUNT(*) as cnt FROM hg_patient WHERE operate_user_id = '326' [ RunTime:0.000192s ]
+[ sql ] [ SQL ] select SUM(stock_num) as 'cnt' from hg_stock where mobile = '18679185340' [ RunTime:0.000138s ]
+[ sql ] [ SQL ] SELECT COUNT(*) as cnt FROM hg_patient WHERE operate_user_id = '325' [ RunTime:0.000111s ]
+[ sql ] [ SQL ] select SUM(stock_num) as 'cnt' from hg_stock where mobile = '18931970631' [ RunTime:0.000105s ]
+[ sql ] [ SQL ] SELECT COUNT(*) as cnt FROM hg_patient WHERE operate_user_id = '324' [ RunTime:0.000106s ]
+[ sql ] [ SQL ] select SUM(stock_num) as 'cnt' from hg_stock where mobile = '15578008122' [ RunTime:0.000101s ]
+[ sql ] [ SQL ] SELECT COUNT(*) as cnt FROM hg_patient WHERE operate_user_id = '323' [ RunTime:0.000111s ]
+[ sql ] [ SQL ] select SUM(stock_num) as 'cnt' from hg_stock where mobile = '18646000214' [ RunTime:0.000133s ]
+[ sql ] [ SQL ] SELECT COUNT(*) as cnt FROM hg_patient WHERE operate_user_id = '322' [ RunTime:0.000109s ]
+[ sql ] [ SQL ] select SUM(stock_num) as 'cnt' from hg_stock where mobile = '18674503180' [ RunTime:0.000101s ]
+[ sql ] [ SQL ] SELECT COUNT(*) as cnt FROM hg_patient WHERE operate_user_id = '321' [ RunTime:0.000104s ]
+[ sql ] [ SQL ] select SUM(stock_num) as 'cnt' from hg_stock where mobile = '18629599871' [ RunTime:0.000101s ]
+[ sql ] [ SQL ] SELECT COUNT(*) as cnt FROM hg_patient WHERE operate_user_id = '320' [ RunTime:0.000113s ]
+[ sql ] [ SQL ] select SUM(stock_num) as 'cnt' from hg_stock where mobile = '18828093089' [ RunTime:0.000116s ]
+[ sql ] [ SQL ] SELECT COUNT(*) as cnt FROM hg_patient WHERE operate_user_id = '319' [ RunTime:0.000109s ]
+[ sql ] [ SQL ] select SUM(stock_num) as 'cnt' from hg_stock where mobile = '13518157114' [ RunTime:0.000104s ]
+[ sql ] [ SQL ] SELECT COUNT(*) as cnt FROM hg_patient WHERE operate_user_id = '318' [ RunTime:0.000105s ]
+[ sql ] [ SQL ] select SUM(stock_num) as 'cnt' from hg_stock where mobile = '18100612989' [ RunTime:0.000104s ]
+
+---------------------------------------------------------------
+[ 2018-01-23T20:37:36+08:00 ] 47.100.136.57 180.166.124.214 GET /public/admin.php/admin/patient/index
+[ log ] app.hugedental.cn/public/admin.php/admin/patient/index [运行时间：0.032758s][吞吐率：30.53req/s] [内存消耗：3,419.52kb] [文件加载：48]
+[ info ] [ LANG ] /www/wwwroot/app.hugedental.cn/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'patient',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'app.hugedental.cn',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.113 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://app.hugedental.cn/public/admin.php/admin/index',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'PHPSESSID=964unpsauj0lg834ib6jb04f37',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Patient->index[ /www/wwwroot/app.hugedental.cn/application/admin/controller/Patient.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /www/wwwroot/app.hugedental.cn/public/../application/admin/view/patient/index.html [ array (
+  0 => 'patient',
+  1 => 'page',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000309s ] mysql:dbname=huge;host=localhost;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hg_patient` [ RunTime:0.000701s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `hg_patient` `a` INNER JOIN `hg_false_tooth` `b` ON `a`.`false_tooth`=`b`.`false_tooth_id` LIMIT 1 [ RunTime:0.000189s ]
+[ sql ] [ SQL ] SELECT * FROM `hg_patient` `a` INNER JOIN `hg_false_tooth` `b` ON `a`.`false_tooth`=`b`.`false_tooth_id` ORDER BY patient_id desc LIMIT 0,10 [ RunTime:0.000267s ]
+
+---------------------------------------------------------------
+[ 2018-01-23T20:37:37+08:00 ] 47.100.136.57 180.166.124.214 GET /public/admin.php/admin/user/index
+[ log ] app.hugedental.cn/public/admin.php/admin/user/index [运行时间：0.037558s][吞吐率：26.63req/s] [内存消耗：3,623.68kb] [文件加载：50]
+[ info ] [ LANG ] /www/wwwroot/app.hugedental.cn/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'user',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'app.hugedental.cn',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.113 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://app.hugedental.cn/public/admin.php/admin/index',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'PHPSESSID=964unpsauj0lg834ib6jb04f37',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\User->index[ /www/wwwroot/app.hugedental.cn/application/admin/controller/User.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /www/wwwroot/app.hugedental.cn/public/../application/admin/view/user/index.html [ array (
+  0 => 'user',
+  1 => 'page',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000321s ] mysql:dbname=huge;host=localhost;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hg_user` [ RunTime:0.000863s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `hg_user` LIMIT 1 [ RunTime:0.000186s ]
+[ sql ] [ SQL ] SELECT * FROM `hg_user` ORDER BY user_id desc LIMIT 0,10 [ RunTime:0.000287s ]
+[ sql ] [ SQL ] SELECT COUNT(*) as cnt FROM hg_patient WHERE operate_user_id = '327' [ RunTime:0.000192s ]
+[ sql ] [ SQL ] select SUM(stock_num) as 'cnt' from hg_stock where mobile = '18227612334' [ RunTime:0.000132s ]
+[ sql ] [ SQL ] SELECT COUNT(*) as cnt FROM hg_patient WHERE operate_user_id = '326' [ RunTime:0.000147s ]
+[ sql ] [ SQL ] select SUM(stock_num) as 'cnt' from hg_stock where mobile = '18679185340' [ RunTime:0.000136s ]
+[ sql ] [ SQL ] SELECT COUNT(*) as cnt FROM hg_patient WHERE operate_user_id = '325' [ RunTime:0.000117s ]
+[ sql ] [ SQL ] select SUM(stock_num) as 'cnt' from hg_stock where mobile = '18931970631' [ RunTime:0.000116s ]
+[ sql ] [ SQL ] SELECT COUNT(*) as cnt FROM hg_patient WHERE operate_user_id = '324' [ RunTime:0.000128s ]
+[ sql ] [ SQL ] select SUM(stock_num) as 'cnt' from hg_stock where mobile = '15578008122' [ RunTime:0.000114s ]
+[ sql ] [ SQL ] SELECT COUNT(*) as cnt FROM hg_patient WHERE operate_user_id = '323' [ RunTime:0.000133s ]
+[ sql ] [ SQL ] select SUM(stock_num) as 'cnt' from hg_stock where mobile = '18646000214' [ RunTime:0.000111s ]
+[ sql ] [ SQL ] SELECT COUNT(*) as cnt FROM hg_patient WHERE operate_user_id = '322' [ RunTime:0.000140s ]
+[ sql ] [ SQL ] select SUM(stock_num) as 'cnt' from hg_stock where mobile = '18674503180' [ RunTime:0.000131s ]
+[ sql ] [ SQL ] SELECT COUNT(*) as cnt FROM hg_patient WHERE operate_user_id = '321' [ RunTime:0.000109s ]
+[ sql ] [ SQL ] select SUM(stock_num) as 'cnt' from hg_stock where mobile = '18629599871' [ RunTime:0.000126s ]
+[ sql ] [ SQL ] SELECT COUNT(*) as cnt FROM hg_patient WHERE operate_user_id = '320' [ RunTime:0.000133s ]
+[ sql ] [ SQL ] select SUM(stock_num) as 'cnt' from hg_stock where mobile = '18828093089' [ RunTime:0.000123s ]
+[ sql ] [ SQL ] SELECT COUNT(*) as cnt FROM hg_patient WHERE operate_user_id = '319' [ RunTime:0.000116s ]
+[ sql ] [ SQL ] select SUM(stock_num) as 'cnt' from hg_stock where mobile = '13518157114' [ RunTime:0.000111s ]
+[ sql ] [ SQL ] SELECT COUNT(*) as cnt FROM hg_patient WHERE operate_user_id = '318' [ RunTime:0.000141s ]
+[ sql ] [ SQL ] select SUM(stock_num) as 'cnt' from hg_stock where mobile = '18100612989' [ RunTime:0.000136s ]
+
+---------------------------------------------------------------
+[ 2018-01-23T20:37:38+08:00 ] 47.100.136.57 180.166.124.214 GET /public/admin.php/admin/patient/index
+[ log ] app.hugedental.cn/public/admin.php/admin/patient/index [运行时间：0.027428s][吞吐率：36.46req/s] [内存消耗：3,419.52kb] [文件加载：48]
+[ info ] [ LANG ] /www/wwwroot/app.hugedental.cn/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'patient',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'app.hugedental.cn',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.113 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://app.hugedental.cn/public/admin.php/admin/index',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'PHPSESSID=964unpsauj0lg834ib6jb04f37',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Patient->index[ /www/wwwroot/app.hugedental.cn/application/admin/controller/Patient.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /www/wwwroot/app.hugedental.cn/public/../application/admin/view/patient/index.html [ array (
+  0 => 'patient',
+  1 => 'page',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000317s ] mysql:dbname=huge;host=localhost;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hg_patient` [ RunTime:0.000718s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `hg_patient` `a` INNER JOIN `hg_false_tooth` `b` ON `a`.`false_tooth`=`b`.`false_tooth_id` LIMIT 1 [ RunTime:0.000183s ]
+[ sql ] [ SQL ] SELECT * FROM `hg_patient` `a` INNER JOIN `hg_false_tooth` `b` ON `a`.`false_tooth`=`b`.`false_tooth_id` ORDER BY patient_id desc LIMIT 0,10 [ RunTime:0.000223s ]
+
+---------------------------------------------------------------
+[ 2018-01-23T20:37:43+08:00 ] 47.100.136.57 180.166.124.214 GET /public/admin.php/admin/user/index
+[ log ] app.hugedental.cn/public/admin.php/admin/user/index [运行时间：0.034877s][吞吐率：28.67req/s] [内存消耗：3,623.68kb] [文件加载：50]
+[ info ] [ LANG ] /www/wwwroot/app.hugedental.cn/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'user',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'app.hugedental.cn',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.113 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://app.hugedental.cn/public/admin.php/admin/index',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'PHPSESSID=964unpsauj0lg834ib6jb04f37',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\User->index[ /www/wwwroot/app.hugedental.cn/application/admin/controller/User.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /www/wwwroot/app.hugedental.cn/public/../application/admin/view/user/index.html [ array (
+  0 => 'user',
+  1 => 'page',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000311s ] mysql:dbname=huge;host=localhost;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hg_user` [ RunTime:0.000844s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `hg_user` LIMIT 1 [ RunTime:0.000169s ]
+[ sql ] [ SQL ] SELECT * FROM `hg_user` ORDER BY user_id desc LIMIT 0,10 [ RunTime:0.000308s ]
+[ sql ] [ SQL ] SELECT COUNT(*) as cnt FROM hg_patient WHERE operate_user_id = '327' [ RunTime:0.000186s ]
+[ sql ] [ SQL ] select SUM(stock_num) as 'cnt' from hg_stock where mobile = '18227612334' [ RunTime:0.000142s ]
+[ sql ] [ SQL ] SELECT COUNT(*) as cnt FROM hg_patient WHERE operate_user_id = '326' [ RunTime:0.000105s ]
+[ sql ] [ SQL ] select SUM(stock_num) as 'cnt' from hg_stock where mobile = '18679185340' [ RunTime:0.000102s ]
+[ sql ] [ SQL ] SELECT COUNT(*) as cnt FROM hg_patient WHERE operate_user_id = '325' [ RunTime:0.000102s ]
+[ sql ] [ SQL ] select SUM(stock_num) as 'cnt' from hg_stock where mobile = '18931970631' [ RunTime:0.000138s ]
+[ sql ] [ SQL ] SELECT COUNT(*) as cnt FROM hg_patient WHERE operate_user_id = '324' [ RunTime:0.000121s ]
+[ sql ] [ SQL ] select SUM(stock_num) as 'cnt' from hg_stock where mobile = '15578008122' [ RunTime:0.000166s ]
+[ sql ] [ SQL ] SELECT COUNT(*) as cnt FROM hg_patient WHERE operate_user_id = '323' [ RunTime:0.000132s ]
+[ sql ] [ SQL ] select SUM(stock_num) as 'cnt' from hg_stock where mobile = '18646000214' [ RunTime:0.000103s ]
+[ sql ] [ SQL ] SELECT COUNT(*) as cnt FROM hg_patient WHERE operate_user_id = '322' [ RunTime:0.000115s ]
+[ sql ] [ SQL ] select SUM(stock_num) as 'cnt' from hg_stock where mobile = '18674503180' [ RunTime:0.000107s ]
+[ sql ] [ SQL ] SELECT COUNT(*) as cnt FROM hg_patient WHERE operate_user_id = '321' [ RunTime:0.000139s ]
+[ sql ] [ SQL ] select SUM(stock_num) as 'cnt' from hg_stock where mobile = '18629599871' [ RunTime:0.000117s ]
+[ sql ] [ SQL ] SELECT COUNT(*) as cnt FROM hg_patient WHERE operate_user_id = '320' [ RunTime:0.000107s ]
+[ sql ] [ SQL ] select SUM(stock_num) as 'cnt' from hg_stock where mobile = '18828093089' [ RunTime:0.000101s ]
+[ sql ] [ SQL ] SELECT COUNT(*) as cnt FROM hg_patient WHERE operate_user_id = '319' [ RunTime:0.000111s ]
+[ sql ] [ SQL ] select SUM(stock_num) as 'cnt' from hg_stock where mobile = '13518157114' [ RunTime:0.000102s ]
+[ sql ] [ SQL ] SELECT COUNT(*) as cnt FROM hg_patient WHERE operate_user_id = '318' [ RunTime:0.000133s ]
+[ sql ] [ SQL ] select SUM(stock_num) as 'cnt' from hg_stock where mobile = '18100612989' [ RunTime:0.000130s ]
+
+---------------------------------------------------------------
+[ 2018-01-23T21:08:02+08:00 ] 47.100.136.57 180.166.124.214 GET /public/admin.php/admin/user/index
+[ log ] app.hugedental.cn/public/admin.php/admin/user/index [运行时间：0.032446s][吞吐率：30.82req/s] [内存消耗：3,624.16kb] [文件加载：50]
+[ info ] [ LANG ] /www/wwwroot/app.hugedental.cn/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'user',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'app.hugedental.cn',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.113 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://app.hugedental.cn/public/admin.php/admin/index',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'PHPSESSID=964unpsauj0lg834ib6jb04f37',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\User->index[ /www/wwwroot/app.hugedental.cn/application/admin/controller/User.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /www/wwwroot/app.hugedental.cn/public/../application/admin/view/user/index.html [ array (
+  0 => 'user',
+  1 => 'page',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000273s ] mysql:dbname=huge;host=localhost;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hg_user` [ RunTime:0.000793s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `hg_user` LIMIT 1 [ RunTime:0.000264s ]
+[ sql ] [ SQL ] SELECT * FROM `hg_user` ORDER BY user_id desc LIMIT 0,10 [ RunTime:0.000369s ]
+[ sql ] [ SQL ] SELECT COUNT(*) as cnt FROM hg_patient WHERE operate_user_id = '329' [ RunTime:0.000232s ]
+[ sql ] [ SQL ] select SUM(stock_num) as 'cnt' from hg_stock where mobile = '18693143559' [ RunTime:0.000192s ]
+[ sql ] [ SQL ] SELECT COUNT(*) as cnt FROM hg_patient WHERE operate_user_id = '328' [ RunTime:0.000173s ]
+[ sql ] [ SQL ] select SUM(stock_num) as 'cnt' from hg_stock where mobile = '13858074654' [ RunTime:0.000160s ]
+[ sql ] [ SQL ] SELECT COUNT(*) as cnt FROM hg_patient WHERE operate_user_id = '327' [ RunTime:0.000105s ]
+[ sql ] [ SQL ] select SUM(stock_num) as 'cnt' from hg_stock where mobile = '18227612334' [ RunTime:0.000108s ]
+[ sql ] [ SQL ] SELECT COUNT(*) as cnt FROM hg_patient WHERE operate_user_id = '326' [ RunTime:0.000113s ]
+[ sql ] [ SQL ] select SUM(stock_num) as 'cnt' from hg_stock where mobile = '18679185340' [ RunTime:0.000104s ]
+[ sql ] [ SQL ] SELECT COUNT(*) as cnt FROM hg_patient WHERE operate_user_id = '325' [ RunTime:0.000105s ]
+[ sql ] [ SQL ] select SUM(stock_num) as 'cnt' from hg_stock where mobile = '18931970631' [ RunTime:0.000095s ]
+[ sql ] [ SQL ] SELECT COUNT(*) as cnt FROM hg_patient WHERE operate_user_id = '324' [ RunTime:0.000096s ]
+[ sql ] [ SQL ] select SUM(stock_num) as 'cnt' from hg_stock where mobile = '15578008122' [ RunTime:0.000099s ]
+[ sql ] [ SQL ] SELECT COUNT(*) as cnt FROM hg_patient WHERE operate_user_id = '323' [ RunTime:0.000098s ]
+[ sql ] [ SQL ] select SUM(stock_num) as 'cnt' from hg_stock where mobile = '18646000214' [ RunTime:0.000110s ]
+[ sql ] [ SQL ] SELECT COUNT(*) as cnt FROM hg_patient WHERE operate_user_id = '322' [ RunTime:0.000109s ]
+[ sql ] [ SQL ] select SUM(stock_num) as 'cnt' from hg_stock where mobile = '18674503180' [ RunTime:0.000100s ]
+[ sql ] [ SQL ] SELECT COUNT(*) as cnt FROM hg_patient WHERE operate_user_id = '321' [ RunTime:0.000098s ]
+[ sql ] [ SQL ] select SUM(stock_num) as 'cnt' from hg_stock where mobile = '18629599871' [ RunTime:0.000093s ]
+[ sql ] [ SQL ] SELECT COUNT(*) as cnt FROM hg_patient WHERE operate_user_id = '320' [ RunTime:0.000098s ]
+[ sql ] [ SQL ] select SUM(stock_num) as 'cnt' from hg_stock where mobile = '18828093089' [ RunTime:0.000093s ]
+
+---------------------------------------------------------------
+[ 2018-01-23T21:08:02+08:00 ] 47.100.136.57 180.166.124.214 GET /public/admin.php/admin/user/index
+[ log ] app.hugedental.cn/public/admin.php/admin/user/index [运行时间：0.032370s][吞吐率：30.89req/s] [内存消耗：3,624.16kb] [文件加载：50]
+[ info ] [ LANG ] /www/wwwroot/app.hugedental.cn/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'user',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'app.hugedental.cn',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.113 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://app.hugedental.cn/public/admin.php/admin/index',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'PHPSESSID=964unpsauj0lg834ib6jb04f37',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\User->index[ /www/wwwroot/app.hugedental.cn/application/admin/controller/User.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /www/wwwroot/app.hugedental.cn/public/../application/admin/view/user/index.html [ array (
+  0 => 'user',
+  1 => 'page',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000346s ] mysql:dbname=huge;host=localhost;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hg_user` [ RunTime:0.000898s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `hg_user` LIMIT 1 [ RunTime:0.000223s ]
+[ sql ] [ SQL ] SELECT * FROM `hg_user` ORDER BY user_id desc LIMIT 0,10 [ RunTime:0.000239s ]
+[ sql ] [ SQL ] SELECT COUNT(*) as cnt FROM hg_patient WHERE operate_user_id = '329' [ RunTime:0.000169s ]
+[ sql ] [ SQL ] select SUM(stock_num) as 'cnt' from hg_stock where mobile = '18693143559' [ RunTime:0.000135s ]
+[ sql ] [ SQL ] SELECT COUNT(*) as cnt FROM hg_patient WHERE operate_user_id = '328' [ RunTime:0.000107s ]
+[ sql ] [ SQL ] select SUM(stock_num) as 'cnt' from hg_stock where mobile = '13858074654' [ RunTime:0.000096s ]
+[ sql ] [ SQL ] SELECT COUNT(*) as cnt FROM hg_patient WHERE operate_user_id = '327' [ RunTime:0.000099s ]
+[ sql ] [ SQL ] select SUM(stock_num) as 'cnt' from hg_stock where mobile = '18227612334' [ RunTime:0.000168s ]
+[ sql ] [ SQL ] SELECT COUNT(*) as cnt FROM hg_patient WHERE operate_user_id = '326' [ RunTime:0.000116s ]
+[ sql ] [ SQL ] select SUM(stock_num) as 'cnt' from hg_stock where mobile = '18679185340' [ RunTime:0.000110s ]
+[ sql ] [ SQL ] SELECT COUNT(*) as cnt FROM hg_patient WHERE operate_user_id = '325' [ RunTime:0.000106s ]
+[ sql ] [ SQL ] select SUM(stock_num) as 'cnt' from hg_stock where mobile = '18931970631' [ RunTime:0.000100s ]
+[ sql ] [ SQL ] SELECT COUNT(*) as cnt FROM hg_patient WHERE operate_user_id = '324' [ RunTime:0.000102s ]
+[ sql ] [ SQL ] select SUM(stock_num) as 'cnt' from hg_stock where mobile = '15578008122' [ RunTime:0.000111s ]
+[ sql ] [ SQL ] SELECT COUNT(*) as cnt FROM hg_patient WHERE operate_user_id = '323' [ RunTime:0.000130s ]
+[ sql ] [ SQL ] select SUM(stock_num) as 'cnt' from hg_stock where mobile = '18646000214' [ RunTime:0.000104s ]
+[ sql ] [ SQL ] SELECT COUNT(*) as cnt FROM hg_patient WHERE operate_user_id = '322' [ RunTime:0.000104s ]
+[ sql ] [ SQL ] select SUM(stock_num) as 'cnt' from hg_stock where mobile = '18674503180' [ RunTime:0.000102s ]
+[ sql ] [ SQL ] SELECT COUNT(*) as cnt FROM hg_patient WHERE operate_user_id = '321' [ RunTime:0.000134s ]
+[ sql ] [ SQL ] select SUM(stock_num) as 'cnt' from hg_stock where mobile = '18629599871' [ RunTime:0.000101s ]
+[ sql ] [ SQL ] SELECT COUNT(*) as cnt FROM hg_patient WHERE operate_user_id = '320' [ RunTime:0.000113s ]
+[ sql ] [ SQL ] select SUM(stock_num) as 'cnt' from hg_stock where mobile = '18828093089' [ RunTime:0.000120s ]
+
+---------------------------------------------------------------
+[ 2018-01-23T21:08:02+08:00 ] 47.100.136.57 180.166.124.214 GET /public/admin.php/admin/user/index
+[ log ] app.hugedental.cn/public/admin.php/admin/user/index [运行时间：0.032315s][吞吐率：30.95req/s] [内存消耗：3,624.16kb] [文件加载：50]
+[ info ] [ LANG ] /www/wwwroot/app.hugedental.cn/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'user',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'app.hugedental.cn',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.113 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://app.hugedental.cn/public/admin.php/admin/index',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'PHPSESSID=964unpsauj0lg834ib6jb04f37',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\User->index[ /www/wwwroot/app.hugedental.cn/application/admin/controller/User.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /www/wwwroot/app.hugedental.cn/public/../application/admin/view/user/index.html [ array (
+  0 => 'user',
+  1 => 'page',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000279s ] mysql:dbname=huge;host=localhost;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hg_user` [ RunTime:0.000940s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `hg_user` LIMIT 1 [ RunTime:0.000163s ]
+[ sql ] [ SQL ] SELECT * FROM `hg_user` ORDER BY user_id desc LIMIT 0,10 [ RunTime:0.000250s ]
+[ sql ] [ SQL ] SELECT COUNT(*) as cnt FROM hg_patient WHERE operate_user_id = '329' [ RunTime:0.000165s ]
+[ sql ] [ SQL ] select SUM(stock_num) as 'cnt' from hg_stock where mobile = '18693143559' [ RunTime:0.000128s ]
+[ sql ] [ SQL ] SELECT COUNT(*) as cnt FROM hg_patient WHERE operate_user_id = '328' [ RunTime:0.000108s ]
+[ sql ] [ SQL ] select SUM(stock_num) as 'cnt' from hg_stock where mobile = '13858074654' [ RunTime:0.000113s ]
+[ sql ] [ SQL ] SELECT COUNT(*) as cnt FROM hg_patient WHERE operate_user_id = '327' [ RunTime:0.000125s ]
+[ sql ] [ SQL ] select SUM(stock_num) as 'cnt' from hg_stock where mobile = '18227612334' [ RunTime:0.000106s ]
+[ sql ] [ SQL ] SELECT COUNT(*) as cnt FROM hg_patient WHERE operate_user_id = '326' [ RunTime:0.000119s ]
+[ sql ] [ SQL ] select SUM(stock_num) as 'cnt' from hg_stock where mobile = '18679185340' [ RunTime:0.000148s ]
+[ sql ] [ SQL ] SELECT COUNT(*) as cnt FROM hg_patient WHERE operate_user_id = '325' [ RunTime:0.000111s ]
+[ sql ] [ SQL ] select SUM(stock_num) as 'cnt' from hg_stock where mobile = '18931970631' [ RunTime:0.000113s ]
+[ sql ] [ SQL ] SELECT COUNT(*) as cnt FROM hg_patient WHERE operate_user_id = '324' [ RunTime:0.000113s ]
+[ sql ] [ SQL ] select SUM(stock_num) as 'cnt' from hg_stock where mobile = '15578008122' [ RunTime:0.000133s ]
+[ sql ] [ SQL ] SELECT COUNT(*) as cnt FROM hg_patient WHERE operate_user_id = '323' [ RunTime:0.000120s ]
+[ sql ] [ SQL ] select SUM(stock_num) as 'cnt' from hg_stock where mobile = '18646000214' [ RunTime:0.000100s ]
+[ sql ] [ SQL ] SELECT COUNT(*) as cnt FROM hg_patient WHERE operate_user_id = '322' [ RunTime:0.000101s ]
+[ sql ] [ SQL ] select SUM(stock_num) as 'cnt' from hg_stock where mobile = '18674503180' [ RunTime:0.000097s ]
+[ sql ] [ SQL ] SELECT COUNT(*) as cnt FROM hg_patient WHERE operate_user_id = '321' [ RunTime:0.000127s ]
+[ sql ] [ SQL ] select SUM(stock_num) as 'cnt' from hg_stock where mobile = '18629599871' [ RunTime:0.000095s ]
+[ sql ] [ SQL ] SELECT COUNT(*) as cnt FROM hg_patient WHERE operate_user_id = '320' [ RunTime:0.000101s ]
+[ sql ] [ SQL ] select SUM(stock_num) as 'cnt' from hg_stock where mobile = '18828093089' [ RunTime:0.000106s ]
+
+---------------------------------------------------------------
+[ 2018-01-23T21:08:02+08:00 ] 47.100.136.57 180.166.124.214 GET /public/admin.php/admin/user/index
+[ log ] app.hugedental.cn/public/admin.php/admin/user/index [运行时间：0.032069s][吞吐率：31.18req/s] [内存消耗：3,624.16kb] [文件加载：50]
+[ info ] [ LANG ] /www/wwwroot/app.hugedental.cn/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'user',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'app.hugedental.cn',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.113 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://app.hugedental.cn/public/admin.php/admin/index',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'PHPSESSID=964unpsauj0lg834ib6jb04f37',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\User->index[ /www/wwwroot/app.hugedental.cn/application/admin/controller/User.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /www/wwwroot/app.hugedental.cn/public/../application/admin/view/user/index.html [ array (
+  0 => 'user',
+  1 => 'page',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000272s ] mysql:dbname=huge;host=localhost;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hg_user` [ RunTime:0.000771s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `hg_user` LIMIT 1 [ RunTime:0.000157s ]
+[ sql ] [ SQL ] SELECT * FROM `hg_user` ORDER BY user_id desc LIMIT 0,10 [ RunTime:0.000256s ]
+[ sql ] [ SQL ] SELECT COUNT(*) as cnt FROM hg_patient WHERE operate_user_id = '329' [ RunTime:0.000150s ]
+[ sql ] [ SQL ] select SUM(stock_num) as 'cnt' from hg_stock where mobile = '18693143559' [ RunTime:0.000116s ]
+[ sql ] [ SQL ] SELECT COUNT(*) as cnt FROM hg_patient WHERE operate_user_id = '328' [ RunTime:0.000108s ]
+[ sql ] [ SQL ] select SUM(stock_num) as 'cnt' from hg_stock where mobile = '13858074654' [ RunTime:0.000110s ]
+[ sql ] [ SQL ] SELECT COUNT(*) as cnt FROM hg_patient WHERE operate_user_id = '327' [ RunTime:0.000112s ]
+[ sql ] [ SQL ] select SUM(stock_num) as 'cnt' from hg_stock where mobile = '18227612334' [ RunTime:0.000098s ]
+[ sql ] [ SQL ] SELECT COUNT(*) as cnt FROM hg_patient WHERE operate_user_id = '326' [ RunTime:0.000099s ]
+[ sql ] [ SQL ] select SUM(stock_num) as 'cnt' from hg_stock where mobile = '18679185340' [ RunTime:0.000100s ]
+[ sql ] [ SQL ] SELECT COUNT(*) as cnt FROM hg_patient WHERE operate_user_id = '325' [ RunTime:0.000099s ]
+[ sql ] [ SQL ] select SUM(stock_num) as 'cnt' from hg_stock where mobile = '18931970631' [ RunTime:0.000108s ]
+[ sql ] [ SQL ] SELECT COUNT(*) as cnt FROM hg_patient WHERE operate_user_id = '324' [ RunTime:0.000114s ]
+[ sql ] [ SQL ] select SUM(stock_num) as 'cnt' from hg_stock where mobile = '15578008122' [ RunTime:0.000099s ]
+[ sql ] [ SQL ] SELECT COUNT(*) as cnt FROM hg_patient WHERE operate_user_id = '323' [ RunTime:0.000099s ]
+[ sql ] [ SQL ] select SUM(stock_num) as 'cnt' from hg_stock where mobile = '18646000214' [ RunTime:0.000094s ]
+[ sql ] [ SQL ] SELECT COUNT(*) as cnt FROM hg_patient WHERE operate_user_id = '322' [ RunTime:0.000097s ]
+[ sql ] [ SQL ] select SUM(stock_num) as 'cnt' from hg_stock where mobile = '18674503180' [ RunTime:0.000094s ]
+[ sql ] [ SQL ] SELECT COUNT(*) as cnt FROM hg_patient WHERE operate_user_id = '321' [ RunTime:0.000097s ]
+[ sql ] [ SQL ] select SUM(stock_num) as 'cnt' from hg_stock where mobile = '18629599871' [ RunTime:0.000112s ]
+[ sql ] [ SQL ] SELECT COUNT(*) as cnt FROM hg_patient WHERE operate_user_id = '320' [ RunTime:0.000099s ]
+[ sql ] [ SQL ] select SUM(stock_num) as 'cnt' from hg_stock where mobile = '18828093089' [ RunTime:0.000094s ]
+
+---------------------------------------------------------------
+[ 2018-01-23T21:08:03+08:00 ] 47.100.136.57 180.166.124.214 GET /public/admin.php/admin/user/index
+[ log ] app.hugedental.cn/public/admin.php/admin/user/index [运行时间：0.034580s][吞吐率：28.92req/s] [内存消耗：3,624.16kb] [文件加载：50]
+[ info ] [ LANG ] /www/wwwroot/app.hugedental.cn/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'user',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'app.hugedental.cn',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.113 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://app.hugedental.cn/public/admin.php/admin/index',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'PHPSESSID=964unpsauj0lg834ib6jb04f37',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\User->index[ /www/wwwroot/app.hugedental.cn/application/admin/controller/User.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /www/wwwroot/app.hugedental.cn/public/../application/admin/view/user/index.html [ array (
+  0 => 'user',
+  1 => 'page',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000309s ] mysql:dbname=huge;host=localhost;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hg_user` [ RunTime:0.000829s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `hg_user` LIMIT 1 [ RunTime:0.000178s ]
+[ sql ] [ SQL ] SELECT * FROM `hg_user` ORDER BY user_id desc LIMIT 0,10 [ RunTime:0.000290s ]
+[ sql ] [ SQL ] SELECT COUNT(*) as cnt FROM hg_patient WHERE operate_user_id = '329' [ RunTime:0.000159s ]
+[ sql ] [ SQL ] select SUM(stock_num) as 'cnt' from hg_stock where mobile = '18693143559' [ RunTime:0.000117s ]
+[ sql ] [ SQL ] SELECT COUNT(*) as cnt FROM hg_patient WHERE operate_user_id = '328' [ RunTime:0.000111s ]
+[ sql ] [ SQL ] select SUM(stock_num) as 'cnt' from hg_stock where mobile = '13858074654' [ RunTime:0.000118s ]
+[ sql ] [ SQL ] SELECT COUNT(*) as cnt FROM hg_patient WHERE operate_user_id = '327' [ RunTime:0.000112s ]
+[ sql ] [ SQL ] select SUM(stock_num) as 'cnt' from hg_stock where mobile = '18227612334' [ RunTime:0.000116s ]
+[ sql ] [ SQL ] SELECT COUNT(*) as cnt FROM hg_patient WHERE operate_user_id = '326' [ RunTime:0.000114s ]
+[ sql ] [ SQL ] select SUM(stock_num) as 'cnt' from hg_stock where mobile = '18679185340' [ RunTime:0.000107s ]
+[ sql ] [ SQL ] SELECT COUNT(*) as cnt FROM hg_patient WHERE operate_user_id = '325' [ RunTime:0.000105s ]
+[ sql ] [ SQL ] select SUM(stock_num) as 'cnt' from hg_stock where mobile = '18931970631' [ RunTime:0.000114s ]
+[ sql ] [ SQL ] SELECT COUNT(*) as cnt FROM hg_patient WHERE operate_user_id = '324' [ RunTime:0.000105s ]
+[ sql ] [ SQL ] select SUM(stock_num) as 'cnt' from hg_stock where mobile = '15578008122' [ RunTime:0.000101s ]
+[ sql ] [ SQL ] SELECT COUNT(*) as cnt FROM hg_patient WHERE operate_user_id = '323' [ RunTime:0.000116s ]
+[ sql ] [ SQL ] select SUM(stock_num) as 'cnt' from hg_stock where mobile = '18646000214' [ RunTime:0.000103s ]
+[ sql ] [ SQL ] SELECT COUNT(*) as cnt FROM hg_patient WHERE operate_user_id = '322' [ RunTime:0.000105s ]
+[ sql ] [ SQL ] select SUM(stock_num) as 'cnt' from hg_stock where mobile = '18674503180' [ RunTime:0.000102s ]
+[ sql ] [ SQL ] SELECT COUNT(*) as cnt FROM hg_patient WHERE operate_user_id = '321' [ RunTime:0.000125s ]
+[ sql ] [ SQL ] select SUM(stock_num) as 'cnt' from hg_stock where mobile = '18629599871' [ RunTime:0.000101s ]
+[ sql ] [ SQL ] SELECT COUNT(*) as cnt FROM hg_patient WHERE operate_user_id = '320' [ RunTime:0.000112s ]
+[ sql ] [ SQL ] select SUM(stock_num) as 'cnt' from hg_stock where mobile = '18828093089' [ RunTime:0.000115s ]
+
+---------------------------------------------------------------

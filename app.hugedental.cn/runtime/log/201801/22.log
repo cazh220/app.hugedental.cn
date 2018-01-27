@@ -1,0 +1,2190 @@
+[ 2018-01-22T00:19:18+08:00 ] 47.100.136.57 180.157.199.76 GET /public/admin.php/admin/admin/index
+[ log ] app.hugedental.cn/public/admin.php/admin/admin/index [运行时间：0.241033s][吞吐率：4.15req/s] [内存消耗：3,637.05kb] [文件加载：52]
+[ info ] [ LANG ] /www/wwwroot/app.hugedental.cn/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'admin',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'app.hugedental.cn',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://app.hugedental.cn/public/admin.php/admin/index',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=9n0ahvcjutjpe8q9eet3036oj7',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Admin->index[ /www/wwwroot/app.hugedental.cn/application/admin/controller/Admin.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /www/wwwroot/app.hugedental.cn/public/../application/admin/view/admin/index.html [ array (
+  0 => 'list',
+  1 => 'page',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000325s ] mysql:dbname=huge;host=localhost;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hg_admin_users` [ RunTime:0.000767s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `hg_admin_users` LIMIT 1 [ RunTime:0.000318s ]
+[ sql ] [ SQL ] SELECT * FROM `hg_admin_users` ORDER BY admin_id asc LIMIT 0,10 [ RunTime:0.000250s ]
+
+---------------------------------------------------------------
+[ 2018-01-22T00:19:21+08:00 ] 47.100.136.57 180.157.199.76 GET /public/admin.php/admin/user/index
+[ log ] app.hugedental.cn/public/admin.php/admin/user/index [运行时间：0.129395s][吞吐率：7.73req/s] [内存消耗：3,624.52kb] [文件加载：50]
+[ info ] [ LANG ] /www/wwwroot/app.hugedental.cn/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'user',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'app.hugedental.cn',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://app.hugedental.cn/public/admin.php/admin/index',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=9n0ahvcjutjpe8q9eet3036oj7',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\User->index[ /www/wwwroot/app.hugedental.cn/application/admin/controller/User.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /www/wwwroot/app.hugedental.cn/public/../application/admin/view/user/index.html [ array (
+  0 => 'user',
+  1 => 'page',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000314s ] mysql:dbname=huge;host=localhost;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hg_user` [ RunTime:0.000842s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `hg_user` LIMIT 1 [ RunTime:0.000240s ]
+[ sql ] [ SQL ] SELECT * FROM `hg_user` ORDER BY user_id desc LIMIT 0,10 [ RunTime:0.000320s ]
+[ sql ] [ SQL ] SELECT COUNT(*) as cnt FROM hg_patient WHERE operate_user_id = '303' [ RunTime:0.000428s ]
+[ sql ] [ SQL ] select count(*) as 'cnt' from hg_stock where mobile = '18343206292' [ RunTime:0.000212s ]
+[ sql ] [ SQL ] SELECT COUNT(*) as cnt FROM hg_patient WHERE operate_user_id = '302' [ RunTime:0.000210s ]
+[ sql ] [ SQL ] select count(*) as 'cnt' from hg_stock where mobile = '18903790234' [ RunTime:0.000185s ]
+[ sql ] [ SQL ] SELECT COUNT(*) as cnt FROM hg_patient WHERE operate_user_id = '301' [ RunTime:0.000222s ]
+[ sql ] [ SQL ] select count(*) as 'cnt' from hg_stock where mobile = '18721225113' [ RunTime:0.000175s ]
+[ sql ] [ SQL ] SELECT COUNT(*) as cnt FROM hg_patient WHERE operate_user_id = '300' [ RunTime:0.000212s ]
+[ sql ] [ SQL ] select count(*) as 'cnt' from hg_stock where mobile = '18253286663' [ RunTime:0.000218s ]
+[ sql ] [ SQL ] SELECT COUNT(*) as cnt FROM hg_patient WHERE operate_user_id = '299' [ RunTime:0.000234s ]
+[ sql ] [ SQL ] select count(*) as 'cnt' from hg_stock where mobile = '15275247799' [ RunTime:0.000187s ]
+[ sql ] [ SQL ] SELECT COUNT(*) as cnt FROM hg_patient WHERE operate_user_id = '298' [ RunTime:0.000187s ]
+[ sql ] [ SQL ] select count(*) as 'cnt' from hg_stock where mobile = '18952752006' [ RunTime:0.000174s ]
+[ sql ] [ SQL ] SELECT COUNT(*) as cnt FROM hg_patient WHERE operate_user_id = '297' [ RunTime:0.000167s ]
+[ sql ] [ SQL ] select count(*) as 'cnt' from hg_stock where mobile = '13972074522' [ RunTime:0.000166s ]
+[ sql ] [ SQL ] SELECT COUNT(*) as cnt FROM hg_patient WHERE operate_user_id = '296' [ RunTime:0.000168s ]
+[ sql ] [ SQL ] select count(*) as 'cnt' from hg_stock where mobile = '18353239442' [ RunTime:0.000182s ]
+[ sql ] [ SQL ] SELECT COUNT(*) as cnt FROM hg_patient WHERE operate_user_id = '295' [ RunTime:0.000201s ]
+[ sql ] [ SQL ] select count(*) as 'cnt' from hg_stock where mobile = '18780063690' [ RunTime:0.000160s ]
+[ sql ] [ SQL ] SELECT COUNT(*) as cnt FROM hg_patient WHERE operate_user_id = '294' [ RunTime:0.000160s ]
+[ sql ] [ SQL ] select count(*) as 'cnt' from hg_stock where mobile = '13947211945' [ RunTime:0.000154s ]
+
+---------------------------------------------------------------
+[ 2018-01-22T00:19:28+08:00 ] 47.100.136.57 180.157.199.76 GET /public/admin.php/admin/patient/index
+[ log ] app.hugedental.cn/public/admin.php/admin/patient/index [运行时间：0.056285s][吞吐率：17.77req/s] [内存消耗：3,419.41kb] [文件加载：48]
+[ info ] [ LANG ] /www/wwwroot/app.hugedental.cn/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'patient',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'app.hugedental.cn',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://app.hugedental.cn/public/admin.php/admin/index',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=9n0ahvcjutjpe8q9eet3036oj7',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Patient->index[ /www/wwwroot/app.hugedental.cn/application/admin/controller/Patient.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /www/wwwroot/app.hugedental.cn/public/../application/admin/view/patient/index.html [ array (
+  0 => 'patient',
+  1 => 'page',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000361s ] mysql:dbname=huge;host=localhost;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hg_patient` [ RunTime:0.000766s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `hg_patient` `a` INNER JOIN `hg_false_tooth` `b` ON `a`.`false_tooth`=`b`.`false_tooth_id` LIMIT 1 [ RunTime:0.000441s ]
+[ sql ] [ SQL ] SELECT * FROM `hg_patient` `a` INNER JOIN `hg_false_tooth` `b` ON `a`.`false_tooth`=`b`.`false_tooth_id` ORDER BY patient_id desc LIMIT 0,10 [ RunTime:0.000377s ]
+
+---------------------------------------------------------------
+[ 2018-01-22T00:20:40+08:00 ] 47.100.136.57 180.157.199.76 GET /public/admin.php/admin/patient/index
+[ log ] app.hugedental.cn/public/admin.php/admin/patient/index [运行时间：0.027188s][吞吐率：36.78req/s] [内存消耗：3,419.29kb] [文件加载：48]
+[ info ] [ LANG ] /www/wwwroot/app.hugedental.cn/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'patient',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'app.hugedental.cn',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://app.hugedental.cn/public/admin.php/admin/index',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=9n0ahvcjutjpe8q9eet3036oj7',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Patient->index[ /www/wwwroot/app.hugedental.cn/application/admin/controller/Patient.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /www/wwwroot/app.hugedental.cn/public/../application/admin/view/patient/index.html [ array (
+  0 => 'patient',
+  1 => 'page',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000322s ] mysql:dbname=huge;host=localhost;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hg_patient` [ RunTime:0.000856s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `hg_patient` `a` INNER JOIN `hg_false_tooth` `b` ON `a`.`false_tooth`=`b`.`false_tooth_id` LIMIT 1 [ RunTime:0.000189s ]
+[ sql ] [ SQL ] SELECT * FROM `hg_patient` `a` INNER JOIN `hg_false_tooth` `b` ON `a`.`false_tooth`=`b`.`false_tooth_id` ORDER BY patient_id desc LIMIT 0,10 [ RunTime:0.000227s ]
+
+---------------------------------------------------------------
+[ 2018-01-22T00:35:58+08:00 ] 47.100.136.57 180.157.199.76 GET /public/admin.php/admin/patient/index
+[ log ] app.hugedental.cn/public/admin.php/admin/patient/index [运行时间：0.038626s][吞吐率：25.89req/s] [内存消耗：3,694.25kb] [文件加载：50]
+[ info ] [ LANG ] /www/wwwroot/app.hugedental.cn/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'patient',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'app.hugedental.cn',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://app.hugedental.cn/public/admin.php/admin/index',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=9n0ahvcjutjpe8q9eet3036oj7',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Patient->index[ /www/wwwroot/app.hugedental.cn/application/admin/controller/Patient.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /www/wwwroot/app.hugedental.cn/public/../application/admin/view/patient/index.html [ array (
+  0 => 'patient',
+  1 => 'page',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000308s ] mysql:dbname=huge;host=localhost;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hg_patient` [ RunTime:0.000732s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `hg_patient` `a` INNER JOIN `hg_false_tooth` `b` ON `a`.`false_tooth`=`b`.`false_tooth_id` LIMIT 1 [ RunTime:0.000195s ]
+[ sql ] [ SQL ] SELECT * FROM `hg_patient` `a` INNER JOIN `hg_false_tooth` `b` ON `a`.`false_tooth`=`b`.`false_tooth_id` ORDER BY patient_id desc LIMIT 0,10 [ RunTime:0.000245s ]
+
+---------------------------------------------------------------
+[ 2018-01-22T00:35:59+08:00 ] 47.100.136.57 180.157.199.76 GET /public/admin.php/admin/patient/index
+[ log ] app.hugedental.cn/public/admin.php/admin/patient/index [运行时间：0.027983s][吞吐率：35.74req/s] [内存消耗：3,419.40kb] [文件加载：48]
+[ info ] [ LANG ] /www/wwwroot/app.hugedental.cn/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'patient',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'app.hugedental.cn',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://app.hugedental.cn/public/admin.php/admin/index',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=9n0ahvcjutjpe8q9eet3036oj7',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Patient->index[ /www/wwwroot/app.hugedental.cn/application/admin/controller/Patient.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /www/wwwroot/app.hugedental.cn/public/../application/admin/view/patient/index.html [ array (
+  0 => 'patient',
+  1 => 'page',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000465s ] mysql:dbname=huge;host=localhost;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hg_patient` [ RunTime:0.000792s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `hg_patient` `a` INNER JOIN `hg_false_tooth` `b` ON `a`.`false_tooth`=`b`.`false_tooth_id` LIMIT 1 [ RunTime:0.000200s ]
+[ sql ] [ SQL ] SELECT * FROM `hg_patient` `a` INNER JOIN `hg_false_tooth` `b` ON `a`.`false_tooth`=`b`.`false_tooth_id` ORDER BY patient_id desc LIMIT 0,10 [ RunTime:0.000255s ]
+
+---------------------------------------------------------------
+[ 2018-01-22T00:36:50+08:00 ] 47.100.136.57 180.157.199.76 GET /public/admin.php/admin/patient/index
+[ log ] app.hugedental.cn/public/admin.php/admin/patient/index [运行时间：0.029617s][吞吐率：33.76req/s] [内存消耗：3,694.25kb] [文件加载：50]
+[ info ] [ LANG ] /www/wwwroot/app.hugedental.cn/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'patient',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'app.hugedental.cn',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://app.hugedental.cn/public/admin.php/admin/index',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=9n0ahvcjutjpe8q9eet3036oj7',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Patient->index[ /www/wwwroot/app.hugedental.cn/application/admin/controller/Patient.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /www/wwwroot/app.hugedental.cn/public/../application/admin/view/patient/index.html [ array (
+  0 => 'patient',
+  1 => 'page',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000358s ] mysql:dbname=huge;host=localhost;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hg_patient` [ RunTime:0.000796s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `hg_patient` `a` INNER JOIN `hg_false_tooth` `b` ON `a`.`false_tooth`=`b`.`false_tooth_id` LIMIT 1 [ RunTime:0.000185s ]
+[ sql ] [ SQL ] SELECT * FROM `hg_patient` `a` INNER JOIN `hg_false_tooth` `b` ON `a`.`false_tooth`=`b`.`false_tooth_id` ORDER BY patient_id desc LIMIT 0,10 [ RunTime:0.000237s ]
+
+---------------------------------------------------------------
+[ 2018-01-22T10:18:18+08:00 ] 47.100.136.57 180.169.104.41 GET /public/admin.php/admin/index/login
+[ log ] app.hugedental.cn/public/admin.php/admin/index/login [运行时间：0.016791s][吞吐率：59.56req/s] [内存消耗：1,964.25kb] [文件加载：39]
+[ info ] [ LANG ] /www/wwwroot/app.hugedental.cn/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'app.hugedental.cn',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.108 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=8c4rashcq9nttfhltuvqhgkj93',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Index->login[ /www/wwwroot/app.hugedental.cn/application/admin/controller/Index.php ]
+[ info ] [ VIEW ] /www/wwwroot/app.hugedental.cn/public/../application/admin/view/index/login.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2018-01-22T10:18:19+08:00 ] 47.100.136.57 180.169.104.41 GET /public/admin.php/captcha.html
+[ log ] app.hugedental.cn/public/admin.php/captcha.html [运行时间：0.015494s][吞吐率：64.54req/s] [内存消耗：1,572.07kb] [文件加载：32]
+[ info ] [ LANG ] /www/wwwroot/app.hugedental.cn/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'method',
+  'method' => 
+  array (
+    0 => '\\think\\captcha\\CaptchaController',
+    1 => 'index',
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'app.hugedental.cn',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.108 Safari/537.36',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'referer' => 'http://app.hugedental.cn/public/admin.php/admin/index/login',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=8c4rashcq9nttfhltuvqhgkj93',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'id' => NULL,
+)
+[ info ] [ RUN ] think\captcha\CaptchaController->index[ /www/wwwroot/app.hugedental.cn/vendor/topthink/think-captcha/src/CaptchaController.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2018-01-22T10:18:24+08:00 ] 47.100.136.57 180.169.104.41 POST /public/admin.php/admin/index/doLogin
+[ log ] app.hugedental.cn/public/admin.php/admin/index/doLogin [运行时间：0.025785s][吞吐率：38.78req/s] [内存消耗：3,267.87kb] [文件加载：46]
+[ info ] [ LANG ] /www/wwwroot/app.hugedental.cn/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'doLogin',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'app.hugedental.cn',
+  'connection' => 'keep-alive',
+  'content-length' => '53',
+  'cache-control' => 'max-age=0',
+  'origin' => 'http://app.hugedental.cn',
+  'upgrade-insecure-requests' => '1',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.108 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://app.hugedental.cn/public/admin.php/admin/index/login',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=8c4rashcq9nttfhltuvqhgkj93',
+)
+[ info ] [ PARAM ] array (
+  'username' => '18621902751',
+  'password' => '123456',
+  'verify_code' => '9452',
+)
+[ info ] [ RUN ] app\admin\controller\Index->doLogin[ /www/wwwroot/app.hugedental.cn/application/admin/controller/Index.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000369s ] mysql:dbname=huge;host=localhost;charset=utf8
+[ sql ] [ SQL ] select *  from hg_admin_users where username= '18621902751' AND password= 'e10adc3949ba59abbe56e057f20f883e' ORDER BY admin_id DESC [ RunTime:0.000431s ]
+[ error ] 18621902751用户名或密码错误！
+
+---------------------------------------------------------------
+[ 2018-01-22T10:18:29+08:00 ] 47.100.136.57 180.169.104.41 GET /public/admin.php/admin/index/login?1516587504
+[ log ] app.hugedental.cn/public/admin.php/admin/index/login?1516587504 [运行时间：0.018772s][吞吐率：53.27req/s] [内存消耗：1,965.12kb] [文件加载：39]
+[ info ] [ LANG ] /www/wwwroot/app.hugedental.cn/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'app.hugedental.cn',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.108 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://app.hugedental.cn/public/admin.php/admin/index/doLogin',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=8c4rashcq9nttfhltuvqhgkj93',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  0 => '',
+)
+[ info ] [ RUN ] app\admin\controller\Index->login[ /www/wwwroot/app.hugedental.cn/application/admin/controller/Index.php ]
+[ info ] [ VIEW ] /www/wwwroot/app.hugedental.cn/public/../application/admin/view/index/login.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2018-01-22T10:18:29+08:00 ] 47.100.136.57 180.169.104.41 GET /public/admin.php/captcha.html
+[ log ] app.hugedental.cn/public/admin.php/captcha.html [运行时间：0.015350s][吞吐率：65.15req/s] [内存消耗：1,572.27kb] [文件加载：32]
+[ info ] [ LANG ] /www/wwwroot/app.hugedental.cn/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'method',
+  'method' => 
+  array (
+    0 => '\\think\\captcha\\CaptchaController',
+    1 => 'index',
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'app.hugedental.cn',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.108 Safari/537.36',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'referer' => 'http://app.hugedental.cn/public/admin.php/admin/index/login?1516587504',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=8c4rashcq9nttfhltuvqhgkj93',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'id' => NULL,
+)
+[ info ] [ RUN ] think\captcha\CaptchaController->index[ /www/wwwroot/app.hugedental.cn/vendor/topthink/think-captcha/src/CaptchaController.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2018-01-22T10:18:37+08:00 ] 47.100.136.57 180.169.104.41 POST /public/admin.php/admin/index/doLogin
+[ log ] app.hugedental.cn/public/admin.php/admin/index/doLogin [运行时间：0.029325s][吞吐率：34.10req/s] [内存消耗：3,354.66kb] [文件加载：47]
+[ info ] [ LANG ] /www/wwwroot/app.hugedental.cn/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'doLogin',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'app.hugedental.cn',
+  'connection' => 'keep-alive',
+  'content-length' => '47',
+  'cache-control' => 'max-age=0',
+  'origin' => 'http://app.hugedental.cn',
+  'upgrade-insecure-requests' => '1',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.108 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://app.hugedental.cn/public/admin.php/admin/index/login?1516587504',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=8c4rashcq9nttfhltuvqhgkj93',
+)
+[ info ] [ PARAM ] array (
+  'username' => 'admin',
+  'password' => '123456',
+  'verify_code' => '5216',
+)
+[ info ] [ RUN ] app\admin\controller\Index->doLogin[ /www/wwwroot/app.hugedental.cn/application/admin/controller/Index.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] admin登录成功;
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000300s ] mysql:dbname=huge;host=localhost;charset=utf8
+[ sql ] [ SQL ] select *  from hg_admin_users where username= 'admin' AND password= 'e10adc3949ba59abbe56e057f20f883e' ORDER BY admin_id DESC [ RunTime:0.000509s ]
+[ sql ] [ SQL ] SELECT * FROM hg_admin_action WHERE status = 0 AND action_code IN ('admin','admin_list','user','user_list','credits_shop','gift_list','patient_list','order_list','security_code','security_code_list','security_code_create','wx','wx_menu','stock','stock_list','message','message_list','message_send','security_code_create_list','reverse_pwd','credit_set','repaire_type','repaire_type_detail','fangweima','note','register','credit_rule','import_qrcode') [ RunTime:0.000344s ]
+[ sql ] [ SQL ] update hg_admin_users set last_login_time= '2018-01-22 10:18:37',last_ip= '180.169.104.41' where admin_id= '1' [ RunTime:0.004380s ]
+
+---------------------------------------------------------------
+[ 2018-01-22T10:18:37+08:00 ] 47.100.136.57 180.169.104.41 GET /public/admin.php/admin/index
+[ log ] app.hugedental.cn/public/admin.php/admin/index [运行时间：0.015371s][吞吐率：65.06req/s] [内存消耗：1,890.73kb] [文件加载：38]
+[ info ] [ LANG ] /www/wwwroot/app.hugedental.cn/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'app.hugedental.cn',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.108 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://app.hugedental.cn/public/admin.php/admin/index/login?1516587504',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=8c4rashcq9nttfhltuvqhgkj93',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Index->index[ /www/wwwroot/app.hugedental.cn/application/admin/controller/Index.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] /www/wwwroot/app.hugedental.cn/public/../application/admin/view/index/index.html [ array (
+  0 => 'menu',
+  1 => 'username',
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2018-01-22T10:18:44+08:00 ] 47.100.136.57 180.169.104.41 GET /public/admin.php/admin/admin/index
+[ log ] app.hugedental.cn/public/admin.php/admin/admin/index [运行时间：0.026596s][吞吐率：37.60req/s] [内存消耗：3,409.79kb] [文件加载：50]
+[ info ] [ LANG ] /www/wwwroot/app.hugedental.cn/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'admin',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'app.hugedental.cn',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.108 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://app.hugedental.cn/public/admin.php/admin/index',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=8c4rashcq9nttfhltuvqhgkj93',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Admin->index[ /www/wwwroot/app.hugedental.cn/application/admin/controller/Admin.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /www/wwwroot/app.hugedental.cn/public/../application/admin/view/admin/index.html [ array (
+  0 => 'list',
+  1 => 'page',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000295s ] mysql:dbname=huge;host=localhost;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hg_admin_users` [ RunTime:0.000667s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `hg_admin_users` LIMIT 1 [ RunTime:0.000240s ]
+[ sql ] [ SQL ] SELECT * FROM `hg_admin_users` ORDER BY admin_id asc LIMIT 0,10 [ RunTime:0.000203s ]
+
+---------------------------------------------------------------
+[ 2018-01-22T10:18:47+08:00 ] 47.100.136.57 180.169.104.41 GET /public/admin.php/admin/admin/index?page=2
+[ log ] app.hugedental.cn/public/admin.php/admin/admin/index?page=2 [运行时间：0.028798s][吞吐率：34.72req/s] [内存消耗：3,402.26kb] [文件加载：50]
+[ info ] [ LANG ] /www/wwwroot/app.hugedental.cn/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'admin',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'app.hugedental.cn',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.108 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://app.hugedental.cn/public/admin.php/admin/admin/index',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=8c4rashcq9nttfhltuvqhgkj93',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'page' => '2',
+)
+[ info ] [ RUN ] app\admin\controller\Admin->index[ /www/wwwroot/app.hugedental.cn/application/admin/controller/Admin.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /www/wwwroot/app.hugedental.cn/public/../application/admin/view/admin/index.html [ array (
+  0 => 'list',
+  1 => 'page',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000305s ] mysql:dbname=huge;host=localhost;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hg_admin_users` [ RunTime:0.000659s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `hg_admin_users` LIMIT 1 [ RunTime:0.000158s ]
+[ sql ] [ SQL ] SELECT * FROM `hg_admin_users` ORDER BY admin_id asc LIMIT 10,10 [ RunTime:0.000216s ]
+
+---------------------------------------------------------------
+[ 2018-01-22T10:18:50+08:00 ] 47.100.136.57 180.169.104.41 GET /public/admin.php/admin/admin/edit?admin_id=28
+[ log ] app.hugedental.cn/public/admin.php/admin/admin/edit?admin_id=28 [运行时间：0.028246s][吞吐率：35.40req/s] [内存消耗：3,498.18kb] [文件加载：49]
+[ info ] [ LANG ] /www/wwwroot/app.hugedental.cn/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'admin',
+    2 => 'edit',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'app.hugedental.cn',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.108 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://app.hugedental.cn/public/admin.php/admin/admin/index?page=2',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=8c4rashcq9nttfhltuvqhgkj93',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'admin_id' => '28',
+)
+[ info ] [ RUN ] app\admin\controller\Admin->edit[ /www/wwwroot/app.hugedental.cn/application/admin/controller/Admin.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /www/wwwroot/app.hugedental.cn/public/../application/admin/view/admin/edit.html [ array (
+  0 => 'prev_data',
+  1 => 'data',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000291s ] mysql:dbname=huge;host=localhost;charset=utf8
+[ sql ] [ SQL ] select * from hg_admin_users where admin_id = '28' [ RunTime:0.000467s ]
+[ sql ] [ SQL ] SELECT * FROM hg_admin_action WHERE status = 0 [ RunTime:0.000263s ]
+[ sql ] [ SQL ] select action_list from hg_admin_users where admin_id = '28' [ RunTime:0.000175s ]
+
+---------------------------------------------------------------
+[ 2018-01-22T10:18:59+08:00 ] 47.100.136.57 180.169.104.41 POST /public/admin.php/admin/admin/edit_admin_user
+[ log ] app.hugedental.cn/public/admin.php/admin/admin/edit_admin_user [运行时间：0.027795s][吞吐率：35.98req/s] [内存消耗：3,236.27kb] [文件加载：46]
+[ info ] [ LANG ] /www/wwwroot/app.hugedental.cn/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'admin',
+    2 => 'edit_admin_user',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'app.hugedental.cn',
+  'connection' => 'keep-alive',
+  'content-length' => '650',
+  'cache-control' => 'max-age=0',
+  'origin' => 'http://app.hugedental.cn',
+  'upgrade-insecure-requests' => '1',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.108 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://app.hugedental.cn/public/admin.php/admin/admin/edit?admin_id=28',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=8c4rashcq9nttfhltuvqhgkj93',
+)
+[ info ] [ PARAM ] array (
+  'admin_id' => '28',
+  'username' => '王伟娜',
+  'role_id' => '1',
+  'mobile' => '18621902751',
+  'is_frozen' => '0',
+  'permission' => 
+  array (
+    0 => '72',
+    1 => '73',
+    2 => '94',
+    3 => '95',
+    4 => '96',
+    5 => '97',
+    6 => '98',
+    7 => '99',
+    8 => '74',
+    9 => '75',
+    10 => '78',
+    11 => '92',
+    12 => '76',
+    13 => '77',
+    14 => '79',
+    15 => '93',
+    16 => '80',
+    17 => '81',
+    18 => '82',
+    19 => '90',
+    20 => '100',
+    21 => '83',
+    22 => '84',
+    23 => '85',
+    24 => '86',
+    25 => '87',
+    26 => '88',
+    27 => '89',
+  ),
+)
+[ info ] [ RUN ] app\admin\controller\Admin->edit_admin_user[ /www/wwwroot/app.hugedental.cn/application/admin/controller/Admin.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000301s ] mysql:dbname=huge;host=localhost;charset=utf8
+[ sql ] [ SQL ] select action_code from hg_admin_action where action_id IN (72,73,94,95,96,97,98,99,74,75,78,92,76,77,79,93,80,81,82,90,100,83,84,85,86,87,88,89) [ RunTime:0.000563s ]
+[ sql ] [ SQL ] update hg_admin_users set username = '王伟娜', mobile = '18621902751', role_id = '1', action_list = 'admin,admin_list,user,user_list,credits_shop,gift_list,patient_list,order_list,security_code,security_code_list,security_code_create,wx,wx_menu,stock,stock_list,message,message_list,message_send,security_code_create_list,reverse_pwd,credit_set,repaire_type,repaire_type_detail,fangweima,note,register,credit_rule,import_qrcode', is_frozen = '0', last_login_time = '2018-01-22 10:18:59', last_ip = '180.169.104.41' where admin_id = '28' [ RunTime:0.003757s ]
+
+---------------------------------------------------------------
+[ 2018-01-22T10:18:59+08:00 ] 47.100.136.57 180.169.104.41 GET /public/admin.php/admin/admin/index
+[ log ] app.hugedental.cn/public/admin.php/admin/admin/index [运行时间：0.027834s][吞吐率：35.93req/s] [内存消耗：3,409.93kb] [文件加载：50]
+[ info ] [ LANG ] /www/wwwroot/app.hugedental.cn/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'admin',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'app.hugedental.cn',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.108 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://app.hugedental.cn/public/admin.php/admin/admin/edit_admin_user',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=8c4rashcq9nttfhltuvqhgkj93',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Admin->index[ /www/wwwroot/app.hugedental.cn/application/admin/controller/Admin.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /www/wwwroot/app.hugedental.cn/public/../application/admin/view/admin/index.html [ array (
+  0 => 'list',
+  1 => 'page',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000310s ] mysql:dbname=huge;host=localhost;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hg_admin_users` [ RunTime:0.000672s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `hg_admin_users` LIMIT 1 [ RunTime:0.000228s ]
+[ sql ] [ SQL ] SELECT * FROM `hg_admin_users` ORDER BY admin_id asc LIMIT 0,10 [ RunTime:0.000239s ]
+
+---------------------------------------------------------------
+[ 2018-01-22T10:19:10+08:00 ] 47.100.136.57 180.169.104.41 GET /public/admin.php/admin/admin/index?page=2
+[ log ] app.hugedental.cn/public/admin.php/admin/admin/index?page=2 [运行时间：0.027474s][吞吐率：36.40req/s] [内存消耗：3,402.26kb] [文件加载：50]
+[ info ] [ LANG ] /www/wwwroot/app.hugedental.cn/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'admin',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'app.hugedental.cn',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.108 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://app.hugedental.cn/public/admin.php/admin/admin/index',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=8c4rashcq9nttfhltuvqhgkj93',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'page' => '2',
+)
+[ info ] [ RUN ] app\admin\controller\Admin->index[ /www/wwwroot/app.hugedental.cn/application/admin/controller/Admin.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /www/wwwroot/app.hugedental.cn/public/../application/admin/view/admin/index.html [ array (
+  0 => 'list',
+  1 => 'page',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000334s ] mysql:dbname=huge;host=localhost;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hg_admin_users` [ RunTime:0.000825s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `hg_admin_users` LIMIT 1 [ RunTime:0.000190s ]
+[ sql ] [ SQL ] SELECT * FROM `hg_admin_users` ORDER BY admin_id asc LIMIT 10,10 [ RunTime:0.000274s ]
+
+---------------------------------------------------------------
+[ 2018-01-22T10:19:12+08:00 ] 47.100.136.57 180.169.104.41 GET /public/admin.php/admin/admin/edit_password?admin_id=28&admin_name=%E7%8E%8B%E4%BC%9F%E5%A8%9C
+[ log ] app.hugedental.cn/public/admin.php/admin/admin/edit_password?admin_id=28&admin_name=%E7%8E%8B%E4%BC%9F%E5%A8%9C [运行时间：0.017654s][吞吐率：56.64req/s] [内存消耗：2,107.65kb] [文件加载：40]
+[ info ] [ LANG ] /www/wwwroot/app.hugedental.cn/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'admin',
+    2 => 'edit_password',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'app.hugedental.cn',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.108 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://app.hugedental.cn/public/admin.php/admin/admin/index?page=2',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=8c4rashcq9nttfhltuvqhgkj93',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'admin_id' => '28',
+  'admin_name' => '王伟娜',
+)
+[ info ] [ RUN ] app\admin\controller\Admin->edit_password[ /www/wwwroot/app.hugedental.cn/application/admin/controller/Admin.php ]
+[ info ] [ VIEW ] /www/wwwroot/app.hugedental.cn/public/../application/admin/view/admin/edit_password.html [ array (
+  0 => 'data',
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2018-01-22T10:19:41+08:00 ] 47.100.136.57 180.169.104.41 POST /public/admin.php/admin/admin/edit_password_action
+[ log ] app.hugedental.cn/public/admin.php/admin/admin/edit_password_action [运行时间：0.021796s][吞吐率：45.88req/s] [内存消耗：2,179.86kb] [文件加载：41]
+[ info ] [ LANG ] /www/wwwroot/app.hugedental.cn/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'admin',
+    2 => 'edit_password_action',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'app.hugedental.cn',
+  'connection' => 'keep-alive',
+  'content-length' => '59',
+  'cache-control' => 'max-age=0',
+  'origin' => 'http://app.hugedental.cn',
+  'upgrade-insecure-requests' => '1',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.108 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://app.hugedental.cn/public/admin.php/admin/admin/edit_password?admin_id=28&admin_name=%E7%8E%8B%E4%BC%9F%E5%A8%9C',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=8c4rashcq9nttfhltuvqhgkj93',
+)
+[ info ] [ PARAM ] array (
+  'admin_id' => '28',
+  'password' => 'vina275412965',
+  'repassword' => 'vina275412965',
+)
+[ info ] [ RUN ] app\admin\controller\Admin->edit_password_action[ /www/wwwroot/app.hugedental.cn/application/admin/controller/Admin.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000339s ] mysql:dbname=huge;host=localhost;charset=utf8
+[ sql ] [ SQL ] update hg_admin_users set password = '6b8e7bd086b23d7a7003895eb36d2b62' where admin_id = '28' [ RunTime:0.003755s ]
+
+---------------------------------------------------------------
+[ 2018-01-22T10:19:41+08:00 ] 47.100.136.57 180.169.104.41 GET /public/admin.php/admin/admin/index
+[ log ] app.hugedental.cn/public/admin.php/admin/admin/index [运行时间：0.027526s][吞吐率：36.33req/s] [内存消耗：3,410.12kb] [文件加载：50]
+[ info ] [ LANG ] /www/wwwroot/app.hugedental.cn/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'admin',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'app.hugedental.cn',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.108 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://app.hugedental.cn/public/admin.php/admin/admin/edit_password_action',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=8c4rashcq9nttfhltuvqhgkj93',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Admin->index[ /www/wwwroot/app.hugedental.cn/application/admin/controller/Admin.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /www/wwwroot/app.hugedental.cn/public/../application/admin/view/admin/index.html [ array (
+  0 => 'list',
+  1 => 'page',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000317s ] mysql:dbname=huge;host=localhost;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hg_admin_users` [ RunTime:0.000689s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `hg_admin_users` LIMIT 1 [ RunTime:0.000320s ]
+[ sql ] [ SQL ] SELECT * FROM `hg_admin_users` ORDER BY admin_id asc LIMIT 0,10 [ RunTime:0.000265s ]
+
+---------------------------------------------------------------
+[ 2018-01-22T10:19:46+08:00 ] 47.100.136.57 180.169.104.41 GET /public/admin.php/admin/index/logout
+[ log ] app.hugedental.cn/public/admin.php/admin/index/logout [运行时间：0.015291s][吞吐率：65.40req/s] [内存消耗：1,792.85kb] [文件加载：35]
+[ info ] [ LANG ] /www/wwwroot/app.hugedental.cn/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'logout',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'app.hugedental.cn',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.108 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://app.hugedental.cn/public/admin.php/admin/index',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=8c4rashcq9nttfhltuvqhgkj93',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Index->logout[ /www/wwwroot/app.hugedental.cn/application/admin/controller/Index.php ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2018-01-22T10:19:46+08:00 ] 47.100.136.57 180.169.104.41 GET /public/admin.php/admin/index/login
+[ log ] app.hugedental.cn/public/admin.php/admin/index/login [运行时间：0.018173s][吞吐率：55.03req/s] [内存消耗：1,964.30kb] [文件加载：39]
+[ info ] [ LANG ] /www/wwwroot/app.hugedental.cn/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'app.hugedental.cn',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.108 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://app.hugedental.cn/public/admin.php/admin/index',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=8c4rashcq9nttfhltuvqhgkj93',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Index->login[ /www/wwwroot/app.hugedental.cn/application/admin/controller/Index.php ]
+[ info ] [ VIEW ] /www/wwwroot/app.hugedental.cn/public/../application/admin/view/index/login.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2018-01-22T10:19:46+08:00 ] 47.100.136.57 180.169.104.41 GET /public/admin.php/captcha.html
+[ log ] app.hugedental.cn/public/admin.php/captcha.html [运行时间：0.015502s][吞吐率：64.51req/s] [内存消耗：1,575.22kb] [文件加载：32]
+[ info ] [ LANG ] /www/wwwroot/app.hugedental.cn/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'method',
+  'method' => 
+  array (
+    0 => '\\think\\captcha\\CaptchaController',
+    1 => 'index',
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'app.hugedental.cn',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.108 Safari/537.36',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'referer' => 'http://app.hugedental.cn/public/admin.php/admin/index/login',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=8c4rashcq9nttfhltuvqhgkj93',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'id' => NULL,
+)
+[ info ] [ RUN ] think\captcha\CaptchaController->index[ /www/wwwroot/app.hugedental.cn/vendor/topthink/think-captcha/src/CaptchaController.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2018-01-22T10:19:57+08:00 ] 47.100.136.57 180.169.104.41 POST /public/admin.php/admin/index/doLogin
+[ log ] app.hugedental.cn/public/admin.php/admin/index/doLogin [运行时间：0.026410s][吞吐率：37.86req/s] [内存消耗：3,271.19kb] [文件加载：46]
+[ info ] [ LANG ] /www/wwwroot/app.hugedental.cn/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'doLogin',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'app.hugedental.cn',
+  'connection' => 'keep-alive',
+  'content-length' => '60',
+  'cache-control' => 'max-age=0',
+  'origin' => 'http://app.hugedental.cn',
+  'upgrade-insecure-requests' => '1',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.108 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://app.hugedental.cn/public/admin.php/admin/index/login',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=8c4rashcq9nttfhltuvqhgkj93',
+)
+[ info ] [ PARAM ] array (
+  'username' => '18621902751',
+  'password' => 'vina275412965',
+  'verify_code' => '1916',
+)
+[ info ] [ RUN ] app\admin\controller\Index->doLogin[ /www/wwwroot/app.hugedental.cn/application/admin/controller/Index.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000351s ] mysql:dbname=huge;host=localhost;charset=utf8
+[ sql ] [ SQL ] select *  from hg_admin_users where username= '18621902751' AND password= '6b8e7bd086b23d7a7003895eb36d2b62' ORDER BY admin_id DESC [ RunTime:0.000409s ]
+[ error ] 18621902751用户名或密码错误！
+
+---------------------------------------------------------------
+[ 2018-01-22T10:19:59+08:00 ] 47.100.136.57 180.169.104.41 GET /public/admin.php/admin/index/login?1516587597
+[ log ] app.hugedental.cn/public/admin.php/admin/index/login?1516587597 [运行时间：0.017292s][吞吐率：57.83req/s] [内存消耗：1,965.12kb] [文件加载：39]
+[ info ] [ LANG ] /www/wwwroot/app.hugedental.cn/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'app.hugedental.cn',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.108 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://app.hugedental.cn/public/admin.php/admin/index/doLogin',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=8c4rashcq9nttfhltuvqhgkj93',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  0 => '',
+)
+[ info ] [ RUN ] app\admin\controller\Index->login[ /www/wwwroot/app.hugedental.cn/application/admin/controller/Index.php ]
+[ info ] [ VIEW ] /www/wwwroot/app.hugedental.cn/public/../application/admin/view/index/login.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2018-01-22T10:19:59+08:00 ] 47.100.136.57 180.169.104.41 GET /public/admin.php/captcha.html
+[ log ] app.hugedental.cn/public/admin.php/captcha.html [运行时间：0.013769s][吞吐率：72.63req/s] [内存消耗：1,575.33kb] [文件加载：32]
+[ info ] [ LANG ] /www/wwwroot/app.hugedental.cn/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'method',
+  'method' => 
+  array (
+    0 => '\\think\\captcha\\CaptchaController',
+    1 => 'index',
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'app.hugedental.cn',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.108 Safari/537.36',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'referer' => 'http://app.hugedental.cn/public/admin.php/admin/index/login?1516587597',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=8c4rashcq9nttfhltuvqhgkj93',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'id' => NULL,
+)
+[ info ] [ RUN ] think\captcha\CaptchaController->index[ /www/wwwroot/app.hugedental.cn/vendor/topthink/think-captcha/src/CaptchaController.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2018-01-22T10:20:07+08:00 ] 47.100.136.57 180.169.104.41 POST /public/admin.php/admin/index/doLogin
+[ log ] app.hugedental.cn/public/admin.php/admin/index/doLogin [运行时间：0.016457s][吞吐率：60.76req/s] [内存消耗：1,936.50kb] [文件加载：37]
+[ info ] [ LANG ] /www/wwwroot/app.hugedental.cn/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'doLogin',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'app.hugedental.cn',
+  'connection' => 'keep-alive',
+  'content-length' => '47',
+  'cache-control' => 'max-age=0',
+  'origin' => 'http://app.hugedental.cn',
+  'upgrade-insecure-requests' => '1',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.108 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://app.hugedental.cn/public/admin.php/admin/index/login?1516587597',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=8c4rashcq9nttfhltuvqhgkj93',
+)
+[ info ] [ PARAM ] array (
+  'username' => 'admin',
+  'password' => '123456',
+  'verify_code' => '7725',
+)
+[ info ] [ RUN ] app\admin\controller\Index->doLogin[ /www/wwwroot/app.hugedental.cn/application/admin/controller/Index.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2018-01-22T10:20:09+08:00 ] 47.100.136.57 180.169.104.41 GET /public/admin.php/admin/index/login?1516587607
+[ log ] app.hugedental.cn/public/admin.php/admin/index/login?1516587607 [运行时间：0.018040s][吞吐率：55.43req/s] [内存消耗：1,965.12kb] [文件加载：39]
+[ info ] [ LANG ] /www/wwwroot/app.hugedental.cn/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'app.hugedental.cn',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.108 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://app.hugedental.cn/public/admin.php/admin/index/doLogin',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=8c4rashcq9nttfhltuvqhgkj93',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  0 => '',
+)
+[ info ] [ RUN ] app\admin\controller\Index->login[ /www/wwwroot/app.hugedental.cn/application/admin/controller/Index.php ]
+[ info ] [ VIEW ] /www/wwwroot/app.hugedental.cn/public/../application/admin/view/index/login.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2018-01-22T10:20:09+08:00 ] 47.100.136.57 180.169.104.41 GET /public/admin.php/captcha.html
+[ log ] app.hugedental.cn/public/admin.php/captcha.html [运行时间：0.014426s][吞吐率：69.32req/s] [内存消耗：1,575.45kb] [文件加载：32]
+[ info ] [ LANG ] /www/wwwroot/app.hugedental.cn/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'method',
+  'method' => 
+  array (
+    0 => '\\think\\captcha\\CaptchaController',
+    1 => 'index',
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'app.hugedental.cn',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.108 Safari/537.36',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'referer' => 'http://app.hugedental.cn/public/admin.php/admin/index/login?1516587607',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=8c4rashcq9nttfhltuvqhgkj93',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'id' => NULL,
+)
+[ info ] [ RUN ] think\captcha\CaptchaController->index[ /www/wwwroot/app.hugedental.cn/vendor/topthink/think-captcha/src/CaptchaController.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2018-01-22T10:20:14+08:00 ] 47.100.136.57 180.169.104.41 POST /public/admin.php/admin/index/doLogin
+[ log ] app.hugedental.cn/public/admin.php/admin/index/doLogin [运行时间：0.029555s][吞吐率：33.84req/s] [内存消耗：3,354.66kb] [文件加载：47]
+[ info ] [ LANG ] /www/wwwroot/app.hugedental.cn/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'doLogin',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'app.hugedental.cn',
+  'connection' => 'keep-alive',
+  'content-length' => '47',
+  'cache-control' => 'max-age=0',
+  'origin' => 'http://app.hugedental.cn',
+  'upgrade-insecure-requests' => '1',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.108 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://app.hugedental.cn/public/admin.php/admin/index/login?1516587607',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=8c4rashcq9nttfhltuvqhgkj93',
+)
+[ info ] [ PARAM ] array (
+  'username' => 'admin',
+  'password' => '123456',
+  'verify_code' => '3600',
+)
+[ info ] [ RUN ] app\admin\controller\Index->doLogin[ /www/wwwroot/app.hugedental.cn/application/admin/controller/Index.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] admin登录成功;
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000327s ] mysql:dbname=huge;host=localhost;charset=utf8
+[ sql ] [ SQL ] select *  from hg_admin_users where username= 'admin' AND password= 'e10adc3949ba59abbe56e057f20f883e' ORDER BY admin_id DESC [ RunTime:0.000611s ]
+[ sql ] [ SQL ] SELECT * FROM hg_admin_action WHERE status = 0 AND action_code IN ('admin','admin_list','user','user_list','credits_shop','gift_list','patient_list','order_list','security_code','security_code_list','security_code_create','wx','wx_menu','stock','stock_list','message','message_list','message_send','security_code_create_list','reverse_pwd','credit_set','repaire_type','repaire_type_detail','fangweima','note','register','credit_rule','import_qrcode') [ RunTime:0.000225s ]
+[ sql ] [ SQL ] update hg_admin_users set last_login_time= '2018-01-22 10:20:14',last_ip= '180.169.104.41' where admin_id= '1' [ RunTime:0.004067s ]
+
+---------------------------------------------------------------
+[ 2018-01-22T10:20:14+08:00 ] 47.100.136.57 180.169.104.41 GET /public/admin.php/admin/index
+[ log ] app.hugedental.cn/public/admin.php/admin/index [运行时间：0.015247s][吞吐率：65.59req/s] [内存消耗：1,890.73kb] [文件加载：38]
+[ info ] [ LANG ] /www/wwwroot/app.hugedental.cn/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'app.hugedental.cn',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.108 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://app.hugedental.cn/public/admin.php/admin/index/login?1516587607',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=8c4rashcq9nttfhltuvqhgkj93',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Index->index[ /www/wwwroot/app.hugedental.cn/application/admin/controller/Index.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] /www/wwwroot/app.hugedental.cn/public/../application/admin/view/index/index.html [ array (
+  0 => 'menu',
+  1 => 'username',
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2018-01-22T10:20:47+08:00 ] 47.100.136.57 180.169.104.41 GET /public/admin.php/admin/patient/index
+[ log ] app.hugedental.cn/public/admin.php/admin/patient/index [运行时间：0.028626s][吞吐率：34.93req/s] [内存消耗：3,418.95kb] [文件加载：48]
+[ info ] [ LANG ] /www/wwwroot/app.hugedental.cn/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'patient',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'app.hugedental.cn',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.108 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://app.hugedental.cn/public/admin.php/admin/index',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=8c4rashcq9nttfhltuvqhgkj93',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Patient->index[ /www/wwwroot/app.hugedental.cn/application/admin/controller/Patient.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /www/wwwroot/app.hugedental.cn/public/../application/admin/view/patient/index.html [ array (
+  0 => 'patient',
+  1 => 'page',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000311s ] mysql:dbname=huge;host=localhost;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hg_patient` [ RunTime:0.000742s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `hg_patient` `a` INNER JOIN `hg_false_tooth` `b` ON `a`.`false_tooth`=`b`.`false_tooth_id` LIMIT 1 [ RunTime:0.000186s ]
+[ sql ] [ SQL ] SELECT * FROM `hg_patient` `a` INNER JOIN `hg_false_tooth` `b` ON `a`.`false_tooth`=`b`.`false_tooth_id` ORDER BY patient_id desc LIMIT 0,10 [ RunTime:0.000214s ]
+
+---------------------------------------------------------------
+[ 2018-01-22T10:20:58+08:00 ] 47.100.136.57 180.169.104.41 GET /public/admin.php/admin/user/index
+[ log ] app.hugedental.cn/public/admin.php/admin/user/index [运行时间：0.032246s][吞吐率：31.01req/s] [内存消耗：3,624.18kb] [文件加载：50]
+[ info ] [ LANG ] /www/wwwroot/app.hugedental.cn/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'user',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'app.hugedental.cn',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.108 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://app.hugedental.cn/public/admin.php/admin/index',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=8c4rashcq9nttfhltuvqhgkj93',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\User->index[ /www/wwwroot/app.hugedental.cn/application/admin/controller/User.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /www/wwwroot/app.hugedental.cn/public/../application/admin/view/user/index.html [ array (
+  0 => 'user',
+  1 => 'page',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000291s ] mysql:dbname=huge;host=localhost;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hg_user` [ RunTime:0.000801s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `hg_user` LIMIT 1 [ RunTime:0.000192s ]
+[ sql ] [ SQL ] SELECT * FROM `hg_user` ORDER BY user_id desc LIMIT 0,10 [ RunTime:0.000282s ]
+[ sql ] [ SQL ] SELECT COUNT(*) as cnt FROM hg_patient WHERE operate_user_id = '303' [ RunTime:0.000148s ]
+[ sql ] [ SQL ] select count(*) as 'cnt' from hg_stock where mobile = '18343206292' [ RunTime:0.000108s ]
+[ sql ] [ SQL ] SELECT COUNT(*) as cnt FROM hg_patient WHERE operate_user_id = '302' [ RunTime:0.000101s ]
+[ sql ] [ SQL ] select count(*) as 'cnt' from hg_stock where mobile = '18903790234' [ RunTime:0.000094s ]
+[ sql ] [ SQL ] SELECT COUNT(*) as cnt FROM hg_patient WHERE operate_user_id = '301' [ RunTime:0.000104s ]
+[ sql ] [ SQL ] select count(*) as 'cnt' from hg_stock where mobile = '18721225113' [ RunTime:0.000093s ]
+[ sql ] [ SQL ] SELECT COUNT(*) as cnt FROM hg_patient WHERE operate_user_id = '300' [ RunTime:0.000101s ]
+[ sql ] [ SQL ] select count(*) as 'cnt' from hg_stock where mobile = '18253286663' [ RunTime:0.000093s ]
+[ sql ] [ SQL ] SELECT COUNT(*) as cnt FROM hg_patient WHERE operate_user_id = '299' [ RunTime:0.000097s ]
+[ sql ] [ SQL ] select count(*) as 'cnt' from hg_stock where mobile = '15275247799' [ RunTime:0.000093s ]
+[ sql ] [ SQL ] SELECT COUNT(*) as cnt FROM hg_patient WHERE operate_user_id = '298' [ RunTime:0.000098s ]
+[ sql ] [ SQL ] select count(*) as 'cnt' from hg_stock where mobile = '18952752006' [ RunTime:0.000100s ]
+[ sql ] [ SQL ] SELECT COUNT(*) as cnt FROM hg_patient WHERE operate_user_id = '297' [ RunTime:0.000103s ]
+[ sql ] [ SQL ] select count(*) as 'cnt' from hg_stock where mobile = '13972074522' [ RunTime:0.000149s ]
+[ sql ] [ SQL ] SELECT COUNT(*) as cnt FROM hg_patient WHERE operate_user_id = '296' [ RunTime:0.000145s ]
+[ sql ] [ SQL ] select count(*) as 'cnt' from hg_stock where mobile = '18353239442' [ RunTime:0.000134s ]
+[ sql ] [ SQL ] SELECT COUNT(*) as cnt FROM hg_patient WHERE operate_user_id = '295' [ RunTime:0.000138s ]
+[ sql ] [ SQL ] select count(*) as 'cnt' from hg_stock where mobile = '18780063690' [ RunTime:0.000129s ]
+[ sql ] [ SQL ] SELECT COUNT(*) as cnt FROM hg_patient WHERE operate_user_id = '294' [ RunTime:0.000150s ]
+[ sql ] [ SQL ] select count(*) as 'cnt' from hg_stock where mobile = '13947211945' [ RunTime:0.000131s ]
+
+---------------------------------------------------------------
+[ 2018-01-22T10:21:11+08:00 ] 47.100.136.57 180.169.104.41 GET /public/admin.php/admin/user/index?page=2
+[ log ] app.hugedental.cn/public/admin.php/admin/user/index?page=2 [运行时间：0.033261s][吞吐率：30.07req/s] [内存消耗：3,625.20kb] [文件加载：50]
+[ info ] [ LANG ] /www/wwwroot/app.hugedental.cn/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'user',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'app.hugedental.cn',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.108 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://app.hugedental.cn/public/admin.php/admin/user/index',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=8c4rashcq9nttfhltuvqhgkj93',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'page' => '2',
+)
+[ info ] [ RUN ] app\admin\controller\User->index[ /www/wwwroot/app.hugedental.cn/application/admin/controller/User.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /www/wwwroot/app.hugedental.cn/public/../application/admin/view/user/index.html [ array (
+  0 => 'user',
+  1 => 'page',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000280s ] mysql:dbname=huge;host=localhost;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hg_user` [ RunTime:0.000855s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `hg_user` LIMIT 1 [ RunTime:0.000166s ]
+[ sql ] [ SQL ] SELECT * FROM `hg_user` ORDER BY user_id desc LIMIT 10,10 [ RunTime:0.000384s ]
+[ sql ] [ SQL ] SELECT COUNT(*) as cnt FROM hg_patient WHERE operate_user_id = '293' [ RunTime:0.000241s ]
+[ sql ] [ SQL ] select count(*) as 'cnt' from hg_stock where mobile = '15333715918' [ RunTime:0.000183s ]
+[ sql ] [ SQL ] SELECT COUNT(*) as cnt FROM hg_patient WHERE operate_user_id = '292' [ RunTime:0.000205s ]
+[ sql ] [ SQL ] select count(*) as 'cnt' from hg_stock where mobile = '13980890490' [ RunTime:0.000163s ]
+[ sql ] [ SQL ] SELECT COUNT(*) as cnt FROM hg_patient WHERE operate_user_id = '291' [ RunTime:0.000167s ]
+[ sql ] [ SQL ] select count(*) as 'cnt' from hg_stock where mobile = '13621594142' [ RunTime:0.000170s ]
+[ sql ] [ SQL ] SELECT COUNT(*) as cnt FROM hg_patient WHERE operate_user_id = '290' [ RunTime:0.000174s ]
+[ sql ] [ SQL ] select count(*) as 'cnt' from hg_stock where mobile = '15821124322' [ RunTime:0.000161s ]
+[ sql ] [ SQL ] SELECT COUNT(*) as cnt FROM hg_patient WHERE operate_user_id = '289' [ RunTime:0.000152s ]
+[ sql ] [ SQL ] select count(*) as 'cnt' from hg_stock where mobile = '13762721139' [ RunTime:0.000148s ]
+[ sql ] [ SQL ] SELECT COUNT(*) as cnt FROM hg_patient WHERE operate_user_id = '288' [ RunTime:0.000155s ]
+[ sql ] [ SQL ] select count(*) as 'cnt' from hg_stock where mobile = '13816704909' [ RunTime:0.000161s ]
+[ sql ] [ SQL ] SELECT COUNT(*) as cnt FROM hg_patient WHERE operate_user_id = '287' [ RunTime:0.000161s ]
+[ sql ] [ SQL ] select count(*) as 'cnt' from hg_stock where mobile = '18185171823' [ RunTime:0.000150s ]
+[ sql ] [ SQL ] SELECT COUNT(*) as cnt FROM hg_patient WHERE operate_user_id = '286' [ RunTime:0.000150s ]
+[ sql ] [ SQL ] select count(*) as 'cnt' from hg_stock where mobile = '17621485886' [ RunTime:0.000152s ]
+[ sql ] [ SQL ] SELECT COUNT(*) as cnt FROM hg_patient WHERE operate_user_id = '285' [ RunTime:0.000164s ]
+[ sql ] [ SQL ] select count(*) as 'cnt' from hg_stock where mobile = '18209619981' [ RunTime:0.000150s ]
+[ sql ] [ SQL ] SELECT COUNT(*) as cnt FROM hg_patient WHERE operate_user_id = '284' [ RunTime:0.000154s ]
+[ sql ] [ SQL ] select count(*) as 'cnt' from hg_stock where mobile = '18053766900' [ RunTime:0.000150s ]
+
+---------------------------------------------------------------
+[ 2018-01-22T10:21:18+08:00 ] 47.100.136.57 180.169.104.41 GET /public/admin.php/admin/user/index?page=3
+[ log ] app.hugedental.cn/public/admin.php/admin/user/index?page=3 [运行时间：0.032413s][吞吐率：30.85req/s] [内存消耗：3,625.24kb] [文件加载：50]
+[ info ] [ LANG ] /www/wwwroot/app.hugedental.cn/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'user',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'app.hugedental.cn',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.108 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://app.hugedental.cn/public/admin.php/admin/user/index?page=2',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=8c4rashcq9nttfhltuvqhgkj93',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'page' => '3',
+)
+[ info ] [ RUN ] app\admin\controller\User->index[ /www/wwwroot/app.hugedental.cn/application/admin/controller/User.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /www/wwwroot/app.hugedental.cn/public/../application/admin/view/user/index.html [ array (
+  0 => 'user',
+  1 => 'page',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000267s ] mysql:dbname=huge;host=localhost;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hg_user` [ RunTime:0.000848s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `hg_user` LIMIT 1 [ RunTime:0.000164s ]
+[ sql ] [ SQL ] SELECT * FROM `hg_user` ORDER BY user_id desc LIMIT 20,10 [ RunTime:0.000368s ]
+[ sql ] [ SQL ] SELECT COUNT(*) as cnt FROM hg_patient WHERE operate_user_id = '283' [ RunTime:0.000233s ]
+[ sql ] [ SQL ] select count(*) as 'cnt' from hg_stock where mobile = '15921762628' [ RunTime:0.000171s ]
+[ sql ] [ SQL ] SELECT COUNT(*) as cnt FROM hg_patient WHERE operate_user_id = '281' [ RunTime:0.000154s ]
+[ sql ] [ SQL ] select count(*) as 'cnt' from hg_stock where mobile = '18670393499' [ RunTime:0.000162s ]
+[ sql ] [ SQL ] SELECT COUNT(*) as cnt FROM hg_patient WHERE operate_user_id = '280' [ RunTime:0.000162s ]
+[ sql ] [ SQL ] select count(*) as 'cnt' from hg_stock where mobile = '18721225112' [ RunTime:0.000157s ]
+[ sql ] [ SQL ] SELECT COUNT(*) as cnt FROM hg_patient WHERE operate_user_id = '272' [ RunTime:0.000149s ]
+[ sql ] [ SQL ] select count(*) as 'cnt' from hg_stock where mobile = '13570462894' [ RunTime:0.000151s ]
+[ sql ] [ SQL ] SELECT COUNT(*) as cnt FROM hg_patient WHERE operate_user_id = '264' [ RunTime:0.000156s ]
+[ sql ] [ SQL ] select count(*) as 'cnt' from hg_stock where mobile = '18721225105' [ RunTime:0.000216s ]
+[ sql ] [ SQL ] SELECT COUNT(*) as cnt FROM hg_patient WHERE operate_user_id = '263' [ RunTime:0.000175s ]
+[ sql ] [ SQL ] select count(*) as 'cnt' from hg_stock where mobile = '18721225104' [ RunTime:0.000157s ]
+[ sql ] [ SQL ] SELECT COUNT(*) as cnt FROM hg_patient WHERE operate_user_id = '262' [ RunTime:0.000195s ]
+[ sql ] [ SQL ] select count(*) as 'cnt' from hg_stock where mobile = '18721225103' [ RunTime:0.000165s ]
+[ sql ] [ SQL ] SELECT COUNT(*) as cnt FROM hg_patient WHERE operate_user_id = '260' [ RunTime:0.000170s ]
+[ sql ] [ SQL ] select count(*) as 'cnt' from hg_stock where mobile = '18225876893' [ RunTime:0.000159s ]
+[ sql ] [ SQL ] SELECT COUNT(*) as cnt FROM hg_patient WHERE operate_user_id = '259' [ RunTime:0.000150s ]
+[ sql ] [ SQL ] select count(*) as 'cnt' from hg_stock where mobile = '13621956833' [ RunTime:0.000150s ]
+[ sql ] [ SQL ] SELECT COUNT(*) as cnt FROM hg_patient WHERE operate_user_id = '258' [ RunTime:0.000159s ]
+[ sql ] [ SQL ] select count(*) as 'cnt' from hg_stock where mobile = '18621902751' [ RunTime:0.000157s ]
+
+---------------------------------------------------------------
+[ 2018-01-22T15:30:06+08:00 ] 47.100.136.57 180.169.104.41 GET /public/admin.php/admin/index/login
+[ log ] app.hugedental.cn/public/admin.php/admin/index/login [运行时间：0.017567s][吞吐率：56.93req/s] [内存消耗：1,963.86kb] [文件加载：39]
+[ info ] [ LANG ] /www/wwwroot/app.hugedental.cn/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept' => 'text/html, application/xhtml+xml, image/jxr, */*',
+  'accept-language' => 'zh-CN',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.116 Safari/537.36 Edge/15.15063',
+  'accept-encoding' => 'gzip, deflate',
+  'host' => 'app.hugedental.cn',
+  'connection' => 'Keep-Alive',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Index->login[ /www/wwwroot/app.hugedental.cn/application/admin/controller/Index.php ]
+[ info ] [ VIEW ] /www/wwwroot/app.hugedental.cn/public/../application/admin/view/index/login.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2018-01-22T15:30:06+08:00 ] 47.100.136.57 180.169.104.41 GET /public/admin.php/captcha.html
+[ log ] app.hugedental.cn/public/admin.php/captcha.html [运行时间：0.014099s][吞吐率：70.93req/s] [内存消耗：1,572.20kb] [文件加载：32]
+[ info ] [ LANG ] /www/wwwroot/app.hugedental.cn/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'method',
+  'method' => 
+  array (
+    0 => '\\think\\captcha\\CaptchaController',
+    1 => 'index',
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept' => 'image/png, image/svg+xml, image/jxr, image/*;q=0.8, */*;q=0.5',
+  'referer' => 'http://app.hugedental.cn/public/admin.php/admin/index/login',
+  'accept-language' => 'zh-CN',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.116 Safari/537.36 Edge/15.15063',
+  'accept-encoding' => 'gzip, deflate',
+  'host' => 'app.hugedental.cn',
+  'connection' => 'Keep-Alive',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'id' => NULL,
+)
+[ info ] [ RUN ] think\captcha\CaptchaController->index[ /www/wwwroot/app.hugedental.cn/vendor/topthink/think-captcha/src/CaptchaController.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2018-01-22T15:30:15+08:00 ] 47.100.136.57 180.169.104.41 POST /public/admin.php/admin/index/doLogin
+[ log ] app.hugedental.cn/public/admin.php/admin/index/doLogin [运行时间：0.029264s][吞吐率：34.17req/s] [内存消耗：3,354.30kb] [文件加载：47]
+[ info ] [ LANG ] /www/wwwroot/app.hugedental.cn/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'doLogin',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept' => 'text/html, application/xhtml+xml, image/jxr, */*',
+  'referer' => 'http://app.hugedental.cn/public/admin.php/admin/index/login',
+  'accept-language' => 'zh-CN',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.116 Safari/537.36 Edge/15.15063',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'accept-encoding' => 'gzip, deflate',
+  'host' => 'app.hugedental.cn',
+  'content-length' => '47',
+  'connection' => 'Keep-Alive',
+  'cache-control' => 'no-cache',
+  'cookie' => 'PHPSESSID=vt1b5ifu1qhk15o470p20teei5',
+)
+[ info ] [ PARAM ] array (
+  'username' => 'admin',
+  'password' => '123456',
+  'verify_code' => '4715',
+)
+[ info ] [ RUN ] app\admin\controller\Index->doLogin[ /www/wwwroot/app.hugedental.cn/application/admin/controller/Index.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] admin登录成功;
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000340s ] mysql:dbname=huge;host=localhost;charset=utf8
+[ sql ] [ SQL ] select *  from hg_admin_users where username= 'admin' AND password= 'e10adc3949ba59abbe56e057f20f883e' ORDER BY admin_id DESC [ RunTime:0.000438s ]
+[ sql ] [ SQL ] SELECT * FROM hg_admin_action WHERE status = 0 AND action_code IN ('admin','admin_list','user','user_list','credits_shop','gift_list','patient_list','order_list','security_code','security_code_list','security_code_create','wx','wx_menu','stock','stock_list','message','message_list','message_send','security_code_create_list','reverse_pwd','credit_set','repaire_type','repaire_type_detail','fangweima','note','register','credit_rule','import_qrcode') [ RunTime:0.000193s ]
+[ sql ] [ SQL ] update hg_admin_users set last_login_time= '2018-01-22 15:30:15',last_ip= '180.169.104.41' where admin_id= '1' [ RunTime:0.003989s ]
+
+---------------------------------------------------------------
+[ 2018-01-22T15:30:15+08:00 ] 47.100.136.57 180.169.104.41 GET /public/admin.php/admin/index
+[ log ] app.hugedental.cn/public/admin.php/admin/index [运行时间：0.016255s][吞吐率：61.52req/s] [内存消耗：1,890.21kb] [文件加载：38]
+[ info ] [ LANG ] /www/wwwroot/app.hugedental.cn/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept' => 'text/html, application/xhtml+xml, image/jxr, */*',
+  'referer' => 'http://app.hugedental.cn/public/admin.php/admin/index/login',
+  'accept-language' => 'zh-CN',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.116 Safari/537.36 Edge/15.15063',
+  'accept-encoding' => 'gzip, deflate',
+  'host' => 'app.hugedental.cn',
+  'connection' => 'Keep-Alive',
+  'cookie' => 'PHPSESSID=vt1b5ifu1qhk15o470p20teei5',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Index->index[ /www/wwwroot/app.hugedental.cn/application/admin/controller/Index.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] /www/wwwroot/app.hugedental.cn/public/../application/admin/view/index/index.html [ array (
+  0 => 'menu',
+  1 => 'username',
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2018-01-22T15:30:28+08:00 ] 47.100.136.57 180.169.104.41 GET /public/admin.php/admin/message/send_message
+[ log ] app.hugedental.cn/public/admin.php/admin/message/send_message [运行时间：0.016079s][吞吐率：62.19req/s] [内存消耗：1,874.63kb] [文件加载：38]
+[ info ] [ LANG ] /www/wwwroot/app.hugedental.cn/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'message',
+    2 => 'send_message',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept' => 'text/html, application/xhtml+xml, image/jxr, */*',
+  'referer' => 'http://app.hugedental.cn/public/admin.php/admin/index',
+  'accept-language' => 'zh-CN',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.116 Safari/537.36 Edge/15.15063',
+  'accept-encoding' => 'gzip, deflate',
+  'host' => 'app.hugedental.cn',
+  'connection' => 'Keep-Alive',
+  'cookie' => 'PHPSESSID=vt1b5ifu1qhk15o470p20teei5',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Message->send_message[ /www/wwwroot/app.hugedental.cn/application/admin/controller/Message.php ]
+[ info ] [ VIEW ] /www/wwwroot/app.hugedental.cn/public/../application/admin/view/message/send.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2018-01-22T15:30:30+08:00 ] 47.100.136.57 180.169.104.41 GET /public/admin.php/admin/user/index
+[ log ] app.hugedental.cn/public/admin.php/admin/user/index [运行时间：0.037839s][吞吐率：26.43req/s] [内存消耗：3,624.38kb] [文件加载：50]
+[ info ] [ LANG ] /www/wwwroot/app.hugedental.cn/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'user',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept' => 'text/html, application/xhtml+xml, image/jxr, */*',
+  'referer' => 'http://app.hugedental.cn/public/admin.php/admin/index',
+  'accept-language' => 'zh-CN',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.116 Safari/537.36 Edge/15.15063',
+  'accept-encoding' => 'gzip, deflate',
+  'host' => 'app.hugedental.cn',
+  'connection' => 'Keep-Alive',
+  'cookie' => 'PHPSESSID=vt1b5ifu1qhk15o470p20teei5',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\User->index[ /www/wwwroot/app.hugedental.cn/application/admin/controller/User.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /www/wwwroot/app.hugedental.cn/public/../application/admin/view/user/index.html [ array (
+  0 => 'user',
+  1 => 'page',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000458s ] mysql:dbname=huge;host=localhost;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hg_user` [ RunTime:0.000896s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `hg_user` LIMIT 1 [ RunTime:0.000316s ]
+[ sql ] [ SQL ] SELECT * FROM `hg_user` ORDER BY user_id desc LIMIT 0,10 [ RunTime:0.000396s ]
+[ sql ] [ SQL ] SELECT COUNT(*) as cnt FROM hg_patient WHERE operate_user_id = '304' [ RunTime:0.000288s ]
+[ sql ] [ SQL ] select count(*) as 'cnt' from hg_stock where mobile = '18630996108' [ RunTime:0.000205s ]
+[ sql ] [ SQL ] SELECT COUNT(*) as cnt FROM hg_patient WHERE operate_user_id = '303' [ RunTime:0.000137s ]
+[ sql ] [ SQL ] select count(*) as 'cnt' from hg_stock where mobile = '18343206292' [ RunTime:0.000144s ]
+[ sql ] [ SQL ] SELECT COUNT(*) as cnt FROM hg_patient WHERE operate_user_id = '302' [ RunTime:0.000167s ]
+[ sql ] [ SQL ] select count(*) as 'cnt' from hg_stock where mobile = '18903790234' [ RunTime:0.000127s ]
+[ sql ] [ SQL ] SELECT COUNT(*) as cnt FROM hg_patient WHERE operate_user_id = '301' [ RunTime:0.000227s ]
+[ sql ] [ SQL ] select count(*) as 'cnt' from hg_stock where mobile = '18721225113' [ RunTime:0.000139s ]
+[ sql ] [ SQL ] SELECT COUNT(*) as cnt FROM hg_patient WHERE operate_user_id = '300' [ RunTime:0.000121s ]
+[ sql ] [ SQL ] select count(*) as 'cnt' from hg_stock where mobile = '18253286663' [ RunTime:0.000111s ]
+[ sql ] [ SQL ] SELECT COUNT(*) as cnt FROM hg_patient WHERE operate_user_id = '299' [ RunTime:0.000107s ]
+[ sql ] [ SQL ] select count(*) as 'cnt' from hg_stock where mobile = '15275247799' [ RunTime:0.000166s ]
+[ sql ] [ SQL ] SELECT COUNT(*) as cnt FROM hg_patient WHERE operate_user_id = '298' [ RunTime:0.000125s ]
+[ sql ] [ SQL ] select count(*) as 'cnt' from hg_stock where mobile = '18952752006' [ RunTime:0.000125s ]
+[ sql ] [ SQL ] SELECT COUNT(*) as cnt FROM hg_patient WHERE operate_user_id = '297' [ RunTime:0.000241s ]
+[ sql ] [ SQL ] select count(*) as 'cnt' from hg_stock where mobile = '13972074522' [ RunTime:0.000134s ]
+[ sql ] [ SQL ] SELECT COUNT(*) as cnt FROM hg_patient WHERE operate_user_id = '296' [ RunTime:0.000128s ]
+[ sql ] [ SQL ] select count(*) as 'cnt' from hg_stock where mobile = '18353239442' [ RunTime:0.000133s ]
+[ sql ] [ SQL ] SELECT COUNT(*) as cnt FROM hg_patient WHERE operate_user_id = '295' [ RunTime:0.000126s ]
+[ sql ] [ SQL ] select count(*) as 'cnt' from hg_stock where mobile = '18780063690' [ RunTime:0.000116s ]
+
+---------------------------------------------------------------
+[ 2018-01-22T15:30:44+08:00 ] 47.100.136.57 180.169.104.41 GET /public/admin.php/admin/user/index?page=2
+[ log ] app.hugedental.cn/public/admin.php/admin/user/index?page=2 [运行时间：0.033920s][吞吐率：29.48req/s] [内存消耗：3,625.56kb] [文件加载：50]
+[ info ] [ LANG ] /www/wwwroot/app.hugedental.cn/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'user',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept' => 'text/html, application/xhtml+xml, image/jxr, */*',
+  'referer' => 'http://app.hugedental.cn/public/admin.php/admin/user/index',
+  'accept-language' => 'zh-CN',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.116 Safari/537.36 Edge/15.15063',
+  'accept-encoding' => 'gzip, deflate',
+  'host' => 'app.hugedental.cn',
+  'connection' => 'Keep-Alive',
+  'cookie' => 'PHPSESSID=vt1b5ifu1qhk15o470p20teei5',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'page' => '2',
+)
+[ info ] [ RUN ] app\admin\controller\User->index[ /www/wwwroot/app.hugedental.cn/application/admin/controller/User.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /www/wwwroot/app.hugedental.cn/public/../application/admin/view/user/index.html [ array (
+  0 => 'user',
+  1 => 'page',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000297s ] mysql:dbname=huge;host=localhost;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hg_user` [ RunTime:0.000837s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `hg_user` LIMIT 1 [ RunTime:0.000172s ]
+[ sql ] [ SQL ] SELECT * FROM `hg_user` ORDER BY user_id desc LIMIT 10,10 [ RunTime:0.000358s ]
+[ sql ] [ SQL ] SELECT COUNT(*) as cnt FROM hg_patient WHERE operate_user_id = '294' [ RunTime:0.000168s ]
+[ sql ] [ SQL ] select count(*) as 'cnt' from hg_stock where mobile = '13947211945' [ RunTime:0.000133s ]
+[ sql ] [ SQL ] SELECT COUNT(*) as cnt FROM hg_patient WHERE operate_user_id = '293' [ RunTime:0.000107s ]
+[ sql ] [ SQL ] select count(*) as 'cnt' from hg_stock where mobile = '15333715918' [ RunTime:0.000103s ]
+[ sql ] [ SQL ] SELECT COUNT(*) as cnt FROM hg_patient WHERE operate_user_id = '292' [ RunTime:0.000105s ]
+[ sql ] [ SQL ] select count(*) as 'cnt' from hg_stock where mobile = '13980890490' [ RunTime:0.000111s ]
+[ sql ] [ SQL ] SELECT COUNT(*) as cnt FROM hg_patient WHERE operate_user_id = '291' [ RunTime:0.000103s ]
+[ sql ] [ SQL ] select count(*) as 'cnt' from hg_stock where mobile = '13621594142' [ RunTime:0.000097s ]
+[ sql ] [ SQL ] SELECT COUNT(*) as cnt FROM hg_patient WHERE operate_user_id = '290' [ RunTime:0.000101s ]
+[ sql ] [ SQL ] select count(*) as 'cnt' from hg_stock where mobile = '15821124322' [ RunTime:0.000108s ]
+[ sql ] [ SQL ] SELECT COUNT(*) as cnt FROM hg_patient WHERE operate_user_id = '289' [ RunTime:0.000103s ]
+[ sql ] [ SQL ] select count(*) as 'cnt' from hg_stock where mobile = '13762721139' [ RunTime:0.000097s ]
+[ sql ] [ SQL ] SELECT COUNT(*) as cnt FROM hg_patient WHERE operate_user_id = '288' [ RunTime:0.000106s ]
+[ sql ] [ SQL ] select count(*) as 'cnt' from hg_stock where mobile = '13816704909' [ RunTime:0.000100s ]
+[ sql ] [ SQL ] SELECT COUNT(*) as cnt FROM hg_patient WHERE operate_user_id = '287' [ RunTime:0.000109s ]
+[ sql ] [ SQL ] select count(*) as 'cnt' from hg_stock where mobile = '18185171823' [ RunTime:0.000097s ]
+[ sql ] [ SQL ] SELECT COUNT(*) as cnt FROM hg_patient WHERE operate_user_id = '286' [ RunTime:0.000113s ]
+[ sql ] [ SQL ] select count(*) as 'cnt' from hg_stock where mobile = '17621485886' [ RunTime:0.000113s ]
+[ sql ] [ SQL ] SELECT COUNT(*) as cnt FROM hg_patient WHERE operate_user_id = '285' [ RunTime:0.000112s ]
+[ sql ] [ SQL ] select count(*) as 'cnt' from hg_stock where mobile = '18209619981' [ RunTime:0.000101s ]
+
+---------------------------------------------------------------
+[ 2018-01-22T15:30:47+08:00 ] 47.100.136.57 180.169.104.41 GET /public/admin.php/admin/user/index?page=3
+[ log ] app.hugedental.cn/public/admin.php/admin/user/index?page=3 [运行时间：0.034872s][吞吐率：28.68req/s] [内存消耗：3,624.49kb] [文件加载：50]
+[ info ] [ LANG ] /www/wwwroot/app.hugedental.cn/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'user',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept' => 'text/html, application/xhtml+xml, image/jxr, */*',
+  'referer' => 'http://app.hugedental.cn/public/admin.php/admin/user/index?page=2',
+  'accept-language' => 'zh-CN',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.116 Safari/537.36 Edge/15.15063',
+  'accept-encoding' => 'gzip, deflate',
+  'host' => 'app.hugedental.cn',
+  'connection' => 'Keep-Alive',
+  'cookie' => 'PHPSESSID=vt1b5ifu1qhk15o470p20teei5',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'page' => '3',
+)
+[ info ] [ RUN ] app\admin\controller\User->index[ /www/wwwroot/app.hugedental.cn/application/admin/controller/User.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /www/wwwroot/app.hugedental.cn/public/../application/admin/view/user/index.html [ array (
+  0 => 'user',
+  1 => 'page',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000334s ] mysql:dbname=huge;host=localhost;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hg_user` [ RunTime:0.000830s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `hg_user` LIMIT 1 [ RunTime:0.000181s ]
+[ sql ] [ SQL ] SELECT * FROM `hg_user` ORDER BY user_id desc LIMIT 20,10 [ RunTime:0.000466s ]
+[ sql ] [ SQL ] SELECT COUNT(*) as cnt FROM hg_patient WHERE operate_user_id = '284' [ RunTime:0.000168s ]
+[ sql ] [ SQL ] select count(*) as 'cnt' from hg_stock where mobile = '18053766900' [ RunTime:0.000135s ]
+[ sql ] [ SQL ] SELECT COUNT(*) as cnt FROM hg_patient WHERE operate_user_id = '283' [ RunTime:0.000139s ]
+[ sql ] [ SQL ] select count(*) as 'cnt' from hg_stock where mobile = '15921762628' [ RunTime:0.000101s ]
+[ sql ] [ SQL ] SELECT COUNT(*) as cnt FROM hg_patient WHERE operate_user_id = '281' [ RunTime:0.000139s ]
+[ sql ] [ SQL ] select count(*) as 'cnt' from hg_stock where mobile = '18670393499' [ RunTime:0.000130s ]
+[ sql ] [ SQL ] SELECT COUNT(*) as cnt FROM hg_patient WHERE operate_user_id = '280' [ RunTime:0.000124s ]
+[ sql ] [ SQL ] select count(*) as 'cnt' from hg_stock where mobile = '18721225112' [ RunTime:0.000112s ]
+[ sql ] [ SQL ] SELECT COUNT(*) as cnt FROM hg_patient WHERE operate_user_id = '272' [ RunTime:0.000122s ]
+[ sql ] [ SQL ] select count(*) as 'cnt' from hg_stock where mobile = '13570462894' [ RunTime:0.000135s ]
+[ sql ] [ SQL ] SELECT COUNT(*) as cnt FROM hg_patient WHERE operate_user_id = '264' [ RunTime:0.000115s ]
+[ sql ] [ SQL ] select count(*) as 'cnt' from hg_stock where mobile = '18721225105' [ RunTime:0.000112s ]
+[ sql ] [ SQL ] SELECT COUNT(*) as cnt FROM hg_patient WHERE operate_user_id = '263' [ RunTime:0.000186s ]
+[ sql ] [ SQL ] select count(*) as 'cnt' from hg_stock where mobile = '18721225104' [ RunTime:0.000108s ]
+[ sql ] [ SQL ] SELECT COUNT(*) as cnt FROM hg_patient WHERE operate_user_id = '262' [ RunTime:0.000137s ]
+[ sql ] [ SQL ] select count(*) as 'cnt' from hg_stock where mobile = '18721225103' [ RunTime:0.000098s ]
+[ sql ] [ SQL ] SELECT COUNT(*) as cnt FROM hg_patient WHERE operate_user_id = '260' [ RunTime:0.000108s ]
+[ sql ] [ SQL ] select count(*) as 'cnt' from hg_stock where mobile = '18225876893' [ RunTime:0.000097s ]
+[ sql ] [ SQL ] SELECT COUNT(*) as cnt FROM hg_patient WHERE operate_user_id = '259' [ RunTime:0.000143s ]
+[ sql ] [ SQL ] select count(*) as 'cnt' from hg_stock where mobile = '13621956833' [ RunTime:0.000110s ]
+
+---------------------------------------------------------------
+[ 2018-01-22T15:30:50+08:00 ] 47.100.136.57 180.169.104.41 GET /public/admin.php/admin/user/index?page=2
+[ log ] app.hugedental.cn/public/admin.php/admin/user/index?page=2 [运行时间：0.032450s][吞吐率：30.82req/s] [内存消耗：3,625.38kb] [文件加载：50]
+[ info ] [ LANG ] /www/wwwroot/app.hugedental.cn/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'user',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept' => 'text/html, application/xhtml+xml, image/jxr, */*',
+  'referer' => 'http://app.hugedental.cn/public/admin.php/admin/user/index?page=3',
+  'accept-language' => 'zh-CN',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.116 Safari/537.36 Edge/15.15063',
+  'accept-encoding' => 'gzip, deflate',
+  'host' => 'app.hugedental.cn',
+  'connection' => 'Keep-Alive',
+  'cookie' => 'PHPSESSID=vt1b5ifu1qhk15o470p20teei5',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'page' => '2',
+)
+[ info ] [ RUN ] app\admin\controller\User->index[ /www/wwwroot/app.hugedental.cn/application/admin/controller/User.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /www/wwwroot/app.hugedental.cn/public/../application/admin/view/user/index.html [ array (
+  0 => 'user',
+  1 => 'page',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000353s ] mysql:dbname=huge;host=localhost;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hg_user` [ RunTime:0.000833s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `hg_user` LIMIT 1 [ RunTime:0.000165s ]
+[ sql ] [ SQL ] SELECT * FROM `hg_user` ORDER BY user_id desc LIMIT 10,10 [ RunTime:0.000289s ]
+[ sql ] [ SQL ] SELECT COUNT(*) as cnt FROM hg_patient WHERE operate_user_id = '294' [ RunTime:0.000157s ]
+[ sql ] [ SQL ] select count(*) as 'cnt' from hg_stock where mobile = '13947211945' [ RunTime:0.000111s ]
+[ sql ] [ SQL ] SELECT COUNT(*) as cnt FROM hg_patient WHERE operate_user_id = '293' [ RunTime:0.000107s ]
+[ sql ] [ SQL ] select count(*) as 'cnt' from hg_stock where mobile = '15333715918' [ RunTime:0.000117s ]
+[ sql ] [ SQL ] SELECT COUNT(*) as cnt FROM hg_patient WHERE operate_user_id = '292' [ RunTime:0.000125s ]
+[ sql ] [ SQL ] select count(*) as 'cnt' from hg_stock where mobile = '13980890490' [ RunTime:0.000108s ]
+[ sql ] [ SQL ] SELECT COUNT(*) as cnt FROM hg_patient WHERE operate_user_id = '291' [ RunTime:0.000104s ]
+[ sql ] [ SQL ] select count(*) as 'cnt' from hg_stock where mobile = '13621594142' [ RunTime:0.000098s ]
+[ sql ] [ SQL ] SELECT COUNT(*) as cnt FROM hg_patient WHERE operate_user_id = '290' [ RunTime:0.000103s ]
+[ sql ] [ SQL ] select count(*) as 'cnt' from hg_stock where mobile = '15821124322' [ RunTime:0.000096s ]
+[ sql ] [ SQL ] SELECT COUNT(*) as cnt FROM hg_patient WHERE operate_user_id = '289' [ RunTime:0.000152s ]
+[ sql ] [ SQL ] select count(*) as 'cnt' from hg_stock where mobile = '13762721139' [ RunTime:0.000107s ]
+[ sql ] [ SQL ] SELECT COUNT(*) as cnt FROM hg_patient WHERE operate_user_id = '288' [ RunTime:0.000120s ]
+[ sql ] [ SQL ] select count(*) as 'cnt' from hg_stock where mobile = '13816704909' [ RunTime:0.000122s ]
+[ sql ] [ SQL ] SELECT COUNT(*) as cnt FROM hg_patient WHERE operate_user_id = '287' [ RunTime:0.000132s ]
+[ sql ] [ SQL ] select count(*) as 'cnt' from hg_stock where mobile = '18185171823' [ RunTime:0.000099s ]
+[ sql ] [ SQL ] SELECT COUNT(*) as cnt FROM hg_patient WHERE operate_user_id = '286' [ RunTime:0.000102s ]
+[ sql ] [ SQL ] select count(*) as 'cnt' from hg_stock where mobile = '17621485886' [ RunTime:0.000097s ]
+[ sql ] [ SQL ] SELECT COUNT(*) as cnt FROM hg_patient WHERE operate_user_id = '285' [ RunTime:0.000129s ]
+[ sql ] [ SQL ] select count(*) as 'cnt' from hg_stock where mobile = '18209619981' [ RunTime:0.000138s ]
+
+---------------------------------------------------------------
+[ 2018-01-22T15:31:14+08:00 ] 47.100.136.57 180.169.104.41 GET /public/admin.php/admin/security/create_list
+[ log ] app.hugedental.cn/public/admin.php/admin/security/create_list [运行时间：0.031102s][吞吐率：32.15req/s] [内存消耗：3,526.27kb] [文件加载：48]
+[ info ] [ LANG ] /www/wwwroot/app.hugedental.cn/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'security',
+    2 => 'create_list',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept' => 'text/html, application/xhtml+xml, image/jxr, */*',
+  'referer' => 'http://app.hugedental.cn/public/admin.php/admin/index',
+  'accept-language' => 'zh-CN',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.116 Safari/537.36 Edge/15.15063',
+  'accept-encoding' => 'gzip, deflate',
+  'host' => 'app.hugedental.cn',
+  'connection' => 'Keep-Alive',
+  'cookie' => 'PHPSESSID=vt1b5ifu1qhk15o470p20teei5',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Security->create_list[ /www/wwwroot/app.hugedental.cn/application/admin/controller/Security.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /www/wwwroot/app.hugedental.cn/public/../application/admin/view/security/create_index.html [ array (
+  0 => 'data',
+  1 => 'page',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000307s ] mysql:dbname=huge;host=localhost;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hg_security_code_batch` [ RunTime:0.000657s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `hg_security_code_batch` LIMIT 1 [ RunTime:0.000292s ]
+[ sql ] [ SQL ] SELECT * FROM `hg_security_code_batch` ORDER BY batch_id desc LIMIT 0,10 [ RunTime:0.000195s ]
+
+---------------------------------------------------------------
+[ 2018-01-22T15:31:16+08:00 ] 47.100.136.57 180.169.104.41 GET /public/admin.php/admin/security/export_security_code_pdf?batch_id=206
+[ log ] app.hugedental.cn/public/admin.php/admin/security/export_security_code_pdf?batch_id=206 [运行时间：0.936062s][吞吐率：1.07req/s] [内存消耗：13,195.38kb] [文件加载：55]
+[ info ] [ LANG ] /www/wwwroot/app.hugedental.cn/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'security',
+    2 => 'export_security_code_pdf',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept' => 'text/html, application/xhtml+xml, image/jxr, */*',
+  'referer' => 'http://app.hugedental.cn/public/admin.php/admin/security/create_list',
+  'accept-language' => 'zh-CN',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.116 Safari/537.36 Edge/15.15063',
+  'accept-encoding' => 'gzip, deflate',
+  'host' => 'app.hugedental.cn',
+  'connection' => 'Keep-Alive',
+  'cookie' => 'PHPSESSID=vt1b5ifu1qhk15o470p20teei5',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'batch_id' => '206',
+)
+[ info ] [ RUN ] app\admin\controller\Security->export_security_code_pdf[ /www/wwwroot/app.hugedental.cn/application/admin/controller/Security.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000268s ] mysql:dbname=huge;host=localhost;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hg_security_code` [ RunTime:0.000697s ]
+[ sql ] [ SQL ] SELECT * FROM `hg_security_code` WHERE  `batch_id` = 206 ORDER BY code_id desc [ RunTime:0.085163s ]
+[ error ] [2]file_exists(): open_basedir restriction in effect. File(/etc/php-tcpdf/tcpdf_config.php) is not within the allowed path(s): (/www/wwwroot/app.hugedental.cn/:/tmp/:/proc/:/www)[/www/wwwroot/app.hugedental.cn/vendor/tcpdf/tcpdf_autoconfig.php:64]
+[ error ] [2]file_exists(): open_basedir restriction in effect. File(/etc/tcpdf/tcpdf_config.php) is not within the allowed path(s): (/www/wwwroot/app.hugedental.cn/:/tmp/:/proc/:/www)[/www/wwwroot/app.hugedental.cn/vendor/tcpdf/tcpdf_autoconfig.php:64]
+[ error ] [2]file_exists(): open_basedir restriction in effect. File(/etc/tcpdf_config.php) is not within the allowed path(s): (/www/wwwroot/app.hugedental.cn/:/tmp/:/proc/:/www)[/www/wwwroot/app.hugedental.cn/vendor/tcpdf/tcpdf_autoconfig.php:64]
+[ error ] [2]file_exists(): open_basedir restriction in effect. File(/usr/share/doc/php-tcpdf/examples/images/) is not within the allowed path(s): (/www/wwwroot/app.hugedental.cn/:/tmp/:/proc/:/www)[/www/wwwroot/app.hugedental.cn/vendor/tcpdf/tcpdf_autoconfig.php:96]
+[ error ] [2]file_exists(): open_basedir restriction in effect. File(/usr/share/doc/tcpdf/examples/images/) is not within the allowed path(s): (/www/wwwroot/app.hugedental.cn/:/tmp/:/proc/:/www)[/www/wwwroot/app.hugedental.cn/vendor/tcpdf/tcpdf_autoconfig.php:96]
+[ error ] [2]file_exists(): open_basedir restriction in effect. File(/usr/share/doc/php/tcpdf/examples/images/) is not within the allowed path(s): (/www/wwwroot/app.hugedental.cn/:/tmp/:/proc/:/www)[/www/wwwroot/app.hugedental.cn/vendor/tcpdf/tcpdf_autoconfig.php:96]
+[ error ] [2]file_exists(): open_basedir restriction in effect. File(/var/www/tcpdf/images/) is not within the allowed path(s): (/www/wwwroot/app.hugedental.cn/:/tmp/:/proc/:/www)[/www/wwwroot/app.hugedental.cn/vendor/tcpdf/tcpdf_autoconfig.php:96]
+[ error ] [2]file_exists(): open_basedir restriction in effect. File(/var/www/html/tcpdf/images/) is not within the allowed path(s): (/www/wwwroot/app.hugedental.cn/:/tmp/:/proc/:/www)[/www/wwwroot/app.hugedental.cn/vendor/tcpdf/tcpdf_autoconfig.php:96]
+[ error ] [2]file_exists(): open_basedir restriction in effect. File(/usr/local/apache2/htdocs/tcpdf/images/) is not within the allowed path(s): (/www/wwwroot/app.hugedental.cn/:/tmp/:/proc/:/www)[/www/wwwroot/app.hugedental.cn/vendor/tcpdf/tcpdf_autoconfig.php:96]
+
+---------------------------------------------------------------
+[ 2018-01-22T15:31:42+08:00 ] 47.100.136.57 180.169.104.41 GET /public/admin.php/admin/security/export_security_code_pdf?batch_id=205
+[ log ] app.hugedental.cn/public/admin.php/admin/security/export_security_code_pdf?batch_id=205 [运行时间：0.398418s][吞吐率：2.51req/s] [内存消耗：13,061.06kb] [文件加载：55]
+[ info ] [ LANG ] /www/wwwroot/app.hugedental.cn/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'security',
+    2 => 'export_security_code_pdf',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept' => 'text/html, application/xhtml+xml, image/jxr, */*',
+  'referer' => 'http://app.hugedental.cn/public/admin.php/admin/security/create_list',
+  'accept-language' => 'zh-CN',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.116 Safari/537.36 Edge/15.15063',
+  'accept-encoding' => 'gzip, deflate',
+  'host' => 'app.hugedental.cn',
+  'connection' => 'Keep-Alive',
+  'cookie' => 'PHPSESSID=vt1b5ifu1qhk15o470p20teei5',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'batch_id' => '205',
+)
+[ info ] [ RUN ] app\admin\controller\Security->export_security_code_pdf[ /www/wwwroot/app.hugedental.cn/application/admin/controller/Security.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000329s ] mysql:dbname=huge;host=localhost;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hg_security_code` [ RunTime:0.002068s ]
+[ sql ] [ SQL ] SELECT * FROM `hg_security_code` WHERE  `batch_id` = 205 ORDER BY code_id desc [ RunTime:0.084272s ]
+[ error ] [2]file_exists(): open_basedir restriction in effect. File(/etc/php-tcpdf/tcpdf_config.php) is not within the allowed path(s): (/www/wwwroot/app.hugedental.cn/:/tmp/:/proc/:/www)[/www/wwwroot/app.hugedental.cn/vendor/tcpdf/tcpdf_autoconfig.php:64]
+[ error ] [2]file_exists(): open_basedir restriction in effect. File(/etc/tcpdf/tcpdf_config.php) is not within the allowed path(s): (/www/wwwroot/app.hugedental.cn/:/tmp/:/proc/:/www)[/www/wwwroot/app.hugedental.cn/vendor/tcpdf/tcpdf_autoconfig.php:64]
+[ error ] [2]file_exists(): open_basedir restriction in effect. File(/etc/tcpdf_config.php) is not within the allowed path(s): (/www/wwwroot/app.hugedental.cn/:/tmp/:/proc/:/www)[/www/wwwroot/app.hugedental.cn/vendor/tcpdf/tcpdf_autoconfig.php:64]
+[ error ] [2]file_exists(): open_basedir restriction in effect. File(/usr/share/doc/php-tcpdf/examples/images/) is not within the allowed path(s): (/www/wwwroot/app.hugedental.cn/:/tmp/:/proc/:/www)[/www/wwwroot/app.hugedental.cn/vendor/tcpdf/tcpdf_autoconfig.php:96]
+[ error ] [2]file_exists(): open_basedir restriction in effect. File(/usr/share/doc/tcpdf/examples/images/) is not within the allowed path(s): (/www/wwwroot/app.hugedental.cn/:/tmp/:/proc/:/www)[/www/wwwroot/app.hugedental.cn/vendor/tcpdf/tcpdf_autoconfig.php:96]
+[ error ] [2]file_exists(): open_basedir restriction in effect. File(/usr/share/doc/php/tcpdf/examples/images/) is not within the allowed path(s): (/www/wwwroot/app.hugedental.cn/:/tmp/:/proc/:/www)[/www/wwwroot/app.hugedental.cn/vendor/tcpdf/tcpdf_autoconfig.php:96]
+[ error ] [2]file_exists(): open_basedir restriction in effect. File(/var/www/tcpdf/images/) is not within the allowed path(s): (/www/wwwroot/app.hugedental.cn/:/tmp/:/proc/:/www)[/www/wwwroot/app.hugedental.cn/vendor/tcpdf/tcpdf_autoconfig.php:96]
+[ error ] [2]file_exists(): open_basedir restriction in effect. File(/var/www/html/tcpdf/images/) is not within the allowed path(s): (/www/wwwroot/app.hugedental.cn/:/tmp/:/proc/:/www)[/www/wwwroot/app.hugedental.cn/vendor/tcpdf/tcpdf_autoconfig.php:96]
+[ error ] [2]file_exists(): open_basedir restriction in effect. File(/usr/local/apache2/htdocs/tcpdf/images/) is not within the allowed path(s): (/www/wwwroot/app.hugedental.cn/:/tmp/:/proc/:/www)[/www/wwwroot/app.hugedental.cn/vendor/tcpdf/tcpdf_autoconfig.php:96]
+
+---------------------------------------------------------------
