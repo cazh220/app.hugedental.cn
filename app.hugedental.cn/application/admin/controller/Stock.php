@@ -13,7 +13,7 @@ class Stock
 		$keyword = trim(input("keyword"));
 		$start_time = input("start_time");
 		$end_time = input("end_time");
-		
+
 		$param = array(
 			'keyword'		=> $keyword,
 			'start_time'	=> $start_time ? $start_time." 00:00:00" : '',
@@ -22,15 +22,15 @@ class Stock
 
 		$Stock = Model("Stock");
 		$res = $Stock->stock_list($param);
-		//print_r($res);die;
-		$data = $res->toArray();
+		$data = $res->toArray();//print_r($data['data']);die;
 		$page = $res->render();
 		
-		
+		$tongji = $Stock->stock_tongji();
 
 		$view = new View();
 		$view->assign('stock', $data);
 		$view->assign('page', $page);
+		$view->assign('tongji', $tongji);
 		return $view->fetch('stock/index');
     }
 	
@@ -56,7 +56,6 @@ class Stock
       	//$codeTextarea = input("codeTextarea");
         $user_group = !empty($_POST['user_group']) ? intval($_POST['user_group']) : 0;
         $codeTextarea = !empty($_POST['txt']) ? trim($_POST['txt']) : '';
-
         if(empty($user_group) || empty($codeTextarea))
         {
           $return = array('status'=>1, 'message'=>'参数错误');
@@ -100,8 +99,10 @@ class Stock
       	
       	$Security = Model("Security");
       	$security_code = array();
+		$product_name = '';
       	if($code_arr)
         {
+			$product_arr = array();
         	foreach($code_arr as $key => $val)
 			{
 				$val = trim($val);
@@ -110,18 +111,40 @@ class Stock
 				if($stock_no_s)
 				{
 					//提示已出库
-          $return = array('status'=>1, 'message'=>$val.'已出库，不能重复出库');
-          exit(json_encode($return));
+					$return = array('status'=>1, 'message'=>$val.'已出库，不能重复出库');
+					exit(json_encode($return));
 					//echo "<script>alert('".$val."已出库，不能重复出库');history.go(-1);</script>";
 					//exit();
 				}
+				//判断手机号是否存在
+				$code_info = $Security->check_code($val);
+				if($code_info)
+				{
+					array_push($security_code, $val);
+					
+					//判别产品
+					if(strtolower(substr($val, 0 ,1)) == 'm')
+					{
+						array_push($product_arr, '美晶瓷');
+					}
+					if(strtolower(substr($val, 0 ,1)) == 'n' || strtolower(substr($val, 0 ,1)) == 's')
+					{
+						array_push($product_arr, '诺必灵');
+					}
+				}
+
 				//判断防伪码是否存在，如果存在则处理，如果不存在则跳过
+				/*
 				$res = $Security->stock_out_security_code($val, $stock_no);
 				if($res)
 				{
 					array_push($security_code, $val);
 				}
+				*/
 			}
+			
+			$product = array_unique($product_arr);
+			$product_name = implode(',', $product);
         }
 
       	$data = array(
@@ -132,9 +155,11 @@ class Stock
             'user_name'		=> Session::get('username'),
             'mobile'		=> $user_detail[0]['mobile'],
             'stock_time'	=> date("Y-m-d H:i:s", time()),
+			'product'		=> $product_name
           );
+		//print_r($data);print_r($security_code);die;
         //插入
-        $res = $Stock->insert_stock($data);
+        $res = $Stock->insert_stock($data, $security_code);
         if(empty($res))
         {
           $return = array('status'=>1, 'message'=>$stock_no.'出库失败');
@@ -525,5 +550,6 @@ class Stock
       	exit(json_encode($return));
         */
     }
+	
   
 }

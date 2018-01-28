@@ -209,7 +209,7 @@ class Security extends Model
 		return $res;
 	}
   
-  	//查询村防伪码
+  	//查询防伪码
   	public function check_code($code)
     {
       	$res = array();

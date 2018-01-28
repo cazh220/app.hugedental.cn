@@ -12,13 +12,12 @@ class Stock extends Model
 		$obj = Db::name('hg_stock');
 		if (!empty($param['keyword']))
 		{
-			$obj = $obj->where('company_name|user_name|stock_no','like',$param['keyword'].'%');
+			$obj = $obj->where('company_name|product|mobile','like','%'.$param['keyword'].'%');
 		}
 		if (!empty($param['start_time']) && !empty($param['end_time']))
 		{
 			$obj = $obj->where('stock_time',['>=',$param['start_time']],['<=',$param['end_time']],'and');
 		}
-		
 		$res = $obj->where('is_delete', 0)->order('stock_id desc')->paginate(10);
 		return $res;
 	}
@@ -31,14 +30,38 @@ class Stock extends Model
 	}
 	
     //插入出库
-    public function insert_stock($data=array())
+    public function insert_stock($data=array(), $code=array())
     {
-    	if($data)
+    	if($data && $code && !empty($data['stock_no']))
     	{
-			$res = Db::table('hg_stock')->insert($data);
+			Db::startTrans();
+			
+			foreach($code as $key => $val)
+			{
+				try{
+					$sql = "UPDATE hg_security_code SET stock_no = '".$data['stock_no']."', status = 1 WHERE security_code = '".$val."'";
+					Db::execute($sql);
+				} catch (\Exception $e) {
+					// 回滚事务
+					Db::rollback();
+					return false;
+				}
+			}
+			
+			try{
+				$res = Db::table('hg_stock')->insert($data);
+			} catch (\Exception $e) {
+				// 回滚事务
+				Db::rollback();
+				return false;
+			}
+
+			// 提交事务
+			Db::commit();
+			return true;
     	}
     	
-    	return $res ? $res : 0;
+    	return false;
     }
     
     //获取出库详情
@@ -134,4 +157,19 @@ class Stock extends Model
     	
     	return !empty($res['stock_no']) ? $res['stock_no'] : '';
     }
+	
+	//获取出库数量
+	public function stock_tongji()
+	{
+		$sql = "SELECT COUNT(*) as 'total' FROM hg_security_code";
+		$res = Db::query($sql);
+		
+		$total = !empty($res[0]['total']) ? intval($res[0]['total']) : 0; 
+		
+		$sql = "SELECT COUNT(*) as 'out_num' FROM hg_security_code WHERE status IN (1,2)";
+		$res = Db::query($sql);
+		$out_num = !empty($res[0]['out_num']) ? intval($res[0]['out_num']) : 0;
+		
+		return array('total'=>$total, 'out_num'=>$out_num);
+	}
 }
