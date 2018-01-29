@@ -40,8 +40,8 @@
     </style>
 </head>
 <body>
-<form class="form-inline definewidth m20" action="index" method="get">    
-    <input type="text" name="keyword" id="keyword" class="abc input-default" placeholder="账户名/手机号/所属单位" value="{$Request.get.keyword}">&nbsp;&nbsp;<input type="text" name="dental" id="dental"class="abc input-default" placeholder="技工所" value="{$Request.get.dental}">&nbsp;&nbsp;<input type="text" name="hospital" id="hospital"class="abc input-default" placeholder="门诊医院" value="{$Request.get.hospital}">&nbsp;&nbsp;&nbsp;&nbsp;<label>注册时间:</label><div class="input-group date form_date col-md-5 text_s" data-date="" data-date-format="yyyy-mm-dd" data-link-field="dtp_input1" data-link-format="yyyy-mm-dd">
+<form class="form-inline definewidth m20" style="width:2000px" action="index" method="get">    
+    <input type="text" style="width:300px" name="keyword" id="keyword" class="abc input-default" placeholder="会员编号/账户名/手机号/所属单位/用户名" value="{$Request.get.keyword}">&nbsp;&nbsp;<input type="text" name="dental" id="dental"class="abc input-default" placeholder="技工所" value="{$Request.get.dental}">&nbsp;&nbsp;<input type="text" name="hospital" id="hospital"class="abc input-default" placeholder="门诊医院" value="{$Request.get.hospital}">&nbsp;&nbsp;&nbsp;&nbsp;<label>注册时间:</label><div class="input-group date form_date col-md-5 text_s" data-date="" data-date-format="yyyy-mm-dd" data-link-field="dtp_input1" data-link-format="yyyy-mm-dd">
                     <input class="form-control" size="20" type="text" value="{$Request.get.start_time}" readonly>
 					<span class="input-group-addon"><span class="glyphicon glyphicon-remove"></span></span>
 					<span class="input-group-addon"><span class="glyphicon glyphicon-calendar"></span></span>
@@ -54,7 +54,7 @@
 				<input type="hidden" id="dtp_input2" name="end_time" value="{$Request.get.end_time}" />    
     <button type="submit" class="btn btn-primary">查询</button>&nbsp;&nbsp; <button type="button" class="btn btn-success" id="addnew">新增用户</button>&nbsp;&nbsp; <button type="button" class="btn btn-success" id="delete_user">删除</button>&nbsp;&nbsp; <button type="button" class="btn btn-success" id="export">导出</button>
 </form>
-<table class="table table-bordered table-hover definewidth m10" style="width: 1700px;">
+<table class="table table-bordered table-hover definewidth m10" style="width: 2200px;">
     <thead>
     <tr>
 		<th width="70px"><input type="checkbox" id="all_user_id" name="all_user_id" value="">选择</th>
@@ -68,6 +68,10 @@
 		<th width="120px">部门</th>
 		<th width="100px">邮箱</th>
 		<th width="150px">注册时间</th>
+		<th width="180px">美晶瓷录入数量</th>
+		<th width="180px">美晶瓷出库数量</th>
+		<th width="180px">诺必灵录入数量</th>
+		<th width="180px">诺必灵出库数量</th>
 		<th width="80px">录入数量</th>
 		<th width="80px">出库数量</th>
       	<th width="80px">牙齿数量</th>
@@ -88,6 +92,10 @@
 			<td>{$list.department}</td>
 			<td>{$list.email}</td>
 			<td>{$list.create_time}</td>
+			<td>{$list.m_record_count}</td>
+			<td>{$list.m_stock_count}</td>
+			<td>{$list.n_record_count}</td>
+			<td>{$list.n_stock_count}</td>
 			<td>{$list.record_count}</td>
 			<td>{$list.stock_count}</td>
            	<td>{$list.tooth_count}</td>

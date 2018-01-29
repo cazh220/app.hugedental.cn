@@ -22,6 +22,7 @@ class Stock
 
 		$Stock = Model("Stock");
 		$res = $Stock->stock_list($param);
+		$count = $Stock->stock_list_num($param);
 		$data = $res->toArray();//print_r($data['data']);die;
 		$page = $res->render();
 		
@@ -31,6 +32,7 @@ class Stock
 		$view->assign('stock', $data);
 		$view->assign('page', $page);
 		$view->assign('tongji', $tongji);
+		$view->assign('count', $count);
 		return $view->fetch('stock/index');
     }
 	

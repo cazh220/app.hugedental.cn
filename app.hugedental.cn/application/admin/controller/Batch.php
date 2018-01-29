@@ -454,6 +454,47 @@ class Batch
 		//print_r($data);die;
 	}
 	
+	//修复老数据
+	public function fix_data()
+	{
+		//获取所有数据
+		$Batch = Model("Batch");
+		$stock = $Batch->get_all_stock();//print_r($stock);die;
+		if($stock)
+		{
+			foreach($stock as $key => $val)
+			{
+				if(!empty($val['code_list']))
+				{
+					$name = array();
+					$arr = explode(',', $val['code_list']);
+					foreach($arr as $ka => $va)
+					{
+						if(strtolower(substr($va, 0,1)) == 'm')
+						{
+							array_push($name, '美晶瓷');
+						}
+						
+						if(strtolower(substr($va, 0,1)) == 'n' || strtolower(substr($va, 0,1)) == 's')
+						{
+							array_push($name, '诺必灵');
+						}
+						else
+						{
+							array_push($name, '美晶瓷');
+						}
+					}
+					$name_a = array_unique($name);
+					$product = implode(',', $name_a);
+					
+					$Batch->update_product($product, $val['stock_id']);
+				}
+				
+			}
+		}
+		
+	}
+	
 	
 }
 	

@@ -22,6 +22,24 @@ class Stock extends Model
 		return $res;
 	}
 	
+	
+	public function stock_list_num($param=array())
+	{
+		$res = array();
+		$obj = Db::name('hg_stock');
+		if (!empty($param['keyword']))
+		{
+			$obj = $obj->where('company_name|product|mobile','like','%'.$param['keyword'].'%');
+		}
+		if (!empty($param['start_time']) && !empty($param['end_time']))
+		{
+			$obj = $obj->where('stock_time',['>=',$param['start_time']],['<=',$param['end_time']],'and');
+		}
+		$obj_count = $obj->where('is_delete', 0)->order('stock_id desc')->sum('stock_num');
+
+		return $obj_count ? $obj_count : 0;
+	}
+	
 	//生成出库单号
 	public function create_stock_no()
 	{
@@ -135,12 +153,20 @@ class Stock extends Model
     }
     
     //出库数量统计
-    public function stock_out_num($mobile)
+    public function stock_out_num($mobile, $product=0)
     {
-    	if($mobile)
+    	if($product)
     	{
-    		$res = Db::query("select SUM(stock_num) as 'cnt' from hg_stock where mobile = '".$mobile."'");
-    		
+			if($product)
+			{
+				$sql = "select SUM(stock_num) as 'cnt' from hg_stock where mobile = '".$mobile."' AND product LIKE '%".$product."%'";
+				$res = Db::query($sql);
+			}
+			else
+			{
+				$res = Db::query("select SUM(stock_num) as 'cnt' from hg_stock where mobile = '".$mobile."'");
+			}
+
     	}
     	
     	return !empty($res[0]['cnt']) ? $res[0]['cnt'] : 0;

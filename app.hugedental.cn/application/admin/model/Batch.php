@@ -123,7 +123,27 @@ class Batch extends Model
 			
 			return true;
 		}
+
+	}
+	
+	//获取stock数据
+	public function get_all_stock()
+	{
+		$sql = "SELECT * FROM hg_stock WHERE stock_id < 135";echo $sql;die;
+		$res = Db::query($sql);
+		return $res;
+	}
+	
+	//获取名称
+	public function update_product($product, $stock_id)
+	{
+		if($product && $stock_id)
+		{
+			$sql = "UPDATE hg_stock SET product = '".$product."' WHERE stock_id = ".$stock_id;
+			
+			$res = Db::execute($sql);
+		}
 		
-		
+		return !empty($res) ? $res : '';
 	}
 }

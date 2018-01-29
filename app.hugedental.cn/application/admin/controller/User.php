@@ -39,6 +39,11 @@ class User
 			$Stock = model('Stock');
 			foreach($data['data'] as $key => $val)
 			{
+				$data['data'][$key]['m_record_count'] = $Patient->my_record_count($val['user_id'], 1);
+				$data['data'][$key]['m_stock_count'] = $Stock->stock_out_num($val['mobile'], '美晶瓷');
+				
+				$data['data'][$key]['n_record_count'] = $Patient->my_record_count($val['user_id'], 4);
+				$data['data'][$key]['n_stock_count'] = $Stock->stock_out_num($val['mobile'], '诺必灵');
 				
 				$data['data'][$key]['record_count'] = $Patient->my_record_count($val['user_id']);
 				$data['data'][$key]['stock_count'] = $Stock->stock_out_num($val['mobile']);
@@ -54,7 +59,7 @@ class User
                 }
 			}
 		}
-		
+
 		$view = new View();
 		$view->assign('user', $data);
 		$view->assign('page', $page);

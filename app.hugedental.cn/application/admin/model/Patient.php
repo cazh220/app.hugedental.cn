@@ -144,13 +144,23 @@ class Patient extends Model
 	}
 	
 	//获取某个技工录入的数量
-	public function my_record_count($user_id=0)
+	public function my_record_count($user_id=0, $type=0)
 	{
 		if(empty($user_id))
 		{
 			return 0;
 		}
-		$res = Db::query("SELECT COUNT(*) as cnt FROM hg_patient WHERE operate_user_id = :user_id", ['user_id'=>$user_id]);
+		
+		if($type)
+		{
+			$sql = "SELECT COUNT(*) as cnt FROM hg_patient WHERE operate_user_id = ".$user_id." AND false_tooth = ".$type;
+			$res = Db::query($sql);
+		}
+		else
+		{
+			$res = Db::query("SELECT COUNT(*) as cnt FROM hg_patient WHERE operate_user_id = :user_id", ['user_id'=>$user_id]);
+		}
+		
 		return !empty($res[0]['cnt']) ? $res[0]['cnt'] : 0;
 	}
 	

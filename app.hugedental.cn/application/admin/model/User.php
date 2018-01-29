@@ -44,7 +44,7 @@ class User extends Model
 		
 		if (!empty($param['keyword']))
 		{
-			$obj_data = $obj_data->where('username', 'like', '%'.$param['keyword'])->whereOr('mobile', 'like', '%'.$param['keyword'])->whereOr('company_name', 'like', '%'.$param['keyword']);
+			$obj_data = $obj_data->where('username', 'like', '%'.$param['keyword'])->whereOr('mobile', 'like', '%'.$param['keyword'])->whereOr('company_name', 'like', '%'.$param['keyword'])->whereOr('member_id', 'like', '%'.$param['keyword'])->whereOr('realname', 'like', '%'.$param['keyword']);
 		}
 		
 		if (!empty($param['dental']))
